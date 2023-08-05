@@ -21,7 +21,6 @@
 
     scroll-behavior: smooth;
 
-    font-family: 'open-sans', 'Spoqa Han Sans Neo';
     word-break: keep-all;
 }
 
@@ -54,13 +53,15 @@ td {
     line-height: 1.6em;
 }
 
-//전체 설정 끝
-
 body {
     background-color: #000;
     margin: 1.9rem 4rem;
     color: #FAFAF0;
+
+    font-family: 'open-sans', 'Spoqa Han Sans Neo';
 }
+
+//전체 설정 끝
 
 //HEADER 헤더
 
@@ -69,6 +70,7 @@ header {
     justify-content: space-between;
     align-items: top;
 
+    font-family: 'gt-ultra-median';
     font-size: 3.7rem;
     vertical-align: top;
 }

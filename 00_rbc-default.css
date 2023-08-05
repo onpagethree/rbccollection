@@ -14,7 +14,6 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  font-family: "open-sans", "Spoqa Han Sans Neo";
   word-break: keep-all;
 }
 
@@ -49,12 +48,14 @@ body {
   background-color: #000;
   margin: 1.9rem 4rem;
   color: #FAFAF0;
+  font-family: "open-sans", "Spoqa Han Sans Neo";
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: top;
+  font-family: "gt-ultra-median";
   font-size: 3.7rem;
   vertical-align: top;
 }
