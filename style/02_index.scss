@@ -1,10 +1,18 @@
 //2023-08-05
 
 @font-face {
-    font-family: "gt-ultra-median";
+    font-family: 'gt-ultra-median';
     src: url(./source/GT-Ultra-Median-Regular.otf);
     font-weight: 400;
 }
+
+@font-face {
+    font-family: 'open-sans';
+    src: url(/source/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+//spoqa hans
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 
 * {
     box-sizing: border-box;
@@ -14,7 +22,6 @@
 
     scroll-behavior: smooth;
 
-    font-family: "gt-ultra-median", "Sandoll ClairSans";
     word-break: keep-all;
 }
 
@@ -42,11 +49,17 @@ html {
 }
 
 table,
-td,
-tr {
-    font-family: Sandoll ClairSans;
-    font-weight: 500;
+td {
+    font-weight: 400;
     line-height: 1.6em;
+}
+
+body {
+    background-color: #000;
+    margin: 1.9rem 4rem;
+    color: #FAFAF0;
+
+    font-family: 'open-sans', 'Spoqa Han Sans Neo';
 }
 
 //전체 설정 끝
@@ -61,6 +74,7 @@ body {
 //HEADER 헤더
 
 header {
+    font-family: 'gt-ultra-median';
     font-size: 3.7rem;
     vertical-align: top;
 
@@ -83,8 +97,6 @@ header {
 p {
     line-height: 1.45em;
     text-align: center;
-    font-family: Sandoll ClairSans;
-    font-weight: 500;
 
     max-width: 70vw;
     margin: 2.2rem auto;
@@ -96,6 +108,7 @@ section {
     justify-content: center;
 
     a {
+        font-family: 'gt-ultra-median';
         font-size: 7rem;
         text-align: center;
 

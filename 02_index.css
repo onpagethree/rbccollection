@@ -1,7 +1,12 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 @font-face {
   font-family: "gt-ultra-median";
   src: url(./source/GT-Ultra-Median-Regular.otf);
   font-weight: 400;
+}
+@font-face {
+  font-family: "open-sans";
+  src: url(/source/OpenSans-VariableFont_wdth\,wght.ttf);
 }
 * {
   box-sizing: border-box;
@@ -9,7 +14,6 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  font-family: "gt-ultra-median", "Sandoll ClairSans";
   word-break: keep-all;
 }
 
@@ -35,11 +39,16 @@ html {
 }
 
 table,
-td,
-tr {
-  font-family: Sandoll ClairSans;
-  font-weight: 500;
+td {
+  font-weight: 400;
   line-height: 1.6em;
+}
+
+body {
+  background-color: #000;
+  margin: 1.9rem 4rem;
+  color: #FAFAF0;
+  font-family: "open-sans", "Spoqa Han Sans Neo";
 }
 
 body {
@@ -49,6 +58,7 @@ body {
 }
 
 header {
+  font-family: "gt-ultra-median";
   font-size: 3.7rem;
   vertical-align: top;
 }
@@ -65,8 +75,6 @@ header .rbc-title a {
 p {
   line-height: 1.45em;
   text-align: center;
-  font-family: Sandoll ClairSans;
-  font-weight: 500;
   max-width: 70vw;
   margin: 2.2rem auto;
 }
@@ -77,6 +85,7 @@ section {
   justify-content: center;
 }
 section a {
+  font-family: "gt-ultra-median";
   font-size: 7rem;
   text-align: center;
   margin: 3rem;
