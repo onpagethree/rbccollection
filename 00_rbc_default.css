@@ -1,9 +1,8 @@
 @font-face {
   font-family: "gt-ultra-median";
-  src: url(./source/GT-Ultra-Median-Regular.otf);
+  src: url(/source/GT-Ultra-Median-Regular.otf);
   font-weight: 400;
 }
-
 * {
   box-sizing: border-box;
   position: relative;
@@ -81,31 +80,25 @@ p {
   html {
     font-size: 3vw;
   }
-
   body {
     margin: 1.2rem 1.2rem;
     overflow: auto;
   }
-
   header {
     font-size: 2.7rem;
   }
-
-  header> :nth-child(2) {
+  header > :nth-child(2) {
     text-align: center;
   }
-
   header .head-info,
   header .month {
     width: 25vw;
   }
-
   p {
     max-width: 75vw;
     margin: 2rem auto;
   }
 }
-
 @media screen and (max-width: 450px) {
   p {
     font-size: 1.3rem;
