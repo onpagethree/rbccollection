@@ -61,14 +61,14 @@ section {
     left: 0;
     top: 0;
 
-    padding: 4rem;
+    padding: 2.5rem 4rem;
 
     .pop-title {
         font-family: 'gt-ultra-median';
 
         width: 55%;
         margin: 0 auto;
-        margin-bottom: 2.5rem;
+        margin-bottom: 2rem;
 
         font-size: 2.7rem;
         line-height: 1em;
@@ -76,6 +76,7 @@ section {
         text-align: center;
 
         p {
+            margin-top: 1.5rem;
             font-size: 1rem;
         }
     }
@@ -131,7 +132,7 @@ section {
         .contents {
             width: 75vw;
             height: 28rem;
-            margin: 0 auto 1.2rem;
+            margin: 0 auto 1.6rem;
 
             .img-holder {
                 height: 63%;
