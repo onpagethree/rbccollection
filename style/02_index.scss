@@ -1,4 +1,4 @@
-//2023-08-062
+//2023-08-06
 
 @font-face {
     font-family: 'gt-ultra-median';
@@ -48,12 +48,6 @@ html {
     //1rem = html의 폰트 사이즈
 }
 
-table,
-td {
-    font-weight: 400;
-    line-height: 1.6em;
-}
-
 body {
     background-color: #000;
     margin: 1.9rem 4rem;
@@ -97,9 +91,16 @@ header {
 p {
     line-height: 1.45em;
     text-align: center;
+    font-weight: 500;
 
     max-width: 70vw;
     margin: 2.2rem auto;
+}
+
+table,
+td {
+    font-weight: 500;
+    line-height: 1.6em;
 }
 
 section {
