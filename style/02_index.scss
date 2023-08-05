@@ -103,86 +103,47 @@ section {
     }
 }
 
-//버튼
-/* Button */
-.year {
-    display: flex;
-    justify-content: center;
-
-    .year-dropbtn {
-        vertical-align: text-top;
-
-        font-size: 7rem;
-        text-align: center;
-
-        margin: 3rem;
-    }
-}
-
-
-#optionbtn:hover,
-#optionbtn:focus {
-    opacity: 0.75;
-    transition: all 0.1s linear;
-    ;
-}
-
-.option-dropdown {
-    display: none;
-    position: absolute;
-}
-
-.option-dropdown a {
-    //    font-size: .5em;
-    text-align: center;
-    font-size: 7rem;
-
-    display: block;
-    position: relative;
-    margin-top: 1.6em;
-}
-
-.show {
-    display: block;
-}
-
 
 //세로형 스크린 반응형
 
 @media screen and (max-width: 768px) {
+    html {
+        font-size: 3vw;
+    }
 
-    //HEADER 헤더
+    body {
+        margin: 1.2rem 1.2rem;
+    }
 
+    //HEADER 헤더 max-width: 768px
     header {
-        //    font-size: 2.7rem;
-        vertical-align: top;
-
         .rbc-title {
-            font-size: 2.7rem;
+            a {
+                width: 50%;
+                font-size: 2.7rem;
+
+            }
+
         }
     }
 
-
-    //전체 기본 텍스트
+    //전체 기본 텍스트 max-width: 768px
 
     p {
-        line-height: 1.45em;
-        text-align: center;
-        font-family: Sandoll ClairSans;
-        font-weight: 500;
-
-        max-width: 70vw;
-        margin: 2.2rem auto;
+        max-width: 75vw;
     }
-
 
     section {
         a {
-            font-size: 12rem;
-            text-align: center;
-
-            margin: 4rem;
+            font-size: 6rem;
+            margin: 2rem 3rem;
         }
     }
+}
 
+@media screen and (max-width: 450px) {
+    p {
+        font-size: 1.3rem;
+        max-width: 100%;
+    }
 }

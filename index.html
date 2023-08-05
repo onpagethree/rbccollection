@@ -39,33 +39,6 @@
         <a href="">12</a>
     </section>
 
-    <div class="year">
-        <a onclick="myFunction()" class="year-dropbtn" id="optionbtn">
-            2023
-        </a>
-
-        <div class="option-dropdown" id="option-dropdown">
-            <a href="./2023_08.html">2022</a>
-        </div>
-    </div>
-
-
-    <script>
-        function myFunction() {
-            document.getElementById("option-dropdown").classList.toggle("show");
-        } window.onclick = function (event) {
-            if (!event.target.matches('#optionbtn')) {
-                var dropdowns = document.getElementsByClassName("option-dropdown");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
-                    }
-                }
-            }
-        }
-    </script>
 
     <p>© 2023 radical brewing club. All rights reserved.</p>
 

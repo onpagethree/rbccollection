@@ -108,6 +108,7 @@ p {
         overflow: auto;
     }
 
+    //header max-width: 768px
     header {
         font-size: 2.7rem;
 
@@ -121,9 +122,9 @@ p {
         }
     }
 
+    //전체 텍스트 max-width: 768px
     p {
         max-width: 75vw;
-        margin: 2rem auto;
     }
 }
 

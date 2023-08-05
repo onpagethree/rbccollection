@@ -82,59 +82,28 @@ section a {
   margin: 3rem;
 }
 
-/* Button */
-.year {
-  display: flex;
-  justify-content: center;
-}
-.year .year-dropbtn {
-  vertical-align: text-top;
-  font-size: 7rem;
-  text-align: center;
-  margin: 3rem;
-}
-
-#optionbtn:hover,
-#optionbtn:focus {
-  opacity: 0.75;
-  transition: all 0.1s linear;
-}
-
-.option-dropdown {
-  display: none;
-  position: absolute;
-}
-
-.option-dropdown a {
-  text-align: center;
-  font-size: 7rem;
-  display: block;
-  position: relative;
-  margin-top: 1.6em;
-}
-
-.show {
-  display: block;
-}
-
 @media screen and (max-width: 768px) {
-  header {
-    vertical-align: top;
+  html {
+    font-size: 3vw;
   }
-  header .rbc-title {
+  body {
+    margin: 1.2rem 1.2rem;
+  }
+  header .rbc-title a {
+    width: 50%;
     font-size: 2.7rem;
   }
   p {
-    line-height: 1.45em;
-    text-align: center;
-    font-family: Sandoll ClairSans;
-    font-weight: 500;
-    max-width: 70vw;
-    margin: 2.2rem auto;
+    max-width: 75vw;
   }
   section a {
-    font-size: 12rem;
-    text-align: center;
-    margin: 4rem;
+    font-size: 6rem;
+    margin: 2rem 3rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  p {
+    font-size: 1.3rem;
+    max-width: 100%;
   }
 }
