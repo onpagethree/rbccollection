@@ -1,8 +1,9 @@
 @font-face {
   font-family: "gt-ultra-median";
-  src: url(/source/GT-Ultra-Median-Regular.otf);
+  src: url(./source/GT-Ultra-Median-Regular.otf);
   font-weight: 400;
 }
+
 * {
   box-sizing: border-box;
   position: relative;
@@ -52,11 +53,13 @@ header {
   font-size: 3.7rem;
   vertical-align: top;
 }
+
 header .rbc-title {
   width: 100%;
   height: auto;
   display: flex;
 }
+
 header .rbc-title a {
   text-align: center;
   margin: 0 auto;
@@ -76,6 +79,7 @@ section {
   flex-wrap: wrap;
   justify-content: center;
 }
+
 section a {
   font-size: 7rem;
   text-align: center;
@@ -87,6 +91,7 @@ section a {
   display: flex;
   justify-content: center;
 }
+
 .year .year-dropbtn {
   vertical-align: text-top;
   font-size: 7rem;
