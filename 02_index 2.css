@@ -77,7 +77,7 @@ section {
   justify-content: center;
 }
 section a {
-  font-size: 7rem;
+  font-size: 6.8rem;
   text-align: center;
   margin: 3rem;
 }
@@ -115,26 +115,4 @@ section a {
 
 .show {
   display: block;
-}
-
-@media screen and (max-width: 768px) {
-  header {
-    vertical-align: top;
-  }
-  header .rbc-title {
-    font-size: 2.7rem;
-  }
-  p {
-    line-height: 1.45em;
-    text-align: center;
-    font-family: Sandoll ClairSans;
-    font-weight: 500;
-    max-width: 70vw;
-    margin: 2.2rem auto;
-  }
-  section a {
-    font-size: 12rem;
-    text-align: center;
-    margin: 4rem;
-  }
 }

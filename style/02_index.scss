@@ -51,6 +51,7 @@ tr {
 
 //전체 설정 끝
 
+
 body {
     background-color: #000;
     margin: 1.9rem 4rem;
@@ -95,7 +96,7 @@ section {
     justify-content: center;
 
     a {
-        font-size: 6.8rem;
+        font-size: 7rem;
         text-align: center;
 
         margin: 3rem;
@@ -143,4 +144,45 @@ section {
 
 .show {
     display: block;
+}
+
+
+//세로형 스크린 반응형
+
+@media screen and (max-width: 768px) {
+
+    //HEADER 헤더
+
+    header {
+        //    font-size: 2.7rem;
+        vertical-align: top;
+
+        .rbc-title {
+            font-size: 2.7rem;
+        }
+    }
+
+
+    //전체 기본 텍스트
+
+    p {
+        line-height: 1.45em;
+        text-align: center;
+        font-family: Sandoll ClairSans;
+        font-weight: 500;
+
+        max-width: 70vw;
+        margin: 2.2rem auto;
+    }
+
+
+    section {
+        a {
+            font-size: 12rem;
+            text-align: center;
+
+            margin: 4rem;
+        }
+    }
+
 }
