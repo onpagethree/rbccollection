@@ -65,31 +65,10 @@ body {
     color: #FAFAF0;
 }
 
-//HEADER 헤더
-
-header {
-    font-family: 'gt-ultra-median';
-    font-size: 3.7rem;
-    vertical-align: top;
-
-    .rbc-title {
-        width: 100%;
-        height: auto;
-
-        display: flex;
-
-        a {
-            text-align: center;
-            margin: 0 auto;
-        }
-    }
-}
-
-
 //전체 기본 텍스트
 
 p {
-    line-height: 1.45em;
+    line-height: 1.55em;
     text-align: center;
     font-weight: 500;
 
@@ -100,8 +79,24 @@ p {
 table,
 td {
     font-weight: 500;
-    line-height: 1.6em;
+    line-height: 1.55em;
 }
+
+//HEADER 헤더
+
+header {
+    display: flex;
+    // justify-content: space-between;
+
+    font-family: 'gt-ultra-median';
+    font-size: 3.7rem;
+
+    a {
+        margin: 0 auto;
+    }
+
+}
+
 
 section {
     display: flex;
@@ -131,13 +126,8 @@ section {
 
     //HEADER 헤더 max-width: 768px
     header {
-        .rbc-title {
-            a {
-                width: 50%;
-                font-size: 2.7rem;
-
-            }
-
+        a {
+            text-align: center;
         }
     }
 

@@ -56,6 +56,25 @@ body {
     font-family: 'open-sans', 'Spoqa Han Sans Neo';
 }
 
+//전체 기본 텍스트
+
+p {
+    line-height: 1.55em;
+    text-align: center;
+    font-weight: 500;
+
+    max-width: 70vw;
+    margin: 2.3rem auto;
+}
+
+table,
+td,
+tr {
+    line-height: 1.6em;
+    font-weight: 500;
+    vertical-align: top;
+}
+
 //전체 설정 끝
 
 //HEADER 헤더
@@ -63,11 +82,9 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    align-items: top;
 
     font-family: 'gt-ultra-median';
     font-size: 3.7rem;
-    vertical-align: top;
 }
 
 .month {
@@ -80,25 +97,13 @@ header {
     width: 15vw;
     font-size: .5em;
     text-align: right;
-    //background-color: aqua;
-
+    text-transform: uppercase;
 }
 
-//전체 기본 텍스트
-
-p {
-    line-height: 1.45em;
-    text-align: center;
-    font-weight: 500;
-
-    max-width: 70vw;
-    margin: 2.2rem auto;
-}
-
-table,
-td {
-    font-weight: 500;
-    line-height: 1.6em;
+//Footer
+.rights {
+    font-size: 0.9em;
+    margin: 4rem auto;
 }
 
 
@@ -106,7 +111,7 @@ td {
 
 @media screen and (max-width: 768px) {
     html {
-        font-size: 3vw;
+        font-size: 3.2vw;
         //1rem = html의 폰트 사이즈
     }
 
@@ -117,21 +122,34 @@ td {
 
     //header max-width: 768px
     header {
-        font-size: 2.7rem;
+        flex-direction: column;
+
+        &>:nth-child(1) {
+            text-align: center;
+            order: 2;
+        }
 
         &>:nth-child(2) {
             text-align: center;
+            order: 1;
+        }
+
+        &>:nth-child(3) {
+            text-align: center;
+            order: 3;
         }
 
         .head-info,
         .month {
-            width: 25vw;
+            width: 100%;
+            margin-top: 2rem;
         }
     }
 
     //전체 텍스트 max-width: 768px
     p {
         max-width: 75vw;
+        margin: 2.8rem auto;
     }
 }
 
@@ -142,4 +160,5 @@ td {
         font-size: 1.3rem;
         max-width: 100%;
     }
+
 }

@@ -5,12 +5,12 @@ section {
     display: flex;
     justify-content: space-between;
 
-    height: 30rem;
+    height: 30.9rem;
 }
 
 .contents {
     width: calc(100% / 2 - 1rem);
-    height: auto;
+    height: 100%;
 
     display: flex;
     flex-direction: column;
@@ -30,8 +30,11 @@ section {
     }
 
     table {
+        height: floor($number: 0);
+        // 두 개의 원두 table 높이가 맞춰지느라 짧은 쪽의 행간이 넓어지는 이슈 해결
+
+        margin: 0 2.5rem;
         color: #000;
-        margin: 1.7rem 2.5rem;
     }
 
     th {
@@ -128,18 +131,21 @@ section {
         display: block;
         height: auto;
 
-
         .contents {
             width: 75vw;
-            height: 28rem;
+            height: 29rem;
             margin: 0 auto 1.6rem;
 
             .img-holder {
-                height: 63%;
+                height: 53%;
             }
 
             table {
-                margin: 1.3rem 2.2rem;
+                margin: 0 2.2rem;
+
+                tr {
+                    line-height: 1.5em;
+                }
             }
         }
     }
@@ -176,6 +182,21 @@ section {
 //mobile 사이즈
 
 @media screen and (max-width: 450px) {
+
+    section {
+        .contents {
+            width: 85vw;
+            height: 34rem;
+        }
+    }
+
+    table {
+        tr {
+            font-size: 1.3em;
+        }
+    }
+
+
     .popup {
         font-size: 1.3rem;
 

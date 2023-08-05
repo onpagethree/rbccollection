@@ -51,23 +51,8 @@ body {
   color: #FAFAF0;
 }
 
-header {
-  font-family: "gt-ultra-median";
-  font-size: 3.7rem;
-  vertical-align: top;
-}
-header .rbc-title {
-  width: 100%;
-  height: auto;
-  display: flex;
-}
-header .rbc-title a {
-  text-align: center;
-  margin: 0 auto;
-}
-
 p {
-  line-height: 1.45em;
+  line-height: 1.55em;
   text-align: center;
   font-weight: 500;
   max-width: 70vw;
@@ -77,7 +62,16 @@ p {
 table,
 td {
   font-weight: 500;
-  line-height: 1.6em;
+  line-height: 1.55em;
+}
+
+header {
+  display: flex;
+  font-family: "gt-ultra-median";
+  font-size: 3.7rem;
+}
+header a {
+  margin: 0 auto;
 }
 
 section {
@@ -99,9 +93,8 @@ section a {
   body {
     margin: 1.2rem 1.2rem;
   }
-  header .rbc-title a {
-    width: 50%;
-    font-size: 2.7rem;
+  header a {
+    text-align: center;
   }
   p {
     max-width: 75vw;
