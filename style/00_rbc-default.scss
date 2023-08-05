@@ -14,8 +14,13 @@
 
     scroll-behavior: smooth;
 
-    font-family: "gt-ultra-median", "Sandoll ClairSans";
     word-break: keep-all;
+}
+
+#sandollcrairsans {
+    font-family: "Sandoll ClairSans";
+    font-weight: 500;
+    line-height: 1.6em;
 }
 
 body::-webkit-scrollbar {
@@ -42,9 +47,8 @@ html {
 }
 
 table,
-td,
-tr {
-    font-family: Sandoll ClairSans;
+td {
+    font-family: "Sandoll ClairSans";
     font-weight: 500;
     line-height: 1.6em;
 }
@@ -87,7 +91,6 @@ header {
 p {
     line-height: 1.45em;
     text-align: center;
-    font-family: Sandoll ClairSans;
     font-weight: 500;
 
     max-width: 70vw;
