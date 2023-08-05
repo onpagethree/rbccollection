@@ -1,10 +1,17 @@
 //2023-08-05
 
 @font-face {
-    font-family: "gt-ultra-median";
+    font-family: 'gt-ultra-median';
     src: url(./source/GT-Ultra-Median-Regular.otf);
     font-weight: 400;
 }
+
+@font-face {
+    font-family: 'open-sans';
+    src: url(/source/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 
 * {
     box-sizing: border-box;
@@ -14,13 +21,8 @@
 
     scroll-behavior: smooth;
 
+    font-family: 'open-sans', 'Spoqa Han Sans Neo';
     word-break: keep-all;
-}
-
-#sandollcrairsans {
-    font-family: "Sandoll ClairSans";
-    font-weight: 500;
-    line-height: 1.6em;
 }
 
 body::-webkit-scrollbar {
@@ -48,8 +50,7 @@ html {
 
 table,
 td {
-    font-family: "Sandoll ClairSans";
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.6em;
 }
 
