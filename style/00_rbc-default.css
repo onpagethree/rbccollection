@@ -62,10 +62,10 @@ tr {
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
   font-family: "gt-ultra-median";
   font-size: 3.7rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .month {
