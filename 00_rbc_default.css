@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "gt-ultra-median";
+  src: url(/source/GT-Ultra-Median-Regular.otf);
+  font-weight: 400;
+}
+* {
+  box-sizing: border-box;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: "gt-ultra-median", "Sandoll ClairSans";
+  word-break: keep-all;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+a,
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.75;
+  transition: all 0.1s linear;
+  cursor: pointer;
+}
+
+html {
+  font-size: 1.5vw;
+}
+
+table,
+td,
+tr {
+  font-family: Sandoll ClairSans;
+  font-weight: 500;
+  line-height: 1.6em;
+}
+
+body {
+  background-color: #000;
+  margin: 1.9rem 4rem;
+  color: #FAFAF0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  font-size: 3.7rem;
+  vertical-align: top;
+}
+
+.month {
+  width: 15vw;
+  height: auto;
+}
+
+.head-info {
+  width: 15vw;
+  font-size: 0.5em;
+  text-align: right;
+}
+
+p {
+  line-height: 1.45em;
+  text-align: center;
+  font-family: Sandoll ClairSans;
+  font-weight: 500;
+  max-width: 70vw;
+  margin: 2.2rem auto;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 3vw;
+  }
+  body {
+    margin: 1.2rem 1.2rem;
+    overflow: auto;
+  }
+  header {
+    font-size: 2.7rem;
+  }
+  header > :nth-child(2) {
+    text-align: center;
+  }
+  header .head-info,
+  header .month {
+    width: 25vw;
+  }
+  p {
+    max-width: 75vw;
+    margin: 2rem auto;
+  }
+}
+@media screen and (max-width: 450px) {
+  p {
+    font-size: 1.3rem;
+    max-width: 100%;
+  }
+}

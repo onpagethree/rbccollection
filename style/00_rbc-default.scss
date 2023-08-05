@@ -1,0 +1,135 @@
+@font-face {
+    font-family: "gt-ultra-median";
+    src: url(/source/GT-Ultra-Median-Regular.otf);
+    font-weight: 400;
+}
+
+* {
+    box-sizing: border-box;
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+    scroll-behavior: smooth;
+
+    font-family: "gt-ultra-median", "Sandoll ClairSans";
+    word-break: keep-all;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+a,
+a:link,
+a:visited {
+    color: inherit;
+    text-decoration: none;
+    //앵커태그 스타일 초기화
+}
+
+a:hover {
+    opacity: 0.75;
+    transition: all 0.1s linear;
+    cursor: pointer;
+}
+
+html {
+    font-size: 1.5vw;
+    //1rem = html의 폰트 사이즈
+}
+
+table,
+td,
+tr {
+    font-family: Sandoll ClairSans;
+    font-weight: 500;
+    line-height: 1.6em;
+}
+
+//전체 설정 끝
+
+body {
+    background-color: #000;
+    margin: 1.9rem 4rem;
+    color: #FAFAF0;
+}
+
+//HEADER 헤더
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+
+    font-size: 3.7rem;
+    vertical-align: top;
+}
+
+.month {
+    width: 15vw;
+    height: auto;
+    //background-color: aqua;
+}
+
+.head-info {
+    width: 15vw;
+    font-size: .5em;
+    text-align: right;
+    //background-color: aqua;
+
+}
+
+//전체 기본 텍스트
+
+p {
+    line-height: 1.45em;
+    text-align: center;
+    font-family: Sandoll ClairSans;
+    font-weight: 500;
+
+    max-width: 70vw;
+    margin: 2.2rem auto;
+}
+
+
+//세로형 스크린 반응형
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 3vw;
+        //1rem = html의 폰트 사이즈
+    }
+
+    body {
+        margin: 1.2rem 1.2rem;
+        overflow: auto;
+    }
+
+    header {
+        font-size: 2.7rem;
+
+        &>:nth-child(2) {
+            text-align: center;
+        }
+
+        .head-info,
+        .month {
+            width: 25vw;
+        }
+    }
+
+    p {
+        max-width: 75vw;
+        margin: 2rem auto;
+    }
+}
+
+//mobile 사이즈
+
+@media screen and (max-width: 450px) {
+    p {
+        font-size: 1.3rem;
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "gt-ultra-median";
+  src: url(/source/GT-Ultra-Median-Regular.otf);
+  font-weight: 400;
+}
+* {
+  box-sizing: border-box;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: "gt-ultra-median", "Sandoll ClairSans";
+  word-break: keep-all;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+a,
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.75;
+  transition: all 0.1s linear;
+  cursor: pointer;
+}
+
+html {
+  font-size: 1.5vw;
+}
+
+table,
+td,
+tr {
+  font-family: Sandoll ClairSans;
+  font-weight: 500;
+  line-height: 1.6em;
+}
+
+body {
+  background-color: #000;
+  margin: 1.9rem 4rem;
+  color: #FAFAF0;
+}
+
+header {
+  font-size: 3.7rem;
+  vertical-align: top;
+}
+header .rbc-title {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+header .rbc-title a {
+  text-align: center;
+  margin: 0 auto;
+}
+
+p {
+  line-height: 1.45em;
+  text-align: center;
+  font-family: Sandoll ClairSans;
+  font-weight: 500;
+  max-width: 70vw;
+  margin: 2.2rem auto;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+section a {
+  font-size: 7rem;
+  text-align: center;
+  margin: 3rem;
+}
+
+/* Button */
+.year {
+  display: flex;
+  justify-content: center;
+}
+.year .year-dropbtn {
+  vertical-align: text-top;
+  font-size: 7rem;
+  text-align: center;
+  margin: 3rem;
+}
+
+#optionbtn:hover,
+#optionbtn:focus {
+  opacity: 0.75;
+  transition: all 0.1s linear;
+}
+
+.option-dropdown {
+  display: none;
+  position: absolute;
+}
+
+.option-dropdown a {
+  text-align: center;
+  font-size: 7rem;
+  display: block;
+  position: relative;
+  margin-top: 1.6em;
+}
+
+.show {
+  display: block;
+}
