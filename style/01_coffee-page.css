@@ -88,6 +88,11 @@ section {
   padding-right: 1rem;
 }
 
+#coffee01,
+#coffeeInfo01 {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 768px) {
   section {
     display: block;
