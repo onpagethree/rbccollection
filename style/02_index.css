@@ -7,7 +7,7 @@
 }
 @font-face {
   font-family: "OpenSans";
-  src: url(//source/OpenSans-VariableFont_wdth\,wght.ttf);
+  src: url(../source/OpenSans-VariableFont_wdth\,wght.ttf);
 }
 * {
   box-sizing: border-box;
@@ -70,7 +70,6 @@ header {
   display: flex;
   font-family: "GT-Ultra-Median-Regular";
   font-size: 3.7rem;
-  color: rgb(0, 255, 251);
 }
 header a {
   margin: 0 auto;

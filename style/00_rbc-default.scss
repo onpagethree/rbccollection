@@ -2,14 +2,14 @@
 
 @font-face {
     font-family: 'GT-Ultra-Median-Regular';
-    src: url(/source/GT-Ultra-Median-Regular.otf) format('opentype');
+    src: url(../source/GT-Ultra-Median-Regular.otf) format('opentype');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "OpenSans";
-    src: url(//source/OpenSans-VariableFont_wdth\,wght.ttf);
+    font-family: 'OpenSans';
+    src: url(../source/OpenSans-VariableFont_wdth\,wght.ttf);
 }
 
 //spoqa hans
@@ -54,7 +54,7 @@ body {
     margin: 1.9rem 4rem;
     color: #FAFAF0;
 
-    font-family: "OpenSans", 'Spoqa Han Sans Neo';
+    font-family: 'OpenSans', 'Spoqa Han Sans Neo';
 }
 
 //전체 기본 텍스트

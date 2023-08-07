@@ -8,8 +8,8 @@
 }
 
 @font-face {
-    font-family: "OpenSans";
-    src: url(//source/OpenSans-VariableFont_wdth\,wght.ttf);
+    font-family: 'OpenSans';
+    src: url(../source/OpenSans-VariableFont_wdth\,wght.ttf);
 }
 
 //spoqa hans
@@ -54,7 +54,7 @@ body {
     margin: 1.9rem 4rem;
     color: #FAFAF0;
 
-    font-family: "OpenSans", 'Spoqa Han Sans Neo';
+    font-family: 'OpenSans', 'Spoqa Han Sans Neo';
 }
 
 //전체 설정 끝
@@ -91,7 +91,6 @@ header {
 
     font-family: 'GT-Ultra-Median-Regular';
     font-size: 3.7rem;
-    color: rgb(0, 255, 251);
 
     a {
         margin: 0 auto;
