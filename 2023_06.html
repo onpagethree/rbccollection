@@ -229,10 +229,10 @@
     <script>
 
         // 1번째 원두
-        var coffee01 = document.querySelector("#coffee01");
+        var coffee01 = document.getElementById("coffee01");
+        var modal01 = document.getElementById("coffeeInfo01");
 
         coffee01.addEventListener("focus", function () {
-            var modal01 = document.querySelector("#coffeeInfo01");
             modal01.style.display = "block";
         });
 
@@ -241,15 +241,17 @@
             modal01.style.display = "none";
         });
 
+
         // 2번째 원두
         var coffee02 = document.querySelector("#coffee02");
-
         coffee02.addEventListener("focus", function () {
+
             var modal02 = document.querySelector("#coffeeInfo02");
             modal02.style.display = "block";
         });
 
         coffee02.addEventListener("blur", function () {
+
             var modal02 = document.querySelector("#coffeeInfo02");
             modal02.style.display = "none";
         });
