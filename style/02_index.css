@@ -1,12 +1,13 @@
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 @font-face {
   font-family: "gt-ultra-median";
-  src: url(/source/GT-Ultra-Median-Regular.otf);
-  font-weight: 400;
+  src: url(//source/GT-Ultra-Median-Regular.otf);
+  font-weight: 500;
+  font-style: normal;
 }
 @font-face {
   font-family: "open-sans";
-  src: url(/source/OpenSans-VariableFont_wdth\,wght.ttf);
+  src: url(//source/OpenSans-VariableFont_wdth\,wght.ttf);
 }
 * {
   box-sizing: border-box;
