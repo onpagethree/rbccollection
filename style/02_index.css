@@ -1,12 +1,12 @@
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 @font-face {
-  font-family: "gt-ultra-median";
+  font-family: "GT-Ultra-Median-Regular";
   src: url(//source/GT-Ultra-Median-Regular.otf);
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
-  font-family: "open-sans";
+  font-family: "OpenSans";
   src: url(//source/OpenSans-VariableFont_wdth\,wght.ttf);
 }
 * {
@@ -43,7 +43,7 @@ body {
   background-color: #000;
   margin: 1.9rem 4rem;
   color: #FAFAF0;
-  font-family: "open-sans", "Spoqa Han Sans Neo";
+  font-family: "OpenSans", "Spoqa Han Sans Neo";
 }
 
 body {
@@ -68,8 +68,9 @@ td {
 
 header {
   display: flex;
-  font-family: "gt-ultra-median";
+  font-family: "GT-Ultra-Median-Regular";
   font-size: 3.7rem;
+  color: red;
 }
 header a {
   margin: 0 auto;
@@ -81,7 +82,7 @@ section {
   justify-content: center;
 }
 section a {
-  font-family: "gt-ultra-median";
+  font-family: "GT-Ultra-Median-Regular";
   font-size: 7rem;
   text-align: center;
   margin: 3rem;

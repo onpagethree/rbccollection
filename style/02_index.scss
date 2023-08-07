@@ -1,14 +1,14 @@
 //2023-08-08
 
 @font-face {
-    font-family: 'gt-ultra-median';
+    font-family: "GT-Ultra-Median-Regular";
     src: url(//source/GT-Ultra-Median-Regular.otf);
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'open-sans';
+    font-family: "OpenSans";
     src: url(//source/OpenSans-VariableFont_wdth\,wght.ttf);
 }
 
@@ -54,7 +54,7 @@ body {
     margin: 1.9rem 4rem;
     color: #FAFAF0;
 
-    font-family: 'open-sans', 'Spoqa Han Sans Neo';
+    font-family: "OpenSans", 'Spoqa Han Sans Neo';
 }
 
 //전체 설정 끝
@@ -89,8 +89,9 @@ header {
     display: flex;
     // justify-content: space-between;
 
-    font-family: 'gt-ultra-median';
+    font-family: "GT-Ultra-Median-Regular";
     font-size: 3.7rem;
+    color: red;
 
     a {
         margin: 0 auto;
@@ -105,7 +106,7 @@ section {
     justify-content: center;
 
     a {
-        font-family: 'gt-ultra-median';
+        font-family: "GT-Ultra-Median-Regular";
         font-size: 7rem;
         text-align: center;
 
