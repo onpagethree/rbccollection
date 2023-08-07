@@ -13,7 +13,7 @@ section {
 }
 .contents .img-holder {
   width: 100%;
-  height: 60%;
+  height: 62%;
 }
 .contents .img-holder img {
   position: absolute;
@@ -99,7 +99,7 @@ section {
     margin: 0 auto 1.6rem;
   }
   section .contents .img-holder {
-    height: 53%;
+    height: 56%;
   }
   section .contents table {
     margin: 0 2.2rem;

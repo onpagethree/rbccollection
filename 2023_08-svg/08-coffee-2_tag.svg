@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="_레이어_2" data-name="레이어 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1155.92 1260.92">
+<svg id="_레이어_2" data-name="레이어 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1100 756.55">
   <defs>
     <style>
       .cls-1 {
@@ -13,18 +13,54 @@
       .cls-3 {
         fill: #e1a404;
       }
+
+      .cls-4 {
+        font-family: GTUltraMedian-Regular, 'GT Ultra Median';
+        font-size: 75.07px;
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: .26px;
+      }
     </style>
     <clipPath id="clippath">
-      <rect class="cls-1" width="1155.92" height="1260.92"/>
+      <rect class="cls-1" width="1100" height="756.55"/>
     </clipPath>
   </defs>
   <g id="_레이어_1-2" data-name="레이어 1">
     <g class="cls-2">
       <g>
-        <rect class="cls-3" x="694.93" y="-883.31" width="203.15" height="1504.18" rx="36" ry="36" transform="translate(19.17 -348.91) rotate(25)"/>
+        <rect class="cls-3" x="666.97" y="-883.31" width="203.15" height="1504.18" rx="36" ry="36" transform="translate(16.55 -337.09) rotate(25)"/>
         <g id="f2gCkx">
-          <image id="f2gCkx-2" data-name="f2gCkx" width="258" height="69" transform="translate(480.67 490.96) rotate(-65) scale(.67)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQIAAABFCAYAAAChZegwAAAACXBIWXMAAAsSAAALEgHS3X78AAAE0klEQVR4nO2d247cMAxDM0X//5enD+0sMq7tWL6JonmABfqw2ZqWzCi+JNclhBBCCCGEEFC8//0w8b44dEVvfwmW+KSY9bxWtMJIS6MR2mmBQVNrMqHryMEQn5QhTQhiLe6F0N4WGDRZ7yqoOnIwxCdlSNOviQ3pxdLRKuP2YR0AqDpGOSLnEIyAEQ0ibKLc5S0M5RyKEbwuvuAw6GGMywdGbd16UIzggwKDCYuOHGzaugwOzQiuizMwQkCDaASMMJgBg4YSjNpMmmQEQojrt3cDCLjPvjLcWXIrGAy6RAUZgZ3aUh+SKcxcktTyJjk7jCBNIu8BYgVtEKC1BwHGLcNbqRlB793tKShed02GAcSgIccOXe9LZnDnqy9KRpAGZlWgSsF5Tf4/WQeQwGRGhbK6yvkae6fMEcw2Fi+8dHwShqEPV9PaRzP6clqVc4oR7GZlCbraDDzKZxajDkvJCLwDs+L/XqUJeeCkbXu6Rs/Qh1KrCKwD555Eoy+1WDloa3+31J7SNcgDB7ltOVofP6zmVrpuFd430Va++uNpZ2HtAMMr+YlCTY/1Gk8Q2zSDp3yLQJR2/tA6R2AV1uKK4TorA9IGIiZm9yXy49vnd1O2VhWnnjVYkRjhykHxhVff9FSolt9pYpURRBgUKbOWcwQWMr8GViwfRt7u+Wn7jk1OjNzXtSNOsM6md3J6OzMrgmgveewJAkzggHnKg507RpnjNVVbriKoHRKaEcQIwendsYWubSR+kUy+B3Z9VdKKINcZs78G0/J3dgWlNnCPTowExL5AyqOIfPWN1xZjxgCxVQMsMWLRMZum04fiL5GPrvYMgB2DZkZ/anBPJjUC6ykzhlNpltWAyDp3ENU0T+TrJldaNXgKaKTtnjtQX+xDZryAp0NHQlwXTuVn3aPi3d4w7JojYA5OFMPsGcwWbQj9kLahRbM2il1zjMC6qaMlYXYHZnUyeCZarv8jbsQZaXPLo65HjDwno03HkL1AScTRSmb1bsuWBLdeh9L3u/HSXdu7Y72um9GKIOKdpUTvXcG7rEzL39Y+jxQbpjzL4Z1DQxUBe3DuuAeqgR0rOSNHZns5Kc+sTMvL3oogwsCYwSk6RUymmeCqVQMkl/YazL3v1vMk18anyUZVAz4sP334RKTgeKw+sJGb2d6hM1KejeKuxWoEJwWnlRM0717mOiXPYHRYJgsjBmdVmyK+vfmJCI8u1xWvzz0mWM20VgQRTWAmzPqsB65W90WIV3sNAqejxQiim0DvPnl0XaP0VgArHxNYTQC+7U9GEN0E7oR5keQGRh8DZlcHTHkWkpoRMAYnVx1E1HEKSBOU1JSMwPvOuTooJw/+2W8RHu1LvfYcgJa3GN9RcGLT880Jj1OZyrPNtC4fsi2VoYHSt6UPu9SYaRTKMydyFcF9Uk1BOYeno8krKgPlFwilOQIFSIiDQH0xiRBiIzICIZ6hr5BlBEIIGYH4YdcXjAUgEY2AvkxzpPQiTUGOvn0oUnQ4i5//YhaxImBj50DSoBVZUI1ACbuOmX3LFCcmLWZQjaDE0cESLhyRc9GMgA2Iz111Xn/EACEkG7dIRhA98dDa3zuY0XSsJLrW5rdPIxvBq/BvFlA0tRrCCVUAoz5GTUIIIYQQQog1/AFiYdD/n6HlHwAAAABJRU5ErkJggg=="/>
+          <image id="f2gCkx-2" data-name="f2gCkx" width="258" height="69" transform="translate(452.7 490.96) rotate(-65) scale(.67)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQIAAABFCAYAAAChZegwAAAACXBIWXMAAAsSAAALEgHS3X78AAAE0klEQVR4nO2d247cMAxDM0X//5enD+0sMq7tWL6JonmABfqw2ZqWzCi+JNclhBBCCCGEEFC8//0w8b44dEVvfwmW+KSY9bxWtMJIS6MR2mmBQVNrMqHryMEQn5QhTQhiLe6F0N4WGDRZ7yqoOnIwxCdlSNOviQ3pxdLRKuP2YR0AqDpGOSLnEIyAEQ0ibKLc5S0M5RyKEbwuvuAw6GGMywdGbd16UIzggwKDCYuOHGzaugwOzQiuizMwQkCDaASMMJgBg4YSjNpMmmQEQojrt3cDCLjPvjLcWXIrGAy6RAUZgZ3aUh+SKcxcktTyJjk7jCBNIu8BYgVtEKC1BwHGLcNbqRlB793tKShed02GAcSgIccOXe9LZnDnqy9KRpAGZlWgSsF5Tf4/WQeQwGRGhbK6yvkae6fMEcw2Fi+8dHwShqEPV9PaRzP6clqVc4oR7GZlCbraDDzKZxajDkvJCLwDs+L/XqUJeeCkbXu6Rs/Qh1KrCKwD555Eoy+1WDloa3+31J7SNcgDB7ltOVofP6zmVrpuFd430Va++uNpZ2HtAMMr+YlCTY/1Gk8Q2zSDp3yLQJR2/tA6R2AV1uKK4TorA9IGIiZm9yXy49vnd1O2VhWnnjVYkRjhykHxhVff9FSolt9pYpURRBgUKbOWcwQWMr8GViwfRt7u+Wn7jk1OjNzXtSNOsM6md3J6OzMrgmgveewJAkzggHnKg507RpnjNVVbriKoHRKaEcQIwendsYWubSR+kUy+B3Z9VdKKINcZs78G0/J3dgWlNnCPTowExL5AyqOIfPWN1xZjxgCxVQMsMWLRMZum04fiL5GPrvYMgB2DZkZ/anBPJjUC6ykzhlNpltWAyDp3ENU0T+TrJldaNXgKaKTtnjtQX+xDZryAp0NHQlwXTuVn3aPi3d4w7JojYA5OFMPsGcwWbQj9kLahRbM2il1zjMC6qaMlYXYHZnUyeCZarv8jbsQZaXPLo65HjDwno03HkL1AScTRSmb1bsuWBLdeh9L3u/HSXdu7Y72um9GKIOKdpUTvXcG7rEzL39Y+jxQbpjzL4Z1DQxUBe3DuuAeqgR0rOSNHZns5Kc+sTMvL3oogwsCYwSk6RUymmeCqVQMkl/YazL3v1vMk18anyUZVAz4sP334RKTgeKw+sJGb2d6hM1KejeKuxWoEJwWnlRM0717mOiXPYHRYJgsjBmdVmyK+vfmJCI8u1xWvzz0mWM20VgQRTWAmzPqsB65W90WIV3sNAqejxQiim0DvPnl0XaP0VgArHxNYTQC+7U9GEN0E7oR5keQGRh8DZlcHTHkWkpoRMAYnVx1E1HEKSBOU1JSMwPvOuTooJw/+2W8RHu1LvfYcgJa3GN9RcGLT880Jj1OZyrPNtC4fsi2VoYHSt6UPu9SYaRTKMydyFcF9Uk1BOYeno8krKgPlFwilOQIFSIiDQH0xiRBiIzICIZ6hr5BlBEIIGYH4YdcXjAUgEY2AvkxzpPQiTUGOvn0oUnQ4i5//YhaxImBj50DSoBVZUI1ACbuOmX3LFCcmLWZQjaDE0cESLhyRc9GMgA2Iz111Xn/EACEkG7dIRhA98dDa3zuY0XSsJLrW5rdPIxvBq/BvFlA0tRrCCVUAoz5GTUIIIYQQQog1/AFiYdD/n6HlHwAAAABJRU5ErkJggg=="/>
         </g>
+      </g>
+      <g>
+        <text class="cls-4" transform="translate(328.49 220.84) rotate(-26.25)"><tspan x="0" y="0">E</tspan></text>
+        <text class="cls-4" transform="translate(366.57 201.93) rotate(-20.16)"><tspan x="0" y="0">T</tspan></text>
+        <text class="cls-4" transform="translate(407.17 186.56) rotate(-13.75)"><tspan x="0" y="0">H</tspan></text>
+        <text class="cls-4" transform="translate(460.64 174.07) rotate(-9.11)"><tspan x="0" y="0">I</tspan></text>
+        <text class="cls-4" transform="translate(480.72 169.93) rotate(-4.4)"><tspan x="0" y="0">O</tspan></text>
+        <text class="cls-4" transform="translate(539.55 165.66) rotate(1.45)"><tspan x="0" y="0">P</tspan></text>
+        <text class="cls-4" transform="translate(582.6 167) rotate(5.11)"><tspan x="0" y="0">I</tspan></text>
+        <text class="cls-4" transform="translate(604.44 168.34) rotate(9.42)"><tspan x="0" y="0">A</tspan></text>
+        <text class="cls-4" transform="translate(655.36 177.39) rotate(13.72)"><tspan x="0" y="0"> </tspan></text>
+        <text class="cls-4" transform="translate(673.27 181.29) rotate(17.68)"><tspan x="0" y="0">S</tspan></text>
+        <text class="cls-4" transform="translate(712.74 194.17) rotate(21.89)"><tspan x="0" y="0">I</tspan></text>
+        <text class="cls-4" transform="translate(731.83 200.84) rotate(27.14)"><tspan x="0" y="0">D</tspan></text>
+        <text class="cls-4" transform="translate(776.62 223.41) rotate(34.72)"><tspan x="0" y="0">A</tspan></text>
+        <text class="cls-4" transform="translate(817.28 250.19) rotate(44.96)"><tspan x="0" y="0">M</tspan></text>
+        <text class="cls-4" transform="translate(861.57 294.61) rotate(57.12)"><tspan x="0" y="0">A</tspan></text>
+        <text class="cls-4" transform="translate(184.11 506.79) rotate(62.08)"><tspan x="0" y="0">A</tspan></text>
+        <text class="cls-4" transform="translate(214.81 561.53) rotate(48.53)"><tspan x="0" y="0">R</tspan></text>
+        <text class="cls-4" transform="translate(255.48 605.9) rotate(37.92)"><tspan x="0" y="0">B</tspan></text>
+        <text class="cls-4" transform="translate(297.88 638.21) rotate(29.88)"><tspan x="0" y="0">E</tspan></text>
+        <text class="cls-4" transform="translate(340.62 662.8) rotate(22.14)"><tspan x="0" y="0">G</tspan></text>
+        <text class="cls-4" transform="translate(399.39 686.35) rotate(13.86)"><tspan x="0" y="0">O</tspan></text>
+        <text class="cls-4" transform="translate(464.55 701.91) rotate(6.31)"><tspan x="0" y="0">N</tspan></text>
+        <text class="cls-4" transform="translate(526.39 708.5) rotate(-.68)"><tspan x="0" y="0">A</tspan></text>
+        <text class="cls-4" transform="translate(582.76 707.25) rotate(-4.66)"><tspan x="0" y="0"> </tspan></text>
+        <text class="cls-4" transform="translate(606.26 705.96) rotate(-9.51)"><tspan x="0" y="0">G</tspan></text>
+        <text class="cls-4" transform="translate(666.31 695) rotate(-15.01)"><tspan x="0" y="0">1</tspan></text>
       </g>
     </g>
   </g>
