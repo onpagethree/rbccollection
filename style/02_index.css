@@ -1,7 +1,7 @@
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 @font-face {
   font-family: "GT-Ultra-Median-Regular";
-  src: url(/source/ChunkFive-Regular.otf);
+  src: url(/source/GT-Ultra-Median-Regular.ttf);
   font-weight: 500;
   font-style: normal;
 }
@@ -68,11 +68,11 @@ td {
 
 header {
   display: flex;
-  font-family: "GT-Ultra-Median-Regular";
-  font-size: 3.7rem;
-  color: red;
 }
 header a {
+  font-family: "GT-Ultra-Median-Regular";
+  font-size: 3.7rem;
+  color: rgb(0, 204, 255);
   margin: 0 auto;
 }
 

@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: "GT-Ultra-Median-Regular";
-    src: url(/source/ChunkFive-Regular.otf);
+    src: url(/source/GT-Ultra-Median-Regular.ttf);
     font-weight: 500;
     font-style: normal;
 }
@@ -89,11 +89,10 @@ header {
     display: flex;
     // justify-content: space-between;
 
-    font-family: "GT-Ultra-Median-Regular";
-    font-size: 3.7rem;
-    color: red;
-
     a {
+        font-family: "GT-Ultra-Median-Regular";
+        font-size: 3.7rem;
+        color: rgb(0, 204, 255);
         margin: 0 auto;
     }
 
