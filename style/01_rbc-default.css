@@ -81,6 +81,42 @@ header {
   text-transform: uppercase;
 }
 
+section {
+  display: flex;
+  justify-content: space-between;
+  height: 30.9rem;
+}
+
+.contents {
+  width: calc(50% - 1rem);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #FAFAF0;
+}
+.contents .img-holder {
+  width: 100%;
+  height: 62%;
+}
+.contents .img-holder img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+.contents table {
+  height: 0;
+  margin: 0 2.5rem;
+  color: #000;
+}
+.contents th {
+  line-height: 2.5em;
+  text-align: left;
+}
+.contents tr > :first-child {
+  width: 3.5rem;
+}
+
 .footer {
   font-size: 0.95em;
   margin: 4rem auto;
@@ -117,6 +153,24 @@ header {
   p {
     max-width: 75vw;
     margin: 2.8rem auto;
+  }
+  section {
+    display: block;
+    height: auto;
+  }
+  section .contents {
+    width: 75vw;
+    height: 29rem;
+    margin: 0 auto 1.6rem;
+  }
+  section .contents .img-holder {
+    height: 54%;
+  }
+  section .contents table {
+    margin: 0 2.2rem;
+  }
+  section .contents table tr {
+    line-height: 1.5em;
   }
 }
 @media screen and (max-width: 450px) {
