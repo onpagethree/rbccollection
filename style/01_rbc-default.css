@@ -151,6 +151,7 @@ section {
     margin-top: 2rem;
   }
   p {
+    font-weight: 500;
     max-width: 75vw;
     margin: 2.8rem auto;
   }
@@ -160,7 +161,7 @@ section {
   }
   section .contents {
     width: 75vw;
-    height: 29rem;
+    height: 28rem;
     margin: 0 auto 1.6rem;
   }
   section .contents .img-holder {
@@ -177,5 +178,16 @@ section {
   p {
     font-size: 1.3rem;
     max-width: 100%;
+  }
+  .contents {
+    height: 29.5rem;
+  }
+  table,
+  td,
+  tr {
+    font-size: 1.3rem;
+    line-height: 1.5em;
+    font-weight: 500;
+    vertical-align: top;
   }
 }

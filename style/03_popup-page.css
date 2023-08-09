@@ -12,15 +12,15 @@
 }
 .popup .pop-title {
   font-family: "GT-Ultra-Median-Regular";
-  width: 55%;
+  width: 65%;
   margin: 0 auto;
   margin-bottom: 3rem;
-  font-size: 2.7rem;
-  line-height: 1em;
+  font-size: 3rem;
   text-transform: uppercase;
   text-align: center;
 }
 .popup .pop-title p {
+  font-weight: 500;
   margin-top: 1.5rem;
   font-size: 1rem;
 }
@@ -44,12 +44,12 @@
 .popup .pop-info td {
   vertical-align: top;
 }
-.popup .pop-info td:nth-child(3) {
-  width: 70%;
-}
-.popup .pop-info tr > :first-child {
+.popup .pop-info td:nth-child(1) {
   width: 5rem;
-  padding-right: 1rem;
+  padding-right: 2em;
+}
+.popup .pop-info td:nth-child(3) {
+  width: 68%;
 }
 
 #coffee01,
@@ -62,11 +62,11 @@
     padding: 1.3rem 3rem;
   }
   .popup .pop-title {
-    width: 75%;
-    font-size: 2.7rem;
+    width: 100%;
+    font-size: 3.7rem;
   }
   .popup .pop-title p {
-    margin: 1rem auto 3rem auto;
+    margin: 2.8rem auto 3rem auto;
   }
   .popup .pop-info {
     display: block;
@@ -85,13 +85,18 @@
     width: 85vw;
     height: 34rem;
   }
-  table tr {
-    font-size: 1.3em;
-  }
   .popup {
     font-size: 1.3rem;
   }
   .popup .pop-title p {
     font-size: 1.3rem;
+  }
+  .popup .pop-info td:nth-child(1) {
+    width: 5.5rem;
+    padding-right: 1em;
+  }
+  .popup .pop-info td:nth-child(3) {
+    width: 67%;
+    padding-left: 0.7em;
   }
 }
