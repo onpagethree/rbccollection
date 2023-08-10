@@ -1,6 +1,8 @@
 //팝업 페이지
 //2023-08-10
-
+a {
+    cursor: pointer;
+}
 
 .popup {
     display: none;
@@ -71,11 +73,6 @@
         }
     }
 
-}
-
-#coffee01,
-#coffeeInfo01 {
-    cursor: pointer;
 }
 
 

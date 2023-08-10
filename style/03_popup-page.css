@@ -1,3 +1,7 @@
+a {
+  cursor: pointer;
+}
+
 .popup {
   display: none;
   overflow: auto;
@@ -50,11 +54,6 @@
 }
 .popup .pop-info td:nth-child(3) {
   width: 68%;
-}
-
-#coffee01,
-#coffeeInfo01 {
-  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {

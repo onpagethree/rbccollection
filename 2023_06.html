@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="./style/01_rbc-default.css">
     <link rel="stylesheet" href="./style/03_popup-page.css">
-
+    <script async src="/coffee-popup.js"></script>
 </head>
 
 <body>
@@ -26,7 +26,7 @@
 
     <section>
 
-        <a href="" class="contents" id="coffee01">
+        <a href="#coffeeInfo01" class="contents" id="coffee01">
             <div class="img-holder">
                 <img src="./2023_06-svg/06-coffee-1_tag.svg" alt="">
             </div>
@@ -226,35 +226,7 @@
         </div>
     </section>
 
-    <script>
 
-        var coffee01 = document.querySelector("#coffee01");
-        coffee01.addEventListener("focus", function () {
-
-            var modal01 = document.querySelector("#coffeeInfo01");
-            modal01.style.display = "block";
-        });
-
-
-        coffee01.addEventListener("blur", function () {
-            var modal01 = document.querySelector("#coffeeInfo01");
-            modal01.style.display = "none";
-        });
-
-        // 2번째 원두
-        var coffee02 = document.querySelector("#coffee02");
-        coffee02.addEventListener("focus", function () {
-
-            var modal02 = document.querySelector("#coffeeInfo02");
-            modal02.style.display = "block";
-        });
-
-        coffee02.addEventListener("blur", function () {
-
-            var modal02 = document.querySelector("#coffeeInfo02");
-            modal02.style.display = "none";
-        });
-    </script>
 </body>
 
 </html>
