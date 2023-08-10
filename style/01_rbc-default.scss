@@ -108,9 +108,11 @@ header {
 .sidebtn {
     position: fixed;
     margin: 0 -4rem;
-    margin-top: 13.5rem;
+    margin-top: 14rem;
+
     display: flex;
     justify-content: space-between;
+
     width: 100%;
 
     opacity: 0.35;
@@ -221,6 +223,10 @@ section {
         .month {
             width: 100%;
             margin-top: 2rem;
+        }
+
+        #map {
+            display: none;
         }
     }
 

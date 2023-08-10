@@ -87,7 +87,7 @@ header {
 .sidebtn {
   position: fixed;
   margin: 0 -4rem;
-  margin-top: 13.5rem;
+  margin-top: 14rem;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -170,6 +170,9 @@ section {
   header .month {
     width: 100%;
     margin-top: 2rem;
+  }
+  header #map {
+    display: none;
   }
   .sidebtn {
     margin: 0 -1.2rem;
