@@ -101,14 +101,37 @@ header {
     text-transform: uppercase;
 }
 
+.sidebtn {
+    position: fixed;
+    margin: 0 -4rem;
+    margin-top: 13.5rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    opacity: 0.35;
+
+
+    #btnLeft {
+        width: 1.8rem;
+        left: 1rem;
+    }
+
+    #btnRight {
+        width: 1.8rem;
+        right: 1rem;
+    }
+}
+
+
+//컨텐츠
+
 section {
     display: flex;
     justify-content: space-between;
 
     height: 30.9rem;
 }
-
-//컨텐츠
 
 .contents {
     width: calc(100% / 2 - 1rem);
@@ -195,6 +218,14 @@ section {
             width: 100%;
             margin-top: 2rem;
         }
+    }
+
+    .sidebtn {
+        margin: 0 -1.2rem;
+        margin-top: auto;
+
+        position: -webkit-sticky;
+        top: 11.8rem;
     }
 
     //전체 텍스트 max-width: 768px
