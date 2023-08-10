@@ -1,16 +1,9 @@
-// var coffee01 = document.querySelector("#coffee01");
-// coffee01.addEventListener("focus", function () {
-
-// var modal01 = document.querySelector("#coffeeInfo01");
-// modal01.style.display = "block"; });
+//JavaScript 출처
+//https://abcdqbbq.tistory.com/93
+//스승님
 
 
-// coffee01.addEventListener("blur", function () {
-// var modal01 = document.querySelector("#coffeeInfo01");
-// modal01.style.display = "none";});
-
-
-
+// 1번째 원두
 var coffee01 = document.querySelectorAll('#coffee01');
 var modal01 = document.querySelectorAll('#coffeeInfo01');;
 
@@ -33,15 +26,20 @@ for (var x = 0; x < coffee01.length; x++) {
 
 
 // 2번째 원두
-var coffee02 = document.querySelector("#coffee02");
-coffee02.addEventListener("focus", function () {
+var coffee02 = document.querySelectorAll('#coffee02');
+var modal02 = document.querySelectorAll('#coffeeInfo02');;
 
-  var modal02 = document.querySelector("#coffeeInfo02");
-  modal02.style.display = "block";
-});
+// 팝업 열기
+for (var i = 0; i < coffee02.length; i++) {
+  coffee02[i].addEventListener('click', function () {
+    modal02 = this.getAttribute('href');
+    document.querySelector(modal02).style.display = 'block';
+  });
+}
 
-coffee02.addEventListener("blur", function () {
-
-  var modal02 = document.querySelector("#coffeeInfo02");
-  modal02.style.display = "none";
-});
+// 팝업 닫기
+for (var x = 0; x < coffee01.length; x++) {
+  modal02[x].addEventListener('click', function () {
+    this.style.display = 'none';
+  });
+}
