@@ -66,6 +66,10 @@ p {
 
     max-width: 70vw;
     margin: 2.3rem auto;
+
+    .mobile_p {
+        display: none;
+    }
 }
 
 table,
@@ -234,6 +238,10 @@ section {
 
         max-width: 75vw;
         margin: 2.8rem auto;
+
+        .mobile_p {
+            display: block;
+        }
     }
 
     //컨텐츠

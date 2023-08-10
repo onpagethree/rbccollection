@@ -53,6 +53,9 @@ p {
   max-width: 70vw;
   margin: 2.3rem auto;
 }
+p .mobile_p {
+  display: none;
+}
 
 table,
 td,
@@ -178,6 +181,9 @@ section {
     font-weight: 500;
     max-width: 75vw;
     margin: 2.8rem auto;
+  }
+  p .mobile_p {
+    display: block;
   }
   section {
     display: block;
