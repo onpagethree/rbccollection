@@ -190,4 +190,7 @@ section {
     font-weight: 500;
     vertical-align: top;
   }
+  .footer {
+    font-size: 1.1em;
+  }
 }
