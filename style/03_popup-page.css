@@ -49,11 +49,13 @@ a {
   vertical-align: top;
 }
 .popup .pop-info td:nth-child(1) {
-  width: 5rem;
-  padding-right: 2em;
+  width: 20%;
+}
+.popup .pop-info td:nth-child(2) {
+  padding: 0 0.5em;
 }
 .popup .pop-info td:nth-child(3) {
-  width: 68%;
+  flex: 1;
 }
 
 @media screen and (max-width: 768px) {
@@ -84,21 +86,13 @@ a {
     width: 85vw;
     height: 34rem;
   }
-  .popup {
+  .popup .pop-title p {
     font-size: 1.3rem;
   }
   .popup .pop-info {
     margin-bottom: 8rem;
   }
-  .popup .pop-title p {
-    font-size: 1.3rem;
-  }
-  .popup td:nth-child(1) {
-    width: 5.5rem;
-    padding-right: 1em;
-  }
-  .popup td:nth-child(3) {
-    width: 67%;
-    padding-left: 0.7em;
+  .popup td:nth-child(2) {
+    padding: 0 0.7em;
   }
 }
