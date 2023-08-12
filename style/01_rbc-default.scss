@@ -57,21 +57,6 @@ body {
     font-family: 'OpenSans', 'Spoqa Han Sans Neo';
 }
 
-//전체 기본 텍스트
-
-p {
-    line-height: 1.55em;
-    text-align: center;
-    font-weight: 500;
-
-    max-width: 70vw;
-    margin: 2.3rem auto;
-
-    .mobile_p {
-        display: none;
-    }
-}
-
 table,
 td,
 tr {
@@ -103,7 +88,32 @@ header {
     font-size: .5em;
     text-align: right;
     text-transform: uppercase;
+
+    .map {
+        width: 9rem;
+        position: absolute;
+        top: -.4rem;
+        right: -1.2rem
+    }
+
+    & p {
+        display: none;
+    }
 }
+
+
+// 설명 글
+
+.writing {
+    max-width: 70vw;
+    margin: 2.3rem auto;
+
+    text-align: center;
+    line-height: 1.55em;
+    font-weight: 500;
+}
+
+
 
 //컨텐츠
 
@@ -212,21 +222,21 @@ section {
             margin-top: 2rem;
         }
 
-        #map {
+        .map {
             display: none;
+        }
+
+        .head-info p {
+            display: block;
         }
     }
 
     //전체 텍스트 max-width: 768px
-    p {
+    .writing {
         font-weight: 500;
 
         max-width: 75vw;
         margin: 2.8rem auto;
-
-        .mobile_p {
-            display: block;
-        }
     }
 
     //컨텐츠
@@ -258,9 +268,9 @@ section {
 //mobile 사이즈
 
 @media screen and (max-width: 450px) {
-    p {
+    .writing {
         font-size: 1.3rem;
-        max-width: 100%;
+        max-width: 90%;
     }
 
     .contents {
