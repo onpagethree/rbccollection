@@ -3,6 +3,28 @@
 //스승님
 
 
+
+// 1번째 원두
+var text01 = document.querySelectorAll('#text01');
+var modaltext = document.querySelectorAll('#textFull01');;
+
+// 팝업 열기
+for (var i = 0; i < text01.length; i++) {
+  text01[i].addEventListener('click', function () {
+    modaltext = this.getAttribute('href');
+    document.querySelector(modaltext).style.display = 'block';
+  });
+}
+
+// 팝업 닫기
+for (var x = 0; x < text01.length; x++) {
+  modaltext[x].addEventListener('click', function () {
+    this.style.display = 'none';
+  });
+}
+
+//--------------
+
 // 1번째 원두
 var coffee01 = document.querySelectorAll('#coffee01');
 var modal01 = document.querySelectorAll('#coffeeInfo01');;

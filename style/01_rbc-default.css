@@ -90,6 +90,11 @@ header {
   font-weight: 500;
 }
 
+#text01 {
+  font-weight: 300;
+  text-decoration: underline;
+}
+
 section {
   display: flex;
   justify-content: space-between;
@@ -200,7 +205,10 @@ section {
   }
 }
 .footer {
-  font-size: 2rem;
+  font-size: 1.5rem;
+}
+.footer .rights {
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 450px) {

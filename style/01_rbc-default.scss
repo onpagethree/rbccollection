@@ -113,6 +113,10 @@ header {
     font-weight: 500;
 }
 
+#text01 {
+    font-weight: 300;
+    text-decoration: underline;
+}
 
 
 //컨텐츠
@@ -268,7 +272,11 @@ section {
 }
 
 .footer {
-    font-size: 2rem;
+    font-size: 1.5rem;
+
+    .rights {
+        font-size: 1rem;
+    }
 }
 
 //mobile 사이즈
