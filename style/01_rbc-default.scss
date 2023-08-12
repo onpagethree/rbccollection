@@ -177,6 +177,8 @@ section {
     font-family: 'Spoqa Han Sans Neo';
 
     .rights {
+        text-align: center;
+        width: 85%;
         font-size: 0.95rem;
     }
 }
@@ -263,6 +265,10 @@ section {
             }
         }
     }
+}
+
+.footer {
+    font-size: 2rem;
 }
 
 //mobile 사이즈

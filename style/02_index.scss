@@ -119,6 +119,8 @@ section {
     font-family: 'Spoqa Han Sans Neo';
 
     .rights {
+        text-align: center;
+        width: 85%;
         font-size: 0.95rem;
     }
 }
@@ -159,10 +161,5 @@ section {
     .writing {
         font-size: 1.3rem;
         max-width: 100%;
-    }
-
-    //Footer
-    .rights {
-        font-size: 1.1em;
     }
 }

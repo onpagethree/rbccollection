@@ -136,6 +136,8 @@ section {
   font-family: "Spoqa Han Sans Neo";
 }
 .footer .rights {
+  text-align: center;
+  width: 85%;
   font-size: 0.95rem;
 }
 
@@ -197,6 +199,10 @@ section {
     line-height: 1.5em;
   }
 }
+.footer {
+  font-size: 2rem;
+}
+
 @media screen and (max-width: 450px) {
   .writing {
     font-size: 1.3rem;
