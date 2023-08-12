@@ -87,14 +87,17 @@ a {
   .popup {
     font-size: 1.3rem;
   }
+  .popup .pop-info {
+    margin-bottom: 8rem;
+  }
   .popup .pop-title p {
     font-size: 1.3rem;
   }
-  .popup .pop-info td:nth-child(1) {
+  .popup td:nth-child(1) {
     width: 5.5rem;
     padding-right: 1em;
   }
-  .popup .pop-info td:nth-child(3) {
+  .popup td:nth-child(3) {
     width: 67%;
     padding-left: 0.7em;
   }

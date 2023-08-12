@@ -124,25 +124,27 @@ a {
     .popup {
         font-size: 1.3rem;
 
+        .pop-info {
+            margin-bottom: 8rem;
+
+        }
+
         .pop-title {
             p {
                 font-size: 1.3rem;
             }
         }
 
-        .pop-info {
-            td {
-                &:nth-child(1) {
-                    width: 5.5rem;
-                    padding-right: 1em;
-                }
+        td {
+            &:nth-child(1) {
+                width: 5.5rem;
+                padding-right: 1em;
+            }
 
-                &:nth-child(3) {
-                    width: 67%;
-                    padding-left: .7em;
-                }
+            &:nth-child(3) {
+                width: 67%;
+                padding-left: .7em;
             }
         }
     }
-
 }
