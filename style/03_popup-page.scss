@@ -30,10 +30,11 @@ a {
         text-transform: uppercase;
         text-align: center;
 
-        p {
-            font-weight: 500;
-            margin-top: 1.5rem;
+        & p {
             font-size: 1rem;
+            font-weight: 500;
+
+            margin-top: 1.5rem;
         }
     }
 
@@ -81,13 +82,13 @@ a {
 @media screen and (max-width: 768px) {
 
     .popup {
-        padding: 1.3rem 3rem;
+        padding: 1.3rem 2.2rem;
 
         .pop-title {
             width: 100%;
             font-size: 3.7rem;
 
-            p {
+            & p {
                 margin: 2.8rem auto 3rem auto;
             }
         }
