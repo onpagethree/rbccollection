@@ -42,17 +42,11 @@ html {
 body {
   background-color: #000;
   margin: 1.9rem 4rem;
-  color: #FAFAF0;
+  color: #f7f7e8;
   font-family: "OpenSans", "Spoqa Han Sans Neo";
 }
 
-body {
-  background-color: #000;
-  margin: 1.9rem 4rem;
-  color: #FAFAF0;
-}
-
-p {
+.writing {
   line-height: 1.55em;
   text-align: center;
   font-weight: 500;
@@ -87,9 +81,16 @@ section a {
   margin: 3rem;
 }
 
-.right {
-  font-size: 0.95em;
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 4rem auto;
+  font-family: "Spoqa Han Sans Neo";
+}
+.footer .rights {
+  font-size: 0.95rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -102,7 +103,7 @@ section a {
   header a {
     text-align: center;
   }
-  p {
+  .writing {
     max-width: 75vw;
   }
   section a {
@@ -111,11 +112,11 @@ section a {
   }
 }
 @media screen and (max-width: 450px) {
-  p {
+  .writing {
     font-size: 1.3rem;
     max-width: 100%;
   }
-  .right {
+  .rights {
     font-size: 1.1em;
   }
 }

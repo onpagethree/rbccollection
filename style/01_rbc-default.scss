@@ -52,7 +52,7 @@ html {
 body {
     background-color: #000;
     margin: 1.9rem 4rem;
-    color: #FAFAF0;
+    color: #f7f7e8;
 
     font-family: 'OpenSans', 'Spoqa Han Sans Neo';
 }
@@ -131,7 +131,7 @@ section {
     display: flex;
     flex-direction: column;
 
-    background-color: #FAFAF0;
+    background-color: #f7f7e8;
 
     .img-holder {
         width: 100%;
@@ -166,7 +166,7 @@ section {
 }
 
 //Footer Footer Footer
-.sidebtn {
+.footer {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -176,7 +176,7 @@ section {
     font-size: 1.5rem;
     font-family: 'Spoqa Han Sans Neo';
 
-    .right {
+    .rights {
         font-size: 0.95rem;
     }
 }
