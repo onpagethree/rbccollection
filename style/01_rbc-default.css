@@ -84,24 +84,6 @@ header {
   text-transform: uppercase;
 }
 
-.sidebtn {
-  position: fixed;
-  margin: 0 -4rem;
-  margin-top: 14rem;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  opacity: 0.35;
-}
-.sidebtn #btnLeft {
-  width: 3rem;
-  left: 1rem;
-}
-.sidebtn #btnRight {
-  width: 1.8rem;
-  right: 1rem;
-}
-
 section {
   display: flex;
   justify-content: space-between;
@@ -173,12 +155,6 @@ section {
   }
   header #map {
     display: none;
-  }
-  .sidebtn {
-    margin: 0 -1.2rem;
-    margin-top: auto;
-    position: -webkit-sticky;
-    top: 11.8rem;
   }
   p {
     font-weight: 500;

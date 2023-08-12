@@ -105,31 +105,6 @@ header {
     text-transform: uppercase;
 }
 
-.sidebtn {
-    position: fixed;
-    margin: 0 -4rem;
-    margin-top: 14rem;
-
-    display: flex;
-    justify-content: space-between;
-
-    width: 100%;
-
-    opacity: 0.35;
-
-
-    #btnLeft {
-        width: 3rem;
-        left: 1rem;
-    }
-
-    #btnRight {
-        width: 1.8rem;
-        right: 1rem;
-    }
-}
-
-
 //컨텐츠
 
 section {
@@ -228,14 +203,6 @@ section {
         #map {
             display: none;
         }
-    }
-
-    .sidebtn {
-        margin: 0 -1.2rem;
-        margin-top: auto;
-
-        position: -webkit-sticky;
-        top: 11.8rem;
     }
 
     //전체 텍스트 max-width: 768px
