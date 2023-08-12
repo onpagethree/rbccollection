@@ -5,7 +5,7 @@ a {
 .popup {
   display: none;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.92);
+  background-color: rgba(0, 0, 0, 0.88);
   color: #FAFAF0;
   position: fixed;
   width: 100vw;
