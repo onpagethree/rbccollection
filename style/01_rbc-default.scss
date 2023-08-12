@@ -155,11 +155,23 @@ section {
     }
 }
 
-//Footer
-.footer {
-    font-size: 0.95em;
+//Footer Footer Footer
+.sidebtn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     margin: 4rem auto;
+    font-size: 1.5rem;
+    font-family: 'Spoqa Han Sans Neo';
+
+    .right {
+        font-size: 0.95rem;
+    }
 }
+
+
 
 
 //세로형 스크린 반응형
@@ -262,11 +274,6 @@ section {
         line-height: 1.5em;
         font-weight: 500;
         vertical-align: top;
-    }
-
-    //Footer
-    .footer {
-        font-size: 1.1em;
     }
 
 }

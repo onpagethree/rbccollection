@@ -120,9 +120,17 @@ section {
   width: 3.5rem;
 }
 
-.footer {
-  font-size: 0.95em;
+.sidebtn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 4rem auto;
+  font-size: 1.5rem;
+  font-family: "Spoqa Han Sans Neo";
+}
+.sidebtn .right {
+  font-size: 0.95rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -198,8 +206,5 @@ section {
     line-height: 1.5em;
     font-weight: 500;
     vertical-align: top;
-  }
-  .footer {
-    font-size: 1.1em;
   }
 }

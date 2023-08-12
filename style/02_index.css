@@ -87,7 +87,7 @@ section a {
   margin: 3rem;
 }
 
-.footer {
+.right {
   font-size: 0.95em;
   margin: 4rem auto;
 }
@@ -115,7 +115,7 @@ section a {
     font-size: 1.3rem;
     max-width: 100%;
   }
-  .footer {
+  .right {
     font-size: 1.1em;
   }
 }
