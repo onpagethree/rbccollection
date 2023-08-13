@@ -91,7 +91,7 @@ a {
     margin-left: 0;
   }
   .popup .pop-info td:nth-child(2) {
-    padding: 0 1.2em;
+    padding: 0 1em;
   }
   .popup .pop-coloumn {
     flex: none;
@@ -121,6 +121,6 @@ a {
     width: 80vw;
   }
   .popup .pop-info td:nth-child(2) {
-    padding: 0 1em;
+    padding: 0 0.7em;
   }
 }
