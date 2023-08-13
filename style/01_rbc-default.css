@@ -239,11 +239,11 @@ section {
   }
   section .contents {
     width: 90vw;
-    height: 29rem;
+    height: 28rem;
   }
   section .contents .img-holder {
     width: 100%;
-    height: 54%;
+    height: 56%;
   }
   section table {
     margin: auto 2rem;
