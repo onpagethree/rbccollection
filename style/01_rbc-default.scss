@@ -7,10 +7,7 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'OpenSans';
-    src: url(../source/OpenSans-VariableFont_wdth\,wght.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
 
 //spoqa hans
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
@@ -56,7 +53,7 @@ body {
     margin: 1.9rem 4rem;
     color: #f7f7e8;
 
-    font-family: 'OpenSans', 'Spoqa Han Sans Neo';
+    font-family: 'Lato', 'Spoqa Han Sans Neo';
 }
 
 table,
@@ -87,6 +84,8 @@ header {
 
 .head-info {
     width: 15vw;
+    padding-top: .2em;
+
     font-size: .5em;
     text-align: right;
     text-transform: uppercase;
@@ -152,6 +151,7 @@ section {
     }
 
     table {
+
         height: floor($number: 0);
         // 두 개의 원두 table 높이가 맞춰지느라 짧은 쪽의 행간이 넓어지는 이슈 해결
 
@@ -159,6 +159,7 @@ section {
         color: #000;
 
         th {
+            font-weight: 500;
             line-height: 2.5em;
             text-align: left;
         }
@@ -184,6 +185,7 @@ section {
     font-family: 'Spoqa Han Sans Neo';
 
     .rights {
+        font-family: 'Lato';
         text-align: center;
         width: 85%;
         font-size: 0.95rem;
@@ -225,6 +227,8 @@ section {
         }
 
         &>:nth-child(3) {
+            padding-top: 0;
+
             text-align: center;
             order: 3;
         }

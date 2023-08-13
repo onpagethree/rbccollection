@@ -7,10 +7,7 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'OpenSans';
-    src: url(../source/OpenSans-VariableFont_wdth\,wght.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
 
 //spoqa hans
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
@@ -54,7 +51,7 @@ body {
     margin: 1.9rem 4rem;
     color: #f7f7e8;
 
-    font-family: 'OpenSans', 'Spoqa Han Sans Neo';
+    font-family: 'Lato', 'Spoqa Han Sans Neo';
 }
 
 //전체 설정 끝

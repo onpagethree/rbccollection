@@ -157,6 +157,7 @@ a {
 
     .popup {
         padding: 2rem 0;
+        padding-bottom: 8rem;
 
         .pop-title {
             width: 90vw;
@@ -175,7 +176,6 @@ a {
 
         .pop-info {
             width: 80vw;
-            margin-bottom: 8rem;
 
             td {
                 &:nth-child(2) {

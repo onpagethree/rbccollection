@@ -1,13 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 @font-face {
   font-family: "GT-Ultra-Median-Regular";
   src: url(../source/GT-Ultra-Median-Regular.otf) format("opentype");
   font-weight: 500;
   font-style: normal;
-}
-@font-face {
-  font-family: "OpenSans";
-  src: url(../source/OpenSans-VariableFont_wdth\,wght.ttf);
 }
 * {
   box-sizing: border-box;
@@ -45,7 +42,7 @@ body {
   background-color: #000;
   margin: 1.9rem 4rem;
   color: #f7f7e8;
-  font-family: "OpenSans", "Spoqa Han Sans Neo";
+  font-family: "Lato", "Spoqa Han Sans Neo";
 }
 
 table,
@@ -70,6 +67,7 @@ header {
 
 .head-info {
   width: 15vw;
+  padding-top: 0.2em;
   font-size: 0.5em;
   text-align: right;
   text-transform: uppercase;
@@ -126,6 +124,7 @@ section {
   color: #000;
 }
 .contents table th {
+  font-weight: 500;
   line-height: 2.5em;
   text-align: left;
 }
@@ -142,6 +141,7 @@ section {
   font-family: "Spoqa Han Sans Neo";
 }
 .footer .rights {
+  font-family: "Lato";
   text-align: center;
   width: 85%;
   font-size: 0.95rem;
@@ -170,6 +170,7 @@ section {
     order: 1;
   }
   header > :nth-child(3) {
+    padding-top: 0;
     text-align: center;
     order: 3;
   }
