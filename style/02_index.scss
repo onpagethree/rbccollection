@@ -129,16 +129,17 @@ section {
 
 @media screen and (max-width: 768px) {
     html {
-        font-size: 3.2vw;
+        font-size: 1.8vw;
     }
 
     body {
-        margin: 1.2rem 1.2rem;
+        margin: 2.5rem auto;
     }
 
     //HEADER 헤더 max-width: 768px
     header {
         a {
+            width: 52vw;
             text-align: center;
         }
     }
@@ -146,10 +147,14 @@ section {
     //전체 기본 텍스트 max-width: 768px
 
     .writing {
-        max-width: 75vw;
+        width: 65vw;
+        margin: 2.8rem auto;
     }
 
     section {
+        width: 65vw;
+        margin: auto;
+
         a {
             font-size: 6rem;
             margin: 2rem 3rem;
@@ -164,8 +169,42 @@ section {
 }
 
 @media screen and (max-width: 450px) {
+
+    html {
+        font-size: 4vw;
+    }
+
+    body {
+        margin: 2rem auto;
+    }
+
+    //HEADER 헤더 max-width: 450px
+    header {
+        a {
+            width: 90vw;
+
+            font-size: 2.8rem;
+            text-align: center;
+        }
+    }
+
     .writing {
-        font-size: 1.3rem;
-        max-width: 100%;
+        width: 92vw;
+        margin: 2.4rem auto;
+    }
+
+    section {
+        width: 100vw;
+
+        a {
+            font-size: 4.25rem;
+            margin: 1.5rem 2.2rem;
+        }
+    }
+
+    .footer {
+        .rights {
+            font-size: .75rem;
+        }
     }
 }

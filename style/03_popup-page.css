@@ -5,21 +5,21 @@ a {
 .popup {
   display: none;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.88);
+  background-color: #000;
   color: #f7f7e8;
   position: fixed;
   width: 100vw;
   height: 100vh;
   left: 0;
   top: 0;
-  padding: 2.5rem 5rem;
+  padding: 1.9rem 4rem;
 }
 .popup .pop-title {
   font-family: "GT-Ultra-Median-Regular", "Spoqa Han Sans Neo";
-  width: 65%;
+  width: 50vw;
   margin: 0 auto;
-  margin-bottom: 3rem;
-  font-size: 3rem;
+  margin-bottom: 5rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
   text-align: center;
 }
@@ -27,6 +27,11 @@ a {
   font-size: 1rem;
   font-weight: 500;
   margin-top: 1.5rem;
+}
+.popup #writing_popup {
+  width: 52vw;
+  line-height: 1.7em;
+  margin-top: 5em;
 }
 .popup .pop-info {
   display: flex;
@@ -41,7 +46,7 @@ a {
   flex: 1;
 }
 .popup .pop-info table {
-  margin-bottom: 2rem;
+  margin: 0 0 2.5rem 0;
   width: 100%;
   text-align: left;
 }
@@ -60,39 +65,62 @@ a {
 
 @media screen and (max-width: 768px) {
   .popup {
-    padding: 1.3rem 2.2rem;
+    padding: 2.5rem 0;
   }
   .popup .pop-title {
-    width: 100%;
+    width: 52vw;
     font-size: 3.7rem;
   }
   .popup .pop-title p {
-    margin: 2.8rem auto 3rem auto;
+    margin: 2.8rem auto 6rem auto;
+  }
+  .popup #writing_popup {
+    width: 54vw;
+    line-height: 1.8em;
+    margin-top: 5em;
   }
   .popup .pop-info {
     display: block;
+    width: 54vw;
+    margin: auto;
+    justify-content: left;
   }
   .popup .pop-info > :first-child,
   .popup .pop-info :last-child {
     margin-right: 0;
     margin-left: 0;
   }
-  .pop-coloumn {
+  .popup .pop-info td:nth-child(2) {
+    padding: 0 1.2em;
+  }
+  .popup .pop-coloumn {
     flex: none;
   }
 }
 @media screen and (max-width: 450px) {
-  section .contents {
-    width: 85vw;
-    height: 34rem;
+  .writing {
+    line-height: 1.65em;
+  }
+  .popup {
+    padding: 2rem 0;
+  }
+  .popup .pop-title {
+    width: 90vw;
+    font-size: 2.8rem;
   }
   .popup .pop-title p {
-    font-size: 1.3rem;
+    margin: 2.2rem auto 5rem auto;
+  }
+  .popup #writing_popup {
+    width: 90vw;
+    line-height: 1.8em;
+    margin-top: 2.3em;
   }
   .popup .pop-info {
+    width: 80vw;
     margin-bottom: 8rem;
   }
-  .popup td:nth-child(2) {
-    padding: 0 0.7em;
+  .popup .pop-info td:nth-child(2) {
+    padding: 0 1em;
   }
 }

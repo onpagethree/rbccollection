@@ -28,6 +28,8 @@
 
 body::-webkit-scrollbar {
     width: 0;
+    display: none;
+    /* Chrome, Safari, Opera*/
 }
 
 a,
@@ -155,23 +157,24 @@ section {
 
         margin: 0 2.5rem;
         color: #000;
-    }
 
-    th {
-        line-height: 2.5em;
-        text-align: left;
-    }
+        th {
+            line-height: 2.5em;
+            text-align: left;
+        }
 
-    tr {
-        &>:first-child {
-            width: 3.5rem;
+        tr {
+            &>:first-child {
+                width: 3.5rem;
+            }
         }
     }
+
+
 }
 
 //Footer Footer Footer
 .footer {
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -194,12 +197,12 @@ section {
 
 @media screen and (max-width: 768px) {
     html {
-        font-size: 3.2vw;
+        font-size: 1.8vw;
         //1rem = html의 폰트 사이즈
     }
 
     body {
-        margin: 1.2rem 1.2rem;
+        margin: 2.5rem auto;
         overflow: auto;
     }
 
@@ -213,6 +216,10 @@ section {
         }
 
         &>:nth-child(2) {
+            width: 52vw;
+            justify-content: center;
+            margin: auto;
+
             text-align: center;
             order: 1;
         }
@@ -239,65 +246,101 @@ section {
 
     //전체 텍스트 max-width: 768px
     .writing {
-        font-weight: 500;
-
-        max-width: 75vw;
+        width: 52vw;
         margin: 2.8rem auto;
     }
 
-    //컨텐츠
 
+    //컨텐츠
     section {
         display: block;
         height: auto;
 
         .contents {
-            width: 75vw;
-            height: 28rem;
-            margin: 0 auto 1.6rem;
+            width: 52vw;
+            height: 33rem;
+            margin: 0 auto 2.3rem;
 
             .img-holder {
-                height: 54%;
+                width: 100%;
+                height: 58%;
             }
+        }
 
-            table {
-                margin: 0 2.2rem;
+        table {
+            margin: auto 2.2rem;
 
-                tr {
-                    line-height: 1.5em;
-                }
+            tr {
+                line-height: 1.5em;
             }
+        }
+    }
+
+    .footer {
+        font-size: 1.5rem;
+        margin: 4rem 2.5rem;
+
+        .rights {
+            font-size: 1rem;
         }
     }
 }
 
-.footer {
-    font-size: 1.5rem;
-
-    .rights {
-        font-size: 1rem;
-    }
-}
 
 //mobile 사이즈
 
 @media screen and (max-width: 450px) {
+
+    html {
+        font-size: 4vw;
+    }
+
+    body {
+        margin: 2rem auto;
+    }
+
+    //header max-width: 450px
+    header {
+        font-size: 2.8rem;
+
+        &>:nth-child(2) {
+            width: 90vw;
+        }
+
+        .head-info,
+        .month {
+            margin-top: 1.6rem;
+        }
+    }
+
     .writing {
-        font-size: 1.3rem;
-        max-width: 90%;
+        width: 90vw;
+        margin: 2.4rem auto 2.6rem;
     }
 
-    .contents {
-        height: 29.5rem;
+    //컨텐츠 max-width: 450px
+    section {
+        .contents {
+            width: 90vw;
+            height: 29rem;
+
+            .img-holder {
+                width: 100%;
+                height: 54%;
+            }
+        }
+
+        table {
+            margin: auto 2rem;
+        }
     }
 
-    table,
-    td,
-    tr {
-        font-size: 1.3rem;
-        line-height: 1.5em;
-        font-weight: 500;
-        vertical-align: top;
-    }
+    .footer {
+        font-size: 1rem;
+        margin: 4rem 1.5rem;
 
+        .rights {
+            font-size: .75rem;
+        }
+    }
 }

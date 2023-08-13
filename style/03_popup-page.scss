@@ -8,7 +8,7 @@ a {
     display: none;
     overflow: auto;
 
-    background-color: rgba($color: #000000, $alpha: 0.88);
+    background-color: #000;
     color: #f7f7e8;
 
     position: fixed;
@@ -17,7 +17,7 @@ a {
     left: 0;
     top: 0;
 
-    padding: 2.5rem 5rem;
+    padding: 1.9rem 4rem;
 
 
 
@@ -27,11 +27,11 @@ a {
     .pop-title {
         font-family: 'GT-Ultra-Median-Regular', 'Spoqa Han Sans Neo';
 
-        width: 65%;
+        width: 50vw;
         margin: 0 auto;
-        margin-bottom: 3rem;
+        margin-bottom: 5rem;
 
-        font-size: 3rem;
+        font-size: 2.5rem;
         text-transform: uppercase;
         text-align: center;
 
@@ -42,6 +42,14 @@ a {
             margin-top: 1.5rem;
         }
     }
+
+    #writing_popup {
+        width: 52vw;
+        line-height: 1.7em;
+        margin-top: 5em;
+    }
+
+
 
     .pop-info {
         display: flex;
@@ -60,7 +68,7 @@ a {
         }
 
         table {
-            margin-bottom: 2rem;
+            margin: 0 0 2.5rem 0;
             width: 100%;
             text-align: left;
         }
@@ -92,69 +100,88 @@ a {
 
 @media screen and (max-width: 768px) {
 
+
     .popup {
-        padding: 1.3rem 2.2rem;
+        padding: 2.5rem 0;
 
-
-        //Full Text 페이지
-
-
-        //원두 정보 페이지
         .pop-title {
-            width: 100%;
+            width: 52vw;
+
             font-size: 3.7rem;
 
             & p {
-                margin: 2.8rem auto 3rem auto;
+                margin: 2.8rem auto 6rem auto;
             }
         }
 
+        #writing_popup {
+            width: 54vw;
+            line-height: 1.8em;
+            margin-top: 5em;
+        }
+
+
         .pop-info {
             display: block;
+            width: 54vw;
+            margin: auto;
+            justify-content: left;
 
             &>:first-child,
             :last-child {
                 margin-right: 0;
                 margin-left: 0;
             }
-        }
-    }
 
-    .pop-coloumn {
-        flex: none;
-        // background-color: aqua;
+            td {
+                &:nth-child(2) {
+                    padding: 0 1.2em;
+                    //    background-color: rgb(126, 126, 0);
+                }
+            }
+        }
+
+        .pop-coloumn {
+            flex: none;
+            // background-color: aqua;
+        }
     }
 }
 
 //mobile 사이즈
 
 @media screen and (max-width: 450px) {
-
-    section {
-        .contents {
-            width: 85vw;
-            height: 34rem;
-        }
+    .writing {
+        line-height: 1.65em;
     }
 
-
     .popup {
+        padding: 2rem 0;
+
         .pop-title {
-            p {
-                font-size: 1.3rem;
+            width: 90vw;
+            font-size: 2.8rem;
+
+            & p {
+                margin: 2.2rem auto 5rem auto;
             }
         }
 
-        // font-size: 1.3rem;
-
-        .pop-info {
-            margin-bottom: 8rem;
-
+        #writing_popup {
+            width: 90vw;
+            line-height: 1.8em;
+            margin-top: 2.3em;
         }
 
-        td {
-            &:nth-child(2) {
-                padding: 0 .7em;
+        .pop-info {
+            width: 80vw;
+            margin-bottom: 8rem;
+
+            td {
+                &:nth-child(2) {
+                    padding: 0 1em;
+                    //    background-color: rgb(126, 126, 0);
+                }
             }
         }
     }

@@ -20,6 +20,8 @@
 
 body::-webkit-scrollbar {
   width: 0;
+  display: none;
+  /* Chrome, Safari, Opera*/
 }
 
 a,
@@ -123,16 +125,15 @@ section {
   margin: 0 2.5rem;
   color: #000;
 }
-.contents th {
+.contents table th {
   line-height: 2.5em;
   text-align: left;
 }
-.contents tr > :first-child {
+.contents table tr > :first-child {
   width: 3.5rem;
 }
 
 .footer {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -148,10 +149,10 @@ section {
 
 @media screen and (max-width: 768px) {
   html {
-    font-size: 3.2vw;
+    font-size: 1.8vw;
   }
   body {
-    margin: 1.2rem 1.2rem;
+    margin: 2.5rem auto;
     overflow: auto;
   }
   header {
@@ -162,6 +163,9 @@ section {
     order: 2;
   }
   header > :nth-child(2) {
+    width: 52vw;
+    justify-content: center;
+    margin: auto;
     text-align: center;
     order: 1;
   }
@@ -181,8 +185,7 @@ section {
     display: block;
   }
   .writing {
-    font-weight: 500;
-    max-width: 75vw;
+    width: 52vw;
     margin: 2.8rem auto;
   }
   section {
@@ -190,41 +193,65 @@ section {
     height: auto;
   }
   section .contents {
-    width: 75vw;
-    height: 28rem;
-    margin: 0 auto 1.6rem;
+    width: 52vw;
+    height: 33rem;
+    margin: 0 auto 2.3rem;
   }
   section .contents .img-holder {
+    width: 100%;
+    height: 58%;
+  }
+  section table {
+    margin: auto 2.2rem;
+  }
+  section table tr {
+    line-height: 1.5em;
+  }
+  .footer {
+    font-size: 1.5rem;
+    margin: 4rem 2.5rem;
+  }
+  .footer .rights {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 4vw;
+  }
+  body {
+    margin: 2rem auto;
+  }
+  header {
+    font-size: 2.8rem;
+  }
+  header > :nth-child(2) {
+    width: 90vw;
+  }
+  header .head-info,
+  header .month {
+    margin-top: 1.6rem;
+  }
+  .writing {
+    width: 90vw;
+    margin: 2.4rem auto 2.6rem;
+  }
+  section .contents {
+    width: 90vw;
+    height: 29rem;
+  }
+  section .contents .img-holder {
+    width: 100%;
     height: 54%;
   }
-  section .contents table {
-    margin: 0 2.2rem;
+  section table {
+    margin: auto 2rem;
   }
-  section .contents table tr {
-    line-height: 1.5em;
+  .footer {
+    font-size: 1rem;
+    margin: 4rem 1.5rem;
   }
-}
-.footer {
-  font-size: 1.5rem;
-}
-.footer .rights {
-  font-size: 1rem;
-}
-
-@media screen and (max-width: 450px) {
-  .writing {
-    font-size: 1.3rem;
-    max-width: 90%;
-  }
-  .contents {
-    height: 29.5rem;
-  }
-  table,
-  td,
-  tr {
-    font-size: 1.3rem;
-    line-height: 1.5em;
-    font-weight: 500;
-    vertical-align: top;
+  .footer .rights {
+    font-size: 0.75rem;
   }
 }
