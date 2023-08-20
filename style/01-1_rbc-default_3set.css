@@ -19,10 +19,8 @@ section {
   section {
     height: auto;
   }
-  .contents {
-    height: 45rem;
-  }
   .contents .img-holder {
-    height: 39rem;
+    width: 20%;
+    height: auto;
   }
 }
