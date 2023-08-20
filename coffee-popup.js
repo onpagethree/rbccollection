@@ -4,7 +4,7 @@
 
 
 
-// 1번째 원두
+// 텍스트 팝업
 var text01 = document.querySelectorAll('#text01');
 var modaltext = document.querySelectorAll('#textFull01');;
 
@@ -60,8 +60,28 @@ for (var i = 0; i < coffee02.length; i++) {
 }
 
 // 팝업 닫기
-for (var x = 0; x < coffee01.length; x++) {
+for (var x = 0; x < coffee02.length; x++) {
   modal02[x].addEventListener('click', function () {
+    this.style.display = 'none';
+  });
+}
+
+
+// 3번째 원두
+var coffee03 = document.querySelectorAll('#coffee03');
+var modal03 = document.querySelectorAll('#coffeeInfo03');;
+
+// 팝업 열기
+for (var i = 0; i < coffee03.length; i++) {
+  coffee03[i].addEventListener('click', function () {
+    modal03 = this.getAttribute('href');
+    document.querySelector(modal03).style.display = 'block';
+  });
+}
+
+// 팝업 닫기
+for (var x = 0; x < coffee03.length; x++) {
+  modal03[x].addEventListener('click', function () {
     this.style.display = 'none';
   });
 }
