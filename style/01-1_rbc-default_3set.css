@@ -1,0 +1,28 @@
+@charset "UTF-8";
+/* 원두 3종 */
+section {
+  height: 30rem;
+}
+
+.contents {
+  width: calc(33.3333333333% - 1rem);
+}
+.contents .img-holder {
+  height: 58%;
+}
+
+.contents table {
+  margin: 0 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    height: auto;
+  }
+  .contents {
+    height: 45rem;
+  }
+  .contents .img-holder {
+    height: 39rem;
+  }
+}
