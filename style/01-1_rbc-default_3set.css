@@ -1,14 +1,14 @@
 @charset "UTF-8";
 /* 원두 3종 */
 section {
-  height: 32rem;
+  height: 34rem;
 }
 
 .contents {
   width: calc(33.3333333333% - 1rem);
 }
 .contents .img-holder {
-  height: 55%;
+  height: 57%;
 }
 
 .contents table {
