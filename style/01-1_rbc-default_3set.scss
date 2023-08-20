@@ -22,14 +22,56 @@
  @media screen and (max-width: 768px) {
 
    section {
+     display: block;
      height: auto;
+
+     .contents {
+       width: 52vw;
+       height: 35rem;
+       margin: 0 auto 2.3rem;
+
+       display: flex;
+
+       .img-holder {
+         margin: 0 auto;
+
+         width: 76%;
+         height: 55%;
+       }
+
+
+       table {
+         margin: auto 2.5rem;
+
+         tr {
+           line-height: 1.5em;
+         }
+       }
+     }
    }
 
-   .contents {
+ }
 
-     .img-holder {
-       width: 20%;
-       height: auto;
+
+
+ //mobile 사이즈
+
+ @media screen and (max-width: 450px) {
+
+   //컨텐츠 max-width: 450px
+   section {
+     .contents {
+       width: 90vw;
+       height: 28rem;
+
+       .img-holder {
+         width: 78%;
+         height: 56%;
+       }
+
+       table {
+         margin: auto 2rem;
+       }
      }
    }
 

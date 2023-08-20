@@ -17,10 +17,37 @@ section {
 
 @media screen and (max-width: 768px) {
   section {
+    display: block;
     height: auto;
   }
-  .contents .img-holder {
-    width: 20%;
-    height: auto;
+  section .contents {
+    width: 52vw;
+    height: 35rem;
+    margin: 0 auto 2.3rem;
+    display: flex;
+  }
+  section .contents .img-holder {
+    margin: 0 auto;
+    width: 76%;
+    height: 55%;
+  }
+  section .contents table {
+    margin: auto 2.5rem;
+  }
+  section .contents table tr {
+    line-height: 1.5em;
+  }
+}
+@media screen and (max-width: 450px) {
+  section .contents {
+    width: 90vw;
+    height: 28rem;
+  }
+  section .contents .img-holder {
+    width: 78%;
+    height: 56%;
+  }
+  section .contents table {
+    margin: auto 2rem;
   }
 }
