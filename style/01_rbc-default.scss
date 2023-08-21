@@ -12,6 +12,9 @@
 //spoqa hans
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 
+$rbc-black: #000;
+$rbc-beige: #f7f7e8;
+
 * {
     box-sizing: border-box;
     position: relative;
@@ -49,9 +52,9 @@ html {
 }
 
 body {
-    background-color: #000;
+    background-color: $rbc-black;
     margin: 1.9rem 4rem;
-    color: #f7f7e8;
+    color: $rbc-beige;
 
     font-family: 'Lato', 'Spoqa Han Sans Neo';
 }
@@ -120,7 +123,7 @@ header {
 }
 
 
-//컨텐츠
+//컨텐츠 컨텐츠
 
 section {
     display: flex;
@@ -136,7 +139,7 @@ section {
     display: flex;
     flex-direction: column;
 
-    background-color: #f7f7e8;
+    background-color: $rbc-beige;
 
     .img-holder {
         width: 100%;
@@ -156,7 +159,7 @@ section {
         // 두 개의 원두 table 높이가 맞춰지느라 짧은 쪽의 행간이 넓어지는 이슈 해결
 
         margin: 0 2.5rem;
-        color: #000;
+        color: $rbc-black;
 
         th {
             font-weight: 600;
@@ -261,7 +264,7 @@ section {
 
         .contents {
             width: 52vw;
-            height: 30rem;
+            height: 28rem;
             // 원두 높이 //////////
             margin: 0 auto 2.3rem;
             // 원두 아래 /////////
@@ -271,17 +274,20 @@ section {
                 margin: 0 auto;
 
                 width: 100%;
-                height: 60%;
+                height: 56%;
+            }
+
+
+            table {
+                margin: auto 2rem;
+
+                tr {
+                    line-height: 1.5em;
+                }
             }
         }
 
-        table {
-            margin: auto 1.8rem;
 
-            tr {
-                line-height: 1.5em;
-            }
-        }
     }
 
     .footer {

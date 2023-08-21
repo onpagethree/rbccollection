@@ -195,19 +195,19 @@ section {
   }
   section .contents {
     width: 52vw;
-    height: 30rem;
+    height: 28rem;
     margin: 0 auto 2.3rem;
     display: flex;
   }
   section .contents .img-holder {
     margin: 0 auto;
     width: 100%;
-    height: 60%;
+    height: 56%;
   }
-  section table {
-    margin: auto 1.8rem;
+  section .contents table {
+    margin: auto 2rem;
   }
-  section table tr {
+  section .contents table tr {
     line-height: 1.5em;
   }
   .footer {
