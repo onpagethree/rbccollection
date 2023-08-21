@@ -12,8 +12,14 @@
 //spoqa hans
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 
+
+
 $rbc-black: #000;
 $rbc-beige: #f7f7e8;
+$lh: 1.6em;
+$bold: 600;
+$medium: 400;
+
 
 * {
     box-sizing: border-box;
@@ -26,18 +32,11 @@ $rbc-beige: #f7f7e8;
     word-break: keep-all;
 }
 
-body::-webkit-scrollbar {
-    width: 0;
-    display: none;
-    /* Chrome, Safari, Opera*/
-}
-
 a,
 a:link,
 a:visited {
     color: inherit;
     text-decoration: none;
-    //앵커태그 스타일 초기화
 }
 
 a:hover {
@@ -46,47 +45,49 @@ a:hover {
     cursor: pointer;
 }
 
+table,
+td,
+tr {
+    line-height: $lh;
+    vertical-align: top;
+}
+
+
+// -----------------------------------------
+
+// 기본: 768 ~ 1440px
 html {
-    font-size: 1.5vw;
+    font-size: 1.6vw;
     //1rem = html의 폰트 사이즈
 }
 
 body {
     background-color: $rbc-black;
-    margin: 1.9rem 4rem;
     color: $rbc-beige;
+    margin: 1.9rem 4rem;
 
     font-family: 'Lato', 'Spoqa Han Sans Neo';
 }
 
-table,
-td,
-tr {
-    line-height: 1.6em;
-    font-weight: 500;
-    vertical-align: top;
-}
-
-//전체 설정 끝
 
 //HEADER 헤더
 
 header {
     font-family: 'GT-Ultra-Median-Regular';
-    font-size: 3.7rem;
+    font-size: 3.6rem;
 
     display: flex;
     justify-content: space-between;
 }
 
 .month {
-    width: 15vw;
+    width: 16vw;
     height: auto;
     //background-color: aqua;
 }
 
 .head-info {
-    width: 15vw;
+    width: 16vw;
     padding-top: .2em;
 
     font-size: .5em;
@@ -107,69 +108,67 @@ header {
 
 
 // 설명 글
-
 .writing {
     width: 70vw;
     margin: 2.3rem auto;
 
     text-align: center;
-    line-height: 1.55em;
-    font-weight: 500;
+    line-height: $lh;
+    font-weight: $medium;
 }
 
 #text01 {
-    font-weight: 300;
+    font-weight: $medium;
     text-decoration: underline;
 }
 
 
 //컨텐츠 컨텐츠
 
-section {
+.contents-holder {
     display: flex;
     justify-content: space-between;
 
-    height: 34rem;
-}
+    .contents {
+        width: calc(100% / 2 - 1rem);
+        height: 32rem;
+        // 원두 높이 원두 높이
 
-.contents {
-    width: calc(100% / 2 - 1rem);
-    height: 100%;
+        background-color: $rbc-beige;
+        display: flex;
+        flex-direction: column;
 
-    display: flex;
-    flex-direction: column;
-
-    background-color: $rbc-beige;
-
-    .img-holder {
-        width: 100%;
-        height: 62%;
-
-        img {
-            position: absolute;
-            top: 0;
+        .img-holder {
+            margin: 0 auto;
             width: 100%;
-            height: auto;
-        }
-    }
+            height: 58%;
 
-    table {
-
-        height: floor($number: 0);
-        // 두 개의 원두 table 높이가 맞춰지느라 짧은 쪽의 행간이 넓어지는 이슈 해결
-
-        margin: 0 2.5rem;
-        color: $rbc-black;
-
-        th {
-            font-weight: 600;
-            line-height: 2.5em;
-            text-align: left;
+            img {
+                top: 0;
+                width: 100%;
+                height: auto;
+            }
         }
 
-        tr {
-            &>:first-child {
-                width: 3.5rem;
+        table {
+            height: floor($number: 0);
+            // 두 개의 원두 table 높이가 맞춰지느라 짧은 쪽의 행간이 넓어지는 이슈
+            color: $rbc-black;
+            font-weight: $medium;
+
+            margin: 0 2.5rem;
+            margin-bottom: 0;
+
+            th {
+                font-weight: $bold;
+                line-height: 2.5em;
+                text-align: left;
+            }
+
+            tr {
+                &>:first-child {
+                    width: 3.5rem;
+                }
             }
         }
     }
@@ -195,7 +194,25 @@ section {
 }
 
 
+@media screen and (min-width: 1280px) {
+    html {
+        font-size: 1.4vw;
+    }
 
+    body {
+        margin: 1.9rem 7.5rem;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    html {
+        font-size: 1.2vw;
+    }
+
+    body {
+        margin: 1.9rem 12rem;
+    }
+}
 
 //세로형 스크린 반응형
 
@@ -252,44 +269,35 @@ section {
 
     //전체 텍스트 max-width: 768px
     .writing {
-        width: 52vw;
+        width: 60vw;
         margin: 2.8rem auto;
     }
 
 
     //컨텐츠
-    section {
+    .contents-holder {
         display: block;
         height: auto;
 
         .contents {
-            width: 52vw;
-            height: 28rem;
-            // 원두 높이 //////////
+            width: 55vw;
+            height: 31rem;
             margin: 0 auto 2.3rem;
-            // 원두 아래 /////////
-            display: flex;
+            // 원두
 
             .img-holder {
                 margin: 0 auto;
 
                 width: 100%;
-                height: 56%;
+                height: 58%;
             }
-
 
             table {
-                margin: auto 2rem;
-                color: aqua;
-
-                tr {
-                    line-height: 1.5em;
-                }
+                margin: 0 2rem;
             }
         }
-
-
     }
+
 
     .footer {
         font-size: 1.5rem;
@@ -334,17 +342,20 @@ section {
     }
 
     //컨텐츠 max-width: 450px
-    section {
+    .contents-holder {
         .contents {
             width: 85vw;
             height: 28rem;
 
+            .img-holder {
+                height: 54%;
+            }
+
             table {
-                margin: auto 1.8rem;
+                margin: 0 1.8rem;
+
             }
         }
-
-
     }
 
     .footer {
