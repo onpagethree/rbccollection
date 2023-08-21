@@ -280,6 +280,7 @@ section {
 
             table {
                 margin: auto 2rem;
+                color: aqua;
 
                 tr {
                     line-height: 1.5em;
@@ -338,15 +339,12 @@ section {
             width: 90vw;
             height: 28rem;
 
-            .img-holder {
-                width: 100%;
-                height: 56%;
+            table {
+                margin: auto 1.8rem;
             }
         }
 
-        table {
-            margin: auto 2rem;
-        }
+
     }
 
     .footer {

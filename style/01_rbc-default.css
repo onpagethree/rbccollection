@@ -206,6 +206,7 @@ section {
   }
   section .contents table {
     margin: auto 2rem;
+    color: aqua;
   }
   section .contents table tr {
     line-height: 1.5em;
@@ -243,12 +244,8 @@ section {
     width: 90vw;
     height: 28rem;
   }
-  section .contents .img-holder {
-    width: 100%;
-    height: 56%;
-  }
-  section table {
-    margin: auto 2rem;
+  section .contents table {
+    margin: auto 1.8rem;
   }
   .footer {
     font-size: 1rem;
