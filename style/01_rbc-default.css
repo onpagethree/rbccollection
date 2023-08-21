@@ -149,7 +149,7 @@ section {
 
 @media screen and (max-width: 768px) {
   html {
-    font-size: 1.8vw;
+    font-size: 2.2vw;
   }
   body {
     margin: 2.5rem auto;
@@ -195,15 +195,17 @@ section {
   }
   section .contents {
     width: 52vw;
-    height: 35rem;
+    height: 30rem;
     margin: 0 auto 2.3rem;
+    display: flex;
   }
   section .contents .img-holder {
+    margin: 0 auto;
     width: 100%;
     height: 60%;
   }
   section table {
-    margin: auto 2.2rem;
+    margin: auto 1.8rem;
   }
   section table tr {
     line-height: 1.5em;
