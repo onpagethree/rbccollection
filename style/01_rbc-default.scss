@@ -109,7 +109,7 @@ header {
 // 설명 글
 
 .writing {
-    max-width: 70vw;
+    width: 70vw;
     margin: 2.3rem auto;
 
     text-align: center;
@@ -319,7 +319,7 @@ section {
         font-size: 2.8rem;
 
         &>:nth-child(2) {
-            width: 90vw;
+            width: 88vw;
         }
 
         .head-info,
@@ -329,14 +329,14 @@ section {
     }
 
     .writing {
-        width: 90vw;
+        width: 88vw;
         margin: 2.4rem auto 2.6rem;
     }
 
     //컨텐츠 max-width: 450px
     section {
         .contents {
-            width: 90vw;
+            width: 85vw;
             height: 28rem;
 
             table {

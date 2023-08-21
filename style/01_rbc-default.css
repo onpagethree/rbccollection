@@ -83,7 +83,7 @@ header {
 }
 
 .writing {
-  max-width: 70vw;
+  width: 70vw;
   margin: 2.3rem auto;
   text-align: center;
   line-height: 1.55em;
@@ -230,18 +230,18 @@ section {
     font-size: 2.8rem;
   }
   header > :nth-child(2) {
-    width: 90vw;
+    width: 88vw;
   }
   header .head-info,
   header .month {
     margin-top: 1.6rem;
   }
   .writing {
-    width: 90vw;
+    width: 88vw;
     margin: 2.4rem auto 2.6rem;
   }
   section .contents {
-    width: 90vw;
+    width: 85vw;
     height: 28rem;
   }
   section .contents table {
