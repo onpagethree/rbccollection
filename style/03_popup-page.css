@@ -90,6 +90,9 @@ a {
     margin-right: 0;
     margin-left: 0;
   }
+  .popup .pop-info td:nth-child(1) {
+    padding-right: 0.5em;
+  }
   .popup .pop-info td:nth-child(2) {
     padding: 0 1em;
   }
@@ -118,7 +121,7 @@ a {
     margin-top: 2.3em;
   }
   .popup .pop-info {
-    width: 80vw;
+    width: 88vw;
   }
   .popup .pop-info td:nth-child(1) {
     width: 25%;
