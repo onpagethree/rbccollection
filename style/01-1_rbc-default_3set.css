@@ -29,7 +29,6 @@
 }
 @media screen and (max-width: 768px) {
   .contents-holder {
-    display: block;
     height: auto;
   }
   .contents-holder .contents {

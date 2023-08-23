@@ -52,7 +52,7 @@
  @media screen and (max-width: 768px) {
 
    .contents-holder {
-     display: block;
+     //  display: block;
      height: auto;
 
      .contents {
@@ -68,7 +68,6 @@
          width: 80%;
          height: 58%;
        }
-
 
        table {
          margin: 0 2rem;
