@@ -5,19 +5,19 @@
 
 
 // 텍스트 팝업
-var text01 = document.querySelectorAll('#text01');
+var readmore = document.querySelectorAll('#readmore');
 var modaltext = document.querySelectorAll('#textFull01');;
 
 // 팝업 열기
-for (var i = 0; i < text01.length; i++) {
-  text01[i].addEventListener('click', function () {
+for (var i = 0; i < readmore.length; i++) {
+  readmore[i].addEventListener('click', function () {
     modaltext = this.getAttribute('href');
     document.querySelector(modaltext).style.display = 'block';
   });
 }
 
 // 팝업 닫기
-for (var x = 0; x < text01.length; x++) {
+for (var x = 0; x < readmore.length; x++) {
   modaltext[x].addEventListener('click', function () {
     this.style.display = 'none';
   });

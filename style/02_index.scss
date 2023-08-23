@@ -1,5 +1,3 @@
-//2023-08-08
-
 @font-face {
     font-family: 'GT-Ultra-Median-Regular';
     src: url(../source/GT-Ultra-Median-Regular.otf) format('opentype');
@@ -11,6 +9,7 @@
 
 //spoqa hans
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
 
 * {
     box-sizing: border-box;
@@ -41,8 +40,15 @@ a:hover {
     cursor: pointer;
 }
 
+
+// -----------------------------------------
+//전체 설정 끝
+
+// -----------------------------------------
+// 기본: 768 ~ 1440px
+
 html {
-    font-size: 1.5vw;
+    font-size: 1.6vw;
     //1rem = html의 폰트 사이즈
 }
 
@@ -54,26 +60,6 @@ body {
     font-family: 'Lato', 'Spoqa Han Sans Neo';
 }
 
-//전체 설정 끝
-
-
-
-//전체 기본 텍스트
-
-.writing {
-    line-height: 1.55em;
-    text-align: center;
-    font-weight: 500;
-
-    max-width: 70vw;
-    margin: 2.2rem auto;
-}
-
-table,
-td {
-    font-weight: 500;
-    line-height: 1.55em;
-}
 
 //HEADER 헤더
 
@@ -82,12 +68,21 @@ header {
     // justify-content: space-between;
 
     font-family: 'GT-Ultra-Median-Regular';
-    font-size: 3.7rem;
+    font-size: 3.6rem;
 
     a {
         margin: 0 auto;
     }
 
+}
+
+.writing {
+    max-width: 70vw;
+    margin: 2.3rem auto;
+
+    line-height: $lh;
+    text-align: center;
+    font-weight: $medium;
 }
 
 
@@ -116,17 +111,46 @@ section {
     font-family: 'Spoqa Han Sans Neo';
 
     .rights {
+        font-family: 'Lato';
         text-align: center;
         width: 85%;
         font-size: 0.95rem;
     }
 }
 
-//세로형 스크린 반응형
+
+// -----------------------------------------
+// wide screen option
+
+
+@media screen and (min-width: 1280px) {
+    html {
+        font-size: 1.4vw;
+    }
+
+    body {
+        margin: 1.9rem 7.5rem;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    html {
+        font-size: 1.2vw;
+    }
+
+    body {
+        margin: 1.9rem 12rem;
+    }
+}
+
+
+// -----------------------------------------
+//vertical screen option
+
 
 @media screen and (max-width: 768px) {
     html {
-        font-size: 1.8vw;
+        font-size: 2.2vw;
     }
 
     body {

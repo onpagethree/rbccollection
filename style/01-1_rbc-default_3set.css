@@ -1,53 +1,62 @@
 @charset "UTF-8";
 /* 원두 3종 */
-section {
+.contents-holder .contents {
+  width: calc(33.3333333333% - 1rem);
   height: 34rem;
 }
-
-.contents {
-  width: calc(33.3333333333% - 1rem);
+.contents-holder .contents .img-holder {
+  height: 54%;
 }
-.contents .img-holder {
-  height: 57%;
-}
-
-.contents table {
+.contents-holder .contents table {
   margin: 0 1.5rem;
 }
 
+@media screen and (min-width: 1280px) {
+  html {
+    font-size: 1.4vw;
+  }
+  body {
+    margin: 1.9rem 7.5rem;
+  }
+}
+@media screen and (min-width: 1600px) {
+  html {
+    font-size: 1.2vw;
+  }
+  body {
+    margin: 1.9rem 12rem;
+  }
+}
 @media screen and (max-width: 768px) {
-  section {
+  .contents-holder {
     display: block;
     height: auto;
   }
-  section .contents {
+  .contents-holder .contents {
     width: 52vw;
-    height: 35rem;
+    height: 31rem;
     margin: 0 auto 2.3rem;
     display: flex;
   }
-  section .contents .img-holder {
+  .contents-holder .contents .img-holder {
     margin: 0 auto;
-    width: 76%;
-    height: 55%;
+    width: 80%;
+    height: 58%;
   }
-  section .contents table {
-    margin: auto 2.5rem;
-  }
-  section .contents table tr {
-    line-height: 1.5em;
+  .contents-holder .contents table {
+    margin: 0 2rem;
   }
 }
 @media screen and (max-width: 450px) {
-  section .contents {
-    width: 90vw;
-    height: 28rem;
+  .contents-holder .contents {
+    width: 85vw;
+    height: 29rem;
   }
-  section .contents .img-holder {
-    width: 78%;
-    height: 56%;
+  .contents-holder .contents .img-holder {
+    width: 76%;
+    height: 54%;
   }
-  section .contents table {
-    margin: auto 2rem;
+  .contents-holder .contents table {
+    margin: 0 1.8rem;
   }
 }

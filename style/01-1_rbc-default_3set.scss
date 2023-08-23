@@ -1,51 +1,77 @@
  /* 원두 3종 */
 
- section {
-   height: 34rem;
- }
+ // -----------------------------------------
+ // 기본: 768 ~ 1440px
 
+ .contents-holder {
+   .contents {
+     width: calc(100% / 3 - 1rem);
+     height: 34rem;
 
- .contents {
-   width: calc(100% / 3 - 1rem);
+     .img-holder {
+       height: 54%;
+     }
 
-   .img-holder {
-     height: 57%;
+     table {
+       margin: 0 1.5rem;
+     }
+
    }
  }
 
- .contents table {
-   margin: 0 1.5rem;
+
+ // -----------------------------------------
+ // wide screen option
+
+
+ @media screen and (min-width: 1280px) {
+   html {
+     font-size: 1.4vw;
+   }
+
+   body {
+     margin: 1.9rem 7.5rem;
+   }
  }
 
+ @media screen and (min-width: 1600px) {
+   html {
+     font-size: 1.2vw;
+   }
+
+   body {
+     margin: 1.9rem 12rem;
+   }
+ }
+
+
+ // -----------------------------------------
+ //vertical screen option
 
 
  @media screen and (max-width: 768px) {
 
-   section {
+   .contents-holder {
      display: block;
      height: auto;
 
      .contents {
        width: 52vw;
-       height: 35rem;
+       height: 31rem;
        margin: 0 auto 2.3rem;
-
+       // 원두 간격
        display: flex;
 
        .img-holder {
          margin: 0 auto;
 
-         width: 76%;
-         height: 55%;
+         width: 80%;
+         height: 58%;
        }
 
 
        table {
-         margin: auto 2.5rem;
-
-         tr {
-           line-height: 1.5em;
-         }
+         margin: 0 2rem;
        }
      }
    }
@@ -59,20 +85,19 @@
  @media screen and (max-width: 450px) {
 
    //컨텐츠 max-width: 450px
-   section {
+   .contents-holder {
      .contents {
-       width: 90vw;
-       height: 28rem;
+       width: 85vw;
+       height: 29rem;
 
        .img-holder {
-         width: 78%;
-         height: 56%;
+         width: 76%;
+         height: 54%;
        }
 
        table {
-         margin: auto 2rem;
+         margin: 0 1.8rem;
        }
      }
    }
-
  }
