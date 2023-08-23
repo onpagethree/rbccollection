@@ -25,7 +25,7 @@ a {
 }
 .popup .pop-title p {
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 400;
   margin-top: 1.5rem;
 }
 .popup #writing_popup {
@@ -113,12 +113,15 @@ a {
     margin: 2.2rem auto 5rem auto;
   }
   .popup #writing_popup {
-    width: 85vw;
+    width: 88vw;
     line-height: 1.8em;
     margin-top: 2.3em;
   }
   .popup .pop-info {
     width: 80vw;
+  }
+  .popup .pop-info td:nth-child(1) {
+    width: 25%;
   }
   .popup .pop-info td:nth-child(2) {
     padding: 0 0.7em;

@@ -1,5 +1,14 @@
 //팝업 페이지
-//2023-08-10
+
+
+$rbc-black: #000;
+$rbc-beige: #f7f7e8;
+$lh: 1.6em;
+$bold: 600;
+$medium: 400;
+
+
+
 a {
     cursor: pointer;
 }
@@ -8,8 +17,8 @@ a {
     display: none;
     overflow: auto;
 
-    background-color: #000;
-    color: #f7f7e8;
+    background-color: $rbc-black;
+    color: $rbc-beige;
 
     position: fixed;
     width: 100vw;
@@ -37,7 +46,7 @@ a {
 
         p {
             font-size: 1rem;
-            font-weight: 500;
+            font-weight: $medium;
 
             margin-top: 1.5rem;
         }
@@ -169,7 +178,7 @@ a {
         }
 
         #writing_popup {
-            width: 85vw;
+            width: 88vw;
             line-height: 1.8em;
             margin-top: 2.3em;
         }
@@ -178,6 +187,11 @@ a {
             width: 80vw;
 
             td {
+                &:nth-child(1) {
+                    width: 25%;
+                    // background-color: darkorange;
+                }
+
                 &:nth-child(2) {
                     padding: 0 .7em;
                     //    background-color: rgb(126, 126, 0);
