@@ -139,6 +139,7 @@ header {
 
         .img-holder {
             margin: 0 auto;
+
             width: 100%;
             height: 61%;
 
@@ -290,8 +291,6 @@ header {
             // 원두
 
             .img-holder {
-                margin: 0 auto;
-
                 width: 100%;
                 height: 58%;
             }
@@ -352,12 +351,13 @@ header {
             height: 27rem;
 
             .img-holder {
-                width: 150%;
+                width: 100%;
                 height: 54%;
 
                 img {
-                    display: flex;
-                    margin: 0 auto;
+                    top: 0;
+                    width: 100%;
+                    height: auto;
                 }
             }
 

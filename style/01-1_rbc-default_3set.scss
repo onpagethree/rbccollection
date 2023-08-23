@@ -1,4 +1,10 @@
  /* 원두 3종 */
+ $rbc-black: #000;
+ $rbc-beige: #f7f7e8;
+ $lh: 1.6em;
+ $bold: 600;
+ $medium: 400;
+
 
  // -----------------------------------------
  // 기본: 768 ~ 1440px
@@ -60,7 +66,6 @@
        height: 31rem;
        margin: 0 auto 2.3rem;
        // 원두 간격
-       display: flex;
 
        .img-holder {
          margin: 0 auto;

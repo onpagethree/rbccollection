@@ -43,14 +43,6 @@ body {
   font-family: "Lato", "Spoqa Han Sans Neo";
 }
 
-.writing {
-  max-width: 70vw;
-  margin: 2.3rem auto;
-  line-height: 1.55em;
-  text-align: center;
-  font-weight: 500;
-}
-
 header {
   display: flex;
   font-family: "GT-Ultra-Median-Regular";
@@ -58,6 +50,14 @@ header {
 }
 header a {
   margin: 0 auto;
+}
+
+.writing {
+  max-width: 70vw;
+  margin: 2.3rem auto;
+  line-height: 1.6em;
+  text-align: center;
+  font-weight: 400;
 }
 
 section {
@@ -81,6 +81,7 @@ section a {
   font-family: "Spoqa Han Sans Neo";
 }
 .footer .rights {
+  font-family: "Lato";
   text-align: center;
   width: 85%;
   font-size: 0.95rem;
@@ -131,7 +132,7 @@ section a {
 }
 @media screen and (max-width: 450px) {
   html {
-    font-size: 4vw;
+    font-size: 4.25vw;
   }
   body {
     margin: 2rem auto;
@@ -150,7 +151,7 @@ section a {
   }
   section a {
     font-size: 4.25rem;
-    margin: 1.5rem 2.2rem;
+    margin: 1.5rem 2rem;
   }
   .footer .rights {
     font-size: 0.75rem;
