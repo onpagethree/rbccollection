@@ -224,7 +224,7 @@ header {
 }
 @media screen and (max-width: 450px) {
   html {
-    font-size: 4vw;
+    font-size: 4.25vw;
   }
   body {
     margin: 2rem auto;
@@ -245,10 +245,15 @@ header {
   }
   .contents-holder .contents {
     width: 85vw;
-    height: 28rem;
+    height: 27rem;
   }
   .contents-holder .contents .img-holder {
+    width: 150%;
     height: 54%;
+  }
+  .contents-holder .contents .img-holder img {
+    display: flex;
+    margin: 0 auto;
   }
   .contents-holder .contents table {
     margin: 0 1.8rem;
