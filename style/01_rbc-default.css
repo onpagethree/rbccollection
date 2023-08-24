@@ -182,7 +182,6 @@ header {
     text-align: center;
     order: 3;
     font-size: 0.7em;
-    color: red;
   }
   header .head-info,
   header .month {
@@ -200,6 +199,7 @@ header {
     margin: 2.8rem auto;
   }
   .contents-holder {
+    display: block;
     height: auto;
   }
   .contents-holder .contents {

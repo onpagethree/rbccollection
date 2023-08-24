@@ -257,7 +257,6 @@ header {
             order: 3;
 
             font-size: .7em;
-            color: red;
         }
 
         .head-info,
@@ -284,7 +283,7 @@ header {
 
     //컨텐츠
     .contents-holder {
-        // display: block;
+        display: block;
         height: auto;
 
         .contents {
