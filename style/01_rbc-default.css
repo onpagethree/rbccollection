@@ -31,7 +31,6 @@ a:hover {
 table,
 td,
 tr {
-  line-height: 1.6em;
   vertical-align: top;
 }
 
@@ -94,15 +93,15 @@ header {
 }
 .contents-holder .contents {
   width: calc(50% - 1rem);
-  height: 32rem;
+  height: 30rem;
   background-color: #f7f7e8;
   display: flex;
   flex-direction: column;
 }
 .contents-holder .contents .img-holder {
   margin: 0 auto;
-  width: 100%;
-  height: 61%;
+  width: 86%;
+  height: 58%;
 }
 .contents-holder .contents .img-holder img {
   top: 0;
@@ -113,12 +112,17 @@ header {
   height: 0;
   color: #000;
   font-weight: 400;
-  margin: 0 2.25rem;
+  margin: 0 2rem;
+  border-spacing: 0.5em;
 }
 .contents-holder .contents table th {
   font-weight: 600;
   text-align: left;
   padding-bottom: 0.5em;
+}
+.contents-holder .contents table td,
+.contents-holder .contents table tr {
+  line-height: 1.3em;
 }
 .contents-holder .contents table tr > :first-child {
   width: 3.5rem;
@@ -204,15 +208,20 @@ header {
   }
   .contents-holder .contents {
     width: 55vw;
-    height: 31rem;
+    height: 30rem;
     margin: 0 auto 2.3rem;
   }
   .contents-holder .contents .img-holder {
-    width: 100%;
-    height: 62%;
+    width: 95%;
+    height: 60%;
   }
   .contents-holder .contents table {
     margin: 0 2rem;
+    border-spacing: 0.5em;
+  }
+  .contents-holder .contents table td,
+  .contents-holder .contents table tr {
+    line-height: 1.2em;
   }
   .footer {
     font-size: 1.5rem;
@@ -258,11 +267,6 @@ header {
   }
   .contents-holder .contents table {
     margin: 0 1.8rem;
-  }
-  .contents-holder .contents table,
-  .contents-holder .contents td,
-  .contents-holder .contents tr {
-    line-height: 1.25em;
     border-spacing: 0.4em;
   }
   .footer {

@@ -46,7 +46,6 @@ a:hover {
 table,
 td,
 tr {
-    line-height: $lh;
     vertical-align: top;
 }
 
@@ -130,7 +129,7 @@ header {
 
     .contents {
         width: calc(100% / 2 - 1rem);
-        height: 32rem;
+        height: 30rem;
         // 원두 높이 원두 높이
 
         background-color: $rbc-beige;
@@ -140,8 +139,8 @@ header {
         .img-holder {
             margin: 0 auto;
 
-            width: 100%;
-            height: 61%;
+            width: 86%;
+            height: 58%;
 
             img {
                 top: 0;
@@ -155,13 +154,19 @@ header {
             // 두 개의 원두 table 높이가 맞춰지느라 짧은 쪽의 행간이 넓어지는 이슈
             color: $rbc-black;
             font-weight: $medium;
-            // border-spacing: 0;
-            margin: 0 2.25rem;
+
+            margin: 0 2rem;
+            border-spacing: .5em;
 
             th {
                 font-weight: $bold;
                 text-align: left;
                 padding-bottom: .5em;
+            }
+
+            td,
+            tr {
+                line-height: 1.3em;
             }
 
             tr {
@@ -288,23 +293,28 @@ header {
 
         .contents {
             width: 55vw;
-            height: 31rem;
+            height: 30rem;
             margin: 0 auto 2.3rem;
             // 원두
 
             .img-holder {
-                width: 100%;
-                height: 62%;
+                width: 95%;
+                height: 60%;
             }
 
             table {
                 margin: 0 2rem;
+                border-spacing: .5em;
+
+                td,
+                tr {
+                    line-height: 1.2em;
+                }
             }
         }
     }
 
-
-    .footer {
+    =.footer {
         font-size: 1.5rem;
         margin: 4rem 2.5rem;
 
@@ -365,14 +375,7 @@ header {
 
             table {
                 margin: 0 1.8rem;
-            }
-
-            table,
-            td,
-            tr {
-                line-height: 1.25em;
                 border-spacing: .4em;
-
             }
         }
     }
