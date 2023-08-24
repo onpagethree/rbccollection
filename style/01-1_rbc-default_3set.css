@@ -32,12 +32,11 @@
     height: auto;
   }
   .contents-holder .contents {
-    width: 52vw;
+    width: 55vw;
     height: 31rem;
     margin: 0 auto 2.3rem;
   }
   .contents-holder .contents .img-holder {
-    margin: 0 auto;
     width: 80%;
     height: 58%;
   }
