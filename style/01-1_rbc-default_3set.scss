@@ -17,7 +17,7 @@
      height: 30rem;
 
      .img-holder {
-       width: 100%;
+       width: 95.15%;
        height: 55%;
      }
 
@@ -40,6 +40,14 @@
 
    body {
      margin: 1.9rem 7.5rem;
+   }
+
+   .contents-holder {
+     .contents {
+       .img-holder {
+         width: 90%;
+       }
+     }
    }
  }
 

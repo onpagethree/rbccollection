@@ -139,7 +139,7 @@ header {
         .img-holder {
             margin: 0 auto;
 
-            width: 86%;
+            width: 85%;
             height: 58%;
 
             img {
@@ -176,6 +176,7 @@ header {
             }
 
             .table_p {
+                font-size: .94em;
                 line-height: $lh;
             }
         }
@@ -213,6 +214,15 @@ header {
     body {
         margin: 1.9rem 7.5rem;
     }
+
+    .contents-holder {
+        .contents {
+            .img-holder {
+                width: 80%;
+            }
+        }
+    }
+
 }
 
 @media screen and (min-width: 1600px) {

@@ -100,7 +100,7 @@ header {
 }
 .contents-holder .contents .img-holder {
   margin: 0 auto;
-  width: 86%;
+  width: 85%;
   height: 58%;
 }
 .contents-holder .contents .img-holder img {
@@ -128,6 +128,7 @@ header {
   width: 3.5rem;
 }
 .contents-holder .contents table .table_p {
+  font-size: 0.94em;
   line-height: 1.6em;
 }
 
@@ -152,6 +153,9 @@ header {
   }
   body {
     margin: 1.9rem 7.5rem;
+  }
+  .contents-holder .contents .img-holder {
+    width: 80%;
   }
 }
 @media screen and (min-width: 1600px) {
