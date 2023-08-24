@@ -127,6 +127,9 @@ header {
 .contents-holder .contents table tr > :first-child {
   width: 3.5rem;
 }
+.contents-holder .contents table .table_p {
+  line-height: 1.6em;
+}
 
 .footer {
   display: flex;
@@ -216,7 +219,7 @@ header {
     height: 60%;
   }
   .contents-holder .contents table {
-    margin: 0 2rem;
+    margin: 0 1.8rem;
     border-spacing: 0.5em;
   }
   .contents-holder .contents table td,
@@ -266,7 +269,7 @@ header {
     height: auto;
   }
   .contents-holder .contents table {
-    margin: 0 1.8rem;
+    margin: 0 1.6rem;
     border-spacing: 0.4em;
   }
   .footer {
