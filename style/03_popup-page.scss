@@ -105,6 +105,24 @@ a {
 
 }
 
+// -----------------------------------------
+// wide screen option
+
+
+@media screen and (min-width: 1280px) {
+
+    .popup {
+        padding: 1.9rem 7.5rem;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+
+    .popup {
+        padding: 1.9rem 12rem;
+    }
+}
+
 
 // -----------------------------------------
 //vertical screen option
