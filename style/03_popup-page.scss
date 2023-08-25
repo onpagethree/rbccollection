@@ -8,8 +8,8 @@
 $rbc-black: #000;
 $rbc-beige: #f7f7e8;
 $lh: 1.6em;
-$bold: 700;
-$medium: 500;
+$bold: 600;
+$medium: 400;
 
 
 
@@ -86,9 +86,13 @@ a {
             text-align: left;
         }
 
-        td {
-            vertical-align: top;
+        td,
+        tr {
+            line-height: calc(#{$lh} * 1.05);
+        }
 
+
+        td {
             &:nth-child(1) {
                 width: 20%;
             }
