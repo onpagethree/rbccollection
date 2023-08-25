@@ -79,11 +79,11 @@ header {
   margin: 2.3rem auto;
   text-align: center;
   line-height: 1.6em;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 #readmore {
-  font-weight: 400;
+  font-weight: 500;
   text-decoration: underline;
 }
 
@@ -111,11 +111,11 @@ header {
 .contents-holder .contents table {
   height: 0;
   color: #000;
-  font-weight: 400;
+  font-weight: 500;
   margin: 0 2.4rem;
 }
 .contents-holder .contents table th {
-  font-weight: 600;
+  font-weight: 700;
   text-align: left;
   padding-bottom: 0.5em;
 }
