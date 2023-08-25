@@ -58,8 +58,8 @@ a {
 
     #writing_popup {
         width: 52vw;
-        line-height: 1.7em;
         margin-top: 5em;
+        line-height: calc(#{$lh} * 1.05);
     }
 
 

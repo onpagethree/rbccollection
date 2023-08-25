@@ -30,8 +30,8 @@ a {
 }
 .popup #writing_popup {
   width: 52vw;
-  line-height: 1.7em;
   margin-top: 5em;
+  line-height: calc(1.6em * 1.05);
 }
 .popup .pop-info {
   display: flex;
