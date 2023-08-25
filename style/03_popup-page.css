@@ -86,8 +86,8 @@ a {
   }
   .popup #writing_popup {
     width: 54vw;
-    line-height: 1.8em;
     margin-top: 5em;
+    line-height: calc(1.6em * 1.1);
   }
   .popup .pop-info {
     display: block;
@@ -100,10 +100,14 @@ a {
     margin-right: 0;
     margin-left: 0;
   }
-  .popup .pop-info td:nth-child(1) {
+  .popup .pop-info table td,
+  .popup .pop-info table tr {
+    line-height: calc(1.6em * 1.1);
+  }
+  .popup .pop-info table td:nth-child(1) {
     padding-right: 0.5em;
   }
-  .popup .pop-info td:nth-child(2) {
+  .popup .pop-info table td:nth-child(2) {
     padding: 0 1em;
   }
   .popup .pop-coloumn {
@@ -111,9 +115,6 @@ a {
   }
 }
 @media screen and (max-width: 450px) {
-  .writing {
-    line-height: 1.65em;
-  }
   .popup {
     padding: 2rem 0;
     padding-bottom: 12rem;
@@ -127,16 +128,15 @@ a {
   }
   .popup #writing_popup {
     width: 88vw;
-    line-height: 1.8em;
     margin-top: 2.3em;
   }
   .popup .pop-info {
     width: 88vw;
   }
-  .popup .pop-info td:nth-child(1) {
+  .popup .pop-info table td:nth-child(1) {
     width: 23%;
   }
-  .popup .pop-info td:nth-child(2) {
+  .popup .pop-info table td:nth-child(2) {
     padding: 0 0.7em;
   }
 }

@@ -155,8 +155,7 @@ header {
             color: $rbc-black;
             font-weight: $medium;
 
-            margin: 0 2rem;
-            border-spacing: .5em;
+            margin: 0 2.4rem;
 
             th {
                 font-weight: $bold;
@@ -166,7 +165,7 @@ header {
 
             td,
             tr {
-                line-height: 1.3em;
+                line-height: $lh;
             }
 
             tr {
@@ -177,7 +176,6 @@ header {
 
             .table_p {
                 font-size: .94em;
-                line-height: $lh;
             }
         }
     }
@@ -317,13 +315,7 @@ header {
             }
 
             table {
-                margin: 0 1.8rem;
-                border-spacing: .5em;
-
-                td,
-                tr {
-                    line-height: 1.2em;
-                }
+                margin: 0 2rem;
             }
         }
     }
@@ -388,8 +380,7 @@ header {
             }
 
             table {
-                margin: 0 1.6rem;
-                border-spacing: .4em;
+                margin: 0 1.8rem;
             }
         }
     }

@@ -129,8 +129,6 @@ a {
 
 
 @media screen and (max-width: 768px) {
-
-
     .popup {
         padding: 2.5rem 0;
 
@@ -146,8 +144,9 @@ a {
 
         #writing_popup {
             width: 54vw;
-            line-height: 1.8em;
             margin-top: 5em;
+
+            line-height: calc(#{$lh} * 1.1);
         }
 
 
@@ -163,13 +162,21 @@ a {
                 margin-left: 0;
             }
 
-            td {
-                &:nth-child(1) {
-                    padding-right: .5em;
+            table {
+
+                td,
+                tr {
+                    line-height: calc(#{$lh} * 1.1);
                 }
 
-                &:nth-child(2) {
-                    padding: 0 1em;
+                td {
+                    &:nth-child(1) {
+                        padding-right: .5em;
+                    }
+
+                    &:nth-child(2) {
+                        padding: 0 1em;
+                    }
                 }
             }
         }
@@ -183,10 +190,6 @@ a {
 //mobile 사이즈
 
 @media screen and (max-width: 450px) {
-    .writing {
-        line-height: 1.65em;
-    }
-
     .popup {
         padding: 2rem 0;
         padding-bottom: 12rem;
@@ -202,20 +205,21 @@ a {
 
         #writing_popup {
             width: 88vw;
-            line-height: 1.8em;
             margin-top: 2.3em;
         }
 
         .pop-info {
             width: 88vw;
 
-            td {
-                &:nth-child(1) {
-                    width: 23%;
-                }
+            table {
+                td {
+                    &:nth-child(1) {
+                        width: 23%;
+                    }
 
-                &:nth-child(2) {
-                    padding: 0 .7em;
+                    &:nth-child(2) {
+                        padding: 0 .7em;
+                    }
                 }
             }
         }

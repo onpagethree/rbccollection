@@ -112,8 +112,7 @@ header {
   height: 0;
   color: #000;
   font-weight: 400;
-  margin: 0 2rem;
-  border-spacing: 0.5em;
+  margin: 0 2.4rem;
 }
 .contents-holder .contents table th {
   font-weight: 600;
@@ -122,14 +121,13 @@ header {
 }
 .contents-holder .contents table td,
 .contents-holder .contents table tr {
-  line-height: 1.3em;
+  line-height: 1.6em;
 }
 .contents-holder .contents table tr > :first-child {
   width: 3.5rem;
 }
 .contents-holder .contents table .table_p {
   font-size: 0.94em;
-  line-height: 1.6em;
 }
 
 .footer {
@@ -223,12 +221,7 @@ header {
     height: 60%;
   }
   .contents-holder .contents table {
-    margin: 0 1.8rem;
-    border-spacing: 0.5em;
-  }
-  .contents-holder .contents table td,
-  .contents-holder .contents table tr {
-    line-height: 1.2em;
+    margin: 0 2rem;
   }
   .footer {
     font-size: 1.5rem;
@@ -273,8 +266,7 @@ header {
     height: auto;
   }
   .contents-holder .contents table {
-    margin: 0 1.6rem;
-    border-spacing: 0.4em;
+    margin: 0 1.8rem;
   }
   .footer {
     font-size: 1rem;
