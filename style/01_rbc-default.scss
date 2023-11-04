@@ -88,7 +88,8 @@ header {
     width: 16vw;
     padding-top: .2em;
 
-    font-size: .5em;
+    font-size: .44em;
+    line-height: 1.15em;
     text-align: right;
     text-transform: uppercase;
 
@@ -113,6 +114,13 @@ header {
     text-align: center;
     line-height: $lh;
     font-weight: $medium;
+}
+
+.message {
+    position: fixed;
+    // width: 100vw;
+    bottom: 3rem;
+    left: 16.5%;
 }
 
 #readmore {

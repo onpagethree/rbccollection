@@ -73,18 +73,10 @@ section a {
 }
 
 .footer {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 4rem auto;
-  font-family: "Spoqa Han Sans Neo";
-}
-.footer .rights {
-  font-family: "Lato";
   text-align: center;
-  width: 85%;
-  font-size: 0.95rem;
+  font-size: 0.8rem;
+  color: #f7f7e8;
+  opacity: 0.6;
 }
 
 @media screen and (min-width: 1280px) {

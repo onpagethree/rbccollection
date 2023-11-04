@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RBC COLLECTION</title>
+
+    <link rel="stylesheet" href="./style/01_rbc-default.css">
+    <link rel="stylesheet" href="./style/03_popup-page.css">
+    <link rel="stylesheet" href="./style/04_event-page.css">
+
+    <script async src="./coffee-popup.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="month">12</div>
+        <div><a href="./index.html">RBC COLLECTION</a></div>
+        <div class="head-info">2023</div>
+    </header>
+
+    <p class="writing Event">
+        2023년 RBC Collection을 통해서 소개드린 24종의 원두 중, <br>
+        나의 취향을 말해주는 커피가 있었나요?
+        <br><br>
+        <span class="highlight"> 좋은 기억으로 남은, 혹은 관심이 가는 원두를 <br> 아래 설문 링크를 통해 답해 주세요!</span> <br>
+        12월 원두 선정에 반영하려 합니다. <br>
+        추첨을 통해 무료 음료쿠폰도 제공합니다!
+        <br><br>
+        지난 3년간 래디컬브루잉클럽과 함께 해 주셔서 매우 감사드립니다.
+    </p>
+
+    <img class="imgE" src="./자산 1.svg" alt="">
+
+
+    <a class="previousM" href="./2023_11.html"></a>
+    <a class="nextM" href="./index.html"></a>
+
+
+
+
+    <!-- Footer Footer Footer -->
+
+
+    <footer class="footer">
+        <div>© 2023 radical brewing club. All rights reserved.</div>
+    </footer>
+
+
+
+
+
+
+    <script>
+
+
+        // 1번째 원두
+        var coffee01 = document.querySelector("#coffee01");
+
+        coffee01.addEventListener("focus", function () {
+            var modal01 = document.querySelector("#coffeeInfo01");
+            modal01.style.display = "block";
+        });
+
+        coffee01.addEventListener("blur", function () {
+            var modal01 = document.querySelector("#coffeeInfo01");
+            modal01.style.display = "none";
+        });
+
+        // 2번째 원두
+        var coffee02 = document.querySelector("#coffee02");
+
+        coffee02.addEventListener("focus", function () {
+            var modal02 = document.querySelector("#coffeeInfo02");
+            modal02.style.display = "block";
+        });
+
+        coffee02.addEventListener("blur", function () {
+            var modal02 = document.querySelector("#coffeeInfo02");
+            modal02.style.display = "none";
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'GT-Ultra-Median-Regular';
+    src: url(../source/GT-Ultra-Median-Regular.otf) format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+//spoqa hans
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+
+
+$rbc-black: #000;
+$rbc-beige: #f7f7e8;
+$lh: 1.6em;
+$bold: 600;
+$medium: 400;
+
+
+* {
+    box-sizing: border-box;
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+    scroll-behavior: smooth;
+
+    word-break: keep-all;
+}
+
+a,
+a:link,
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.75;
+    transition: all 0.1s linear;
+    cursor: pointer;
+}
+
+table,
+td,
+tr {
+    vertical-align: top;
+}
+
+
+// -----------------------------------------
+// 기본: 768 ~ 1440px
+
+
+html {
+    font-size: 1.6vw;
+    //1rem = html의 폰트 사이즈
+}
+
+.Event {
+    font-size: 1.08em;
+}
+
+.imgE {
+    width: 10rem;
+    display: flex;
+    margin: 5.2rem auto 0;
+}
+
+.highlight {
+    color: rgb(255, 100, 0);
+    font-weight: bold;
+}

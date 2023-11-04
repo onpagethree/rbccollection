@@ -109,22 +109,15 @@ section {
     }
 }
 
-//Footer
+//Footer Footer Footer
 .footer {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 
-    margin: 4rem auto;
-    font-family: 'Spoqa Han Sans Neo';
 
-    .rights {
-        font-family: 'Lato';
-        text-align: center;
-        width: 85%;
-        font-size: 0.95rem;
-    }
+    font-size: .8rem;
+    color: $rbc-beige;
+    opacity: .6;
+    // text-align: center;
 }
 
 
