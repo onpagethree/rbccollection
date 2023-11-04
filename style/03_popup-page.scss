@@ -18,6 +18,7 @@ a {
 }
 
 .popup {
+    z-index: 100;
     display: none;
     overflow: auto;
 
@@ -31,7 +32,6 @@ a {
     top: 0;
 
     padding: 1.9rem 4rem;
-
 
 
 
@@ -66,23 +66,13 @@ a {
 
     .pop-info {
         display: flex;
+        justify-content: center;
+        overflow: scroll;
 
-        &>:first-child {
-            margin-right: 1rem;
-        }
-
-        &>:last-child {
-            margin-left: 1rem;
-        }
-
-        .pop-coloumn {
-            flex: 1;
-            // background-color: aqua;
-        }
 
         table {
             margin: 0 0 2.5rem 0;
-            width: 100%;
+            width: 45vw;
             text-align: left;
         }
 
@@ -183,10 +173,6 @@ a {
                     }
                 }
             }
-        }
-
-        .pop-coloumn {
-            flex: none;
         }
     }
 }

@@ -121,15 +121,42 @@ header {
 }
 
 
+// Month 이동 버튼
+
+.previousM {
+    position: fixed;
+    height: 100vh;
+    z-index: 99;
+    top: 51%;
+    left: 2.45rem;
+
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+.nextM {
+    position: fixed;
+    height: 100vh;
+    z-index: 99;
+    top: 51%;
+    right: 2.45rem;
+
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+
+
 //컨텐츠 컨텐츠
 
 .contents-holder {
     display: flex;
     justify-content: space-between;
+    padding: 0 7.5vw;
 
     .contents {
-        width: calc(100% / 2 - 1rem);
-        height: 30rem;
+        width: calc(100% / 2 - .7rem);
+        height: 26.5rem;
         // 원두 높이 원두 높이
 
         background-color: $rbc-beige;
@@ -139,8 +166,8 @@ header {
         .img-holder {
             margin: 0 auto;
 
-            width: 85%;
-            height: 58%;
+            width: 90%;
+            height: 58.4%;
 
             img {
                 top: 0;
@@ -155,7 +182,7 @@ header {
             color: $rbc-black;
             font-weight: $medium;
 
-            margin: 0 2.4rem;
+            margin: 0 2rem;
 
             th {
                 font-weight: $bold;
@@ -166,6 +193,10 @@ header {
             td,
             tr {
                 line-height: $lh;
+            }
+
+            .Lh_short {
+                line-height: 1.45em
             }
 
             tr {
@@ -184,21 +215,20 @@ header {
 
 //Footer Footer Footer
 .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: fixed;
+    bottom: 1rem;
+    left: 0;
+    text-align: center;
+    width: 100vw;
 
-    margin: 4rem auto;
-    font-size: 1.5rem;
-    font-family: 'Spoqa Han Sans Neo';
 
-    .rights {
-        font-family: 'Lato';
-        text-align: center;
-        width: 85%;
-        font-size: 0.95rem;
-    }
+    font-size: .8rem;
+    color: $rbc-beige;
+    opacity: .6;
+    // text-align: center;
 }
+
+
 
 // -----------------------------------------
 // wide screen option
@@ -322,11 +352,6 @@ header {
 
     .footer {
         font-size: 1.5rem;
-        margin: 4rem 2.5rem;
-
-        .rights {
-            font-size: 1rem;
-        }
     }
 }
 

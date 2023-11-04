@@ -3,6 +3,7 @@ a {
 }
 
 .popup {
+  z-index: 100;
   display: none;
   overflow: auto;
   background-color: #000;
@@ -35,19 +36,12 @@ a {
 }
 .popup .pop-info {
   display: flex;
-}
-.popup .pop-info > :first-child {
-  margin-right: 1rem;
-}
-.popup .pop-info > :last-child {
-  margin-left: 1rem;
-}
-.popup .pop-info .pop-coloumn {
-  flex: 1;
+  justify-content: center;
+  overflow: scroll;
 }
 .popup .pop-info table {
   margin: 0 0 2.5rem 0;
-  width: 100%;
+  width: 45vw;
   text-align: left;
 }
 .popup .pop-info td,
@@ -110,9 +104,6 @@ a {
   }
   .popup .pop-info table td:nth-child(2) {
     padding: 0 1em;
-  }
-  .popup .pop-coloumn {
-    flex: none;
   }
 }
 @media screen and (max-width: 450px) {
