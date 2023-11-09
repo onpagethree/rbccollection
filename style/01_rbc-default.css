@@ -121,6 +121,7 @@ header {
   flex-direction: column;
 }
 .contents-holder .contents .likeButton {
+  z-index: 100;
   width: 50%;
   height: 25%;
   position: absolute;
@@ -129,7 +130,6 @@ header {
   display: flex;
   justify-content: flex-end;
   margin: 0.6rem;
-  z-index: 100;
   padding: 10px;
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0);
@@ -140,8 +140,6 @@ header {
 .contents-holder .contents .likeButtonsvg {
   fill: #000000;
   /* Initial color */
-  transition: fill 0.2s;
-  /* Transition for fill color change */
 }
 .contents-holder .contents .likeButton.liked svg {
   fill: #ff0000;
@@ -151,8 +149,6 @@ header {
   margin-top: 10px;
   color: #000000;
   /* Initial color for the counter */
-  transition: color 0.2s;
-  /* Transition for color change */
   font-size: 1.1rem;
   margin-left: 0.22em;
   bottom: 0.43em;
