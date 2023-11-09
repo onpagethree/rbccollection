@@ -174,13 +174,13 @@ header {
 
         // 좋아요 버튼!
         .likeButton {
-            z-index: 100;
             width: 50%;
             height: 25%;
-
             position: absolute;
             top: 0;
             right: 0;
+
+            z-index: 100;
 
             display: flex;
             justify-content: flex-end;

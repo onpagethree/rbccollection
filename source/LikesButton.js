@@ -1,10 +1,6 @@
-// 좋아요 버튼 구성하기
-// Function to set a cookie
-// Function to get the value of a cookie
-
 // Function to set a cookie
 function setCookie(name, value) {
-  document.cookie = `${name}=${value}; path=/; domain=onpagethree.github.io.`; // Change 'yourdomain.com' to your actual domain
+  document.cookie = `${name}=${value}; path=/; domain=onpagethree.github.io.`;
 }
 
 // Function to get the value of a cookie
@@ -17,17 +13,13 @@ function getCookie(name) {
 let likeCounts = [];
 
 // Retrieve like counts from cookies or default to 0
-for (let i = 0; i < 24; i++) {
+for (let i = 0; i < 24; ++i) {
   likeCounts[i] = parseInt(getCookie(`likeCount${i}`)) || 0;
   updateLikeCounter(i);
 }
 
-// Get all like buttons and counters
-const likeButtons = document.querySelectorAll('.likeButton');
-const likeCounters = document.querySelectorAll('.likeCounter');
-
-// Add click event listeners to each like button
-likeButtons.forEach((button, index) => {
+// Event listener for like buttons
+document.querySelectorAll('.likeButton').forEach((button, index) => {
   button.addEventListener('click', () => {
     toggleLike(index);
   });
@@ -40,20 +32,24 @@ function toggleLike(index) {
   // Store the updated like count in a cookie
   setCookie(`likeCount${index}`, likeCounts[index]);
 
-  const likeCounter = likeCounters[index];
+  const likeButton = document.querySelectorAll('.likeButton')[index];
+  const likeCounter = document.querySelectorAll('.likeCounter')[index];
+
+  likeButton.classList.toggle('liked');
 
   // Apply 'liked' class to likeCounter when there's at least 1 like
   if (likeCounts[index] >= 1) {
     likeCounter.classList.add('liked');
   }
 
-  // Reset the 'liked' class after 1 second
+  // Reset the 'liked' class after 1 seconds
   setTimeout(() => {
+    likeButton.classList.remove('liked');
     likeCounter.classList.remove('liked');
-  }, 1000);
+  }, 1200);
 }
 
 function updateLikeCounter(index) {
-  const likeCounter = likeCounters[index];
+  const likeCounter = document.querySelectorAll('.likeCounter')[index];
   likeCounter.innerHTML = likeCounts[index];
 }

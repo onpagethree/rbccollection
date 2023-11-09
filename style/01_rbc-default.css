@@ -121,12 +121,12 @@ header {
   flex-direction: column;
 }
 .contents-holder .contents .likeButton {
-  z-index: 100;
   width: 50%;
   height: 25%;
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 100;
   display: flex;
   justify-content: flex-end;
   margin: 0.6rem;
