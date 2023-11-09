@@ -22,12 +22,6 @@ a:visited {
   text-decoration: none;
 }
 
-a:hover {
-  opacity: 0.75;
-  transition: all 0.1s linear;
-  cursor: pointer;
-}
-
 table,
 td,
 tr {
@@ -97,7 +91,7 @@ header {
 .previousM {
   position: fixed;
   height: 100vh;
-  z-index: 99;
+  z-index: 98;
   top: 51%;
   left: 2.45rem;
   font-size: 3rem;
@@ -107,7 +101,7 @@ header {
 .nextM {
   position: fixed;
   height: 100vh;
-  z-index: 99;
+  z-index: 98;
   top: 51%;
   right: 2.45rem;
   font-size: 3rem;
@@ -126,6 +120,47 @@ header {
   display: flex;
   flex-direction: column;
 }
+.contents-holder .contents .likeButton {
+  width: 50%;
+  height: 25%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0.6rem;
+  z-index: 100;
+  padding: 10px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  outline: none;
+  /* Remove default button outline */
+}
+.contents-holder .contents .likeButtonsvg {
+  fill: #000000;
+  /* Initial color */
+  transition: fill 0.2s;
+  /* Transition for fill color change */
+}
+.contents-holder .contents .likeButton.liked svg {
+  fill: #ff0000;
+  /* Red color when liked */
+}
+.contents-holder .contents .likeButton .likeCounter {
+  margin-top: 10px;
+  color: #000000;
+  /* Initial color for the counter */
+  transition: color 0.2s;
+  /* Transition for color change */
+  font-size: 1.1rem;
+  margin-left: 0.22em;
+  bottom: 0.43em;
+}
+.contents-holder .contents .likeButton .likeCounter.liked {
+  color: #ff0000;
+  /* Red color when liked */
+}
 .contents-holder .contents .img-holder {
   margin: 0 auto;
   width: 90%;
@@ -135,6 +170,14 @@ header {
   top: 0;
   width: 100%;
   height: auto;
+}
+.contents-holder .contents #coffee01,
+.contents-holder .contents #coffee02 {
+  z-index: 100;
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  bottom: 0;
 }
 .contents-holder .contents table {
   height: 0;
