@@ -1,36 +1,18 @@
-// Function to set a cookie
-function setCookie(name, value) {
-  document.cookie = `${name}=${value}; path=/; domain=onpagethree.github.io.`;
-}
-
-// Function to get the value of a cookie
-function getCookie(name) {
-  const match = document.cookie.match(new RegExp(`(^| )${name}=([^;]+)`));
-  return match ? match[2] : null;
-}
-
 // Initialize an array to store like counts
 let likeCounts = [];
 
-// Retrieve like counts from cookies or default to 0
-for (let i = 0; i < 24; ++i) {
-  likeCounts[i] = parseInt(getCookie(`likeCount${i}`)) || 0;
+// Retrieve like counts from local storage or default to 0
+for (let i = 0; i < 2; i++) {
+  likeCounts[i] = parseInt(localStorage.getItem(`likeCount${i}`)) || 0;
   updateLikeCounter(i);
 }
-
-// Event listener for like buttons
-document.querySelectorAll('.likeButton').forEach((button, index) => {
-  button.addEventListener('click', () => {
-    toggleLike(index);
-  });
-});
 
 function toggleLike(index) {
   likeCounts[index]++;
   updateLikeCounter(index);
 
-  // Store the updated like count in a cookie
-  setCookie(`likeCount${index}`, likeCounts[index]);
+  // Store the updated like count in local storage
+  localStorage.setItem(`likeCount${index}`, likeCounts[index]);
 
   const likeButton = document.querySelectorAll('.likeButton')[index];
   const likeCounter = document.querySelectorAll('.likeCounter')[index];
@@ -42,7 +24,7 @@ function toggleLike(index) {
     likeCounter.classList.add('liked');
   }
 
-  // Reset the 'liked' class after 1 seconds
+  // Reset the 'liked' class and color after 2 seconds
   setTimeout(() => {
     likeButton.classList.remove('liked');
     likeCounter.classList.remove('liked');
