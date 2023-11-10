@@ -2,7 +2,7 @@
 let likeCounts = [];
 
 // Retrieve like counts from local storage or default to 0
-for (let i = 0; i < 2; i++) {
+for (let i = 0; i < 24; i++) {
   likeCounts[i] = parseInt(localStorage.getItem(`likeCount${i}`)) || 0;
   updateLikeCounter(i);
 }
