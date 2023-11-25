@@ -73,6 +73,10 @@ section a {
 }
 
 .footer {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 0;
+  width: 100%;
   text-align: center;
   font-size: 0.8rem;
   color: #f7f7e8;
@@ -118,8 +122,9 @@ section a {
     font-size: 6rem;
     margin: 2rem 3rem;
   }
-  .footer .rights {
-    font-size: 1rem;
+  .footer {
+    position: relative;
+    margin: 4rem 0 0;
   }
 }
 @media screen and (max-width: 450px) {
@@ -144,8 +149,5 @@ section a {
   section a {
     font-size: 4.25rem;
     margin: 1.5rem 2rem;
-  }
-  .footer .rights {
-    font-size: 0.75rem;
   }
 }

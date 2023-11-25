@@ -16,21 +16,21 @@
      width: calc(100% / 3 - .7rem);
      height: 26.5rem;
 
-     font-size: .94rem;
+     font-size: .98rem;
 
      .img-holder {
        width: 95.15%;
-       height: 53%;
+       height: auto;
      }
 
      table {
        margin: 0 1.2rem;
-     }
 
-     .Lh_short_2 {
-       line-height: 1.3em;
-     }
+       .table_p {
+         line-height: $lh;
+       }
 
+     }
    }
  }
 
@@ -51,7 +51,7 @@
    .contents-holder {
      .contents {
        .img-holder {
-         width: 90%;
+         width: 80%;
        }
      }
    }
@@ -75,18 +75,16 @@
  @media screen and (max-width: 768px) {
 
    .contents-holder {
-     height: auto;
 
      .contents {
        width: 55vw;
-       height: 31rem;
+       height: 30rem;
        margin: 0 auto 2.3rem;
        // 원두 간격
 
        .img-holder {
          //  margin: 0 auto;
-
-         width: 72.2%;
+         width: 75%;
          height: 60%;
        }
 
@@ -95,7 +93,6 @@
        }
      }
    }
-
  }
 
 
@@ -103,21 +100,34 @@
  //mobile 사이즈
 
  @media screen and (max-width: 450px) {
+   html {
+     font-size: 4.25vw;
+   }
+
+   body {
+     margin: 2rem auto;
+   }
 
    //컨텐츠 max-width: 450px
    .contents-holder {
      .contents {
        width: 85vw;
-       height: 28rem;
+       height: auto;
 
        .img-holder {
-         width: 76%;
-         height: 55%;
-       }
+         width: 80%;
+         height: auto;
 
-       table {
-         margin: 0 1.8rem;
+         img {
+           top: -0.02rem;
+           width: 100%;
+           height: auto;
+         }
        }
+     }
+
+     table {
+       margin: 0 1.8rem;
      }
    }
  }

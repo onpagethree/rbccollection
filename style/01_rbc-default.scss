@@ -37,12 +37,6 @@ a:visited {
     text-decoration: none;
 }
 
-// // a:hover {
-//     opacity: 0.75;
-//     transition: all 0.1s linear;
-//     cursor: pointer;
-// }
-
 table,
 td,
 tr {
@@ -226,6 +220,7 @@ header {
 
             .table_p {
                 font-size: .94em;
+                line-height: $lh;
             }
         }
     }
@@ -345,8 +340,9 @@ header {
     }
 
 
-    //컨텐츠
+    //컨텐츠  max-width: 768px
     .contents-holder {
+
         display: block;
         height: auto;
 

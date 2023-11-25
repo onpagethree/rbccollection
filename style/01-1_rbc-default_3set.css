@@ -6,17 +6,17 @@
 .contents-holder .contents {
   width: calc(33.3333333333% - 0.7rem);
   height: 26.5rem;
-  font-size: 0.94rem;
+  font-size: 0.98rem;
 }
 .contents-holder .contents .img-holder {
   width: 95.15%;
-  height: 53%;
+  height: auto;
 }
 .contents-holder .contents table {
   margin: 0 1.2rem;
 }
-.contents-holder .contents .Lh_short_2 {
-  line-height: 1.3em;
+.contents-holder .contents table .table_p {
+  line-height: 1.6em;
 }
 
 @media screen and (min-width: 1280px) {
@@ -27,7 +27,7 @@
     margin: 1.9rem 7.5rem;
   }
   .contents-holder .contents .img-holder {
-    width: 90%;
+    width: 80%;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -39,16 +39,13 @@
   }
 }
 @media screen and (max-width: 768px) {
-  .contents-holder {
-    height: auto;
-  }
   .contents-holder .contents {
     width: 55vw;
-    height: 31rem;
+    height: 30rem;
     margin: 0 auto 2.3rem;
   }
   .contents-holder .contents .img-holder {
-    width: 72.2%;
+    width: 75%;
     height: 60%;
   }
   .contents-holder .contents table {
@@ -56,15 +53,26 @@
   }
 }
 @media screen and (max-width: 450px) {
+  html {
+    font-size: 4.25vw;
+  }
+  body {
+    margin: 2rem auto;
+  }
   .contents-holder .contents {
     width: 85vw;
-    height: 28rem;
+    height: auto;
   }
   .contents-holder .contents .img-holder {
-    width: 76%;
-    height: 55%;
+    width: 80%;
+    height: auto;
   }
-  .contents-holder .contents table {
+  .contents-holder .contents .img-holder img {
+    top: -0.02rem;
+    width: 100%;
+    height: auto;
+  }
+  .contents-holder table {
     margin: 0 1.8rem;
   }
 }
