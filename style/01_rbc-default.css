@@ -120,43 +120,6 @@ header {
   display: flex;
   flex-direction: column;
 }
-.contents-holder .contents .likeButton {
-  width: 50%;
-  height: 25%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 100;
-  display: flex;
-  justify-content: flex-end;
-  margin: 0.6rem;
-  padding: 10px;
-  cursor: pointer;
-  background-color: rgba(0, 0, 0, 0);
-  border: none;
-  outline: none;
-  /* Remove default button outline */
-}
-.contents-holder .contents .likeButtonsvg {
-  fill: #000000;
-  /* Initial color */
-}
-.contents-holder .contents .likeButton.liked svg {
-  fill: #ff0000;
-  /* Red color when liked */
-}
-.contents-holder .contents .likeButton .likeCounter {
-  margin-top: 10px;
-  color: #000000;
-  /* Initial color for the counter */
-  font-size: 1.1rem;
-  margin-left: 0.22em;
-  bottom: 0.43em;
-}
-.contents-holder .contents .likeButton .likeCounter.liked {
-  color: #ff0000;
-  /* Red color when liked */
-}
 .contents-holder .contents .img-holder {
   margin: 0 auto;
   width: 90%;
