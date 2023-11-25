@@ -1,133 +1,102 @@
- /* 원두 3종 */
- $rbc-black: #000;
- $rbc-beige: #f7f7e8;
- $lh: 1.6em;
- $bold: 600;
- $medium: 400;
+/* 원두 3종 */
+$rbc-black: #000;
+$rbc-beige: #f7f7e8;
+$lh: 1.6em;
+$bold: 600;
+$medium: 400;
 
 
- // -----------------------------------------
- // 기본: 768 ~ 1440px
+// -----------------------------------------
+// 기본: 768 ~ 1440px
 
- .contents-holder {
-   margin: 0 -2rem;
+.contents-holder {
+  padding: 0 3.5vw;
 
-   .contents {
-     width: calc(100% / 3 - .7rem);
-     height: 26.5rem;
+  .contents {
+    width: calc(100% / 3 - .7rem);
+    height: 26.5rem;
 
-     font-size: .98rem;
+    font-size: .9rem;
 
-     .img-holder {
-       width: 95.15%;
-       height: auto;
-     }
+    .img-holder {
+      width: 92%;
+      height: auto;
+    }
 
-     table {
-       margin: 0 1.2rem;
+    table {
+      margin: 0 1.2rem;
 
-       .table_p {
-         line-height: $lh;
-       }
+      .table_p {
+        line-height: $lh;
+      }
 
-     }
-   }
- }
-
-
- // -----------------------------------------
- // wide screen option
-
-
- @media screen and (min-width: 1280px) {
-   html {
-     font-size: 1.4vw;
-   }
-
-   body {
-     margin: 1.9rem 7.5rem;
-   }
-
-   .contents-holder {
-     .contents {
-       .img-holder {
-         width: 80%;
-       }
-     }
-   }
- }
-
- @media screen and (min-width: 1600px) {
-   html {
-     font-size: 1.2vw;
-   }
-
-   body {
-     margin: 1.9rem 12rem;
-   }
- }
-
-
- // -----------------------------------------
- //vertical screen option
-
-
- @media screen and (max-width: 768px) {
-
-   .contents-holder {
-
-     .contents {
-       width: 55vw;
-       height: 30rem;
-       margin: 0 auto 2.3rem;
-       // 원두 간격
-
-       .img-holder {
-         //  margin: 0 auto;
-         width: 75%;
-         height: 60%;
-       }
-
-       table {
-         margin: 0 2rem;
-       }
-     }
-   }
- }
+    }
+  }
+}
 
 
 
- //mobile 사이즈
+// -----------------------------------------
+//vertical screen option
 
- @media screen and (max-width: 450px) {
-   html {
-     font-size: 4.25vw;
-   }
 
-   body {
-     margin: 2rem auto;
-   }
+@media screen and (max-width: 768px) {
 
-   //컨텐츠 max-width: 450px
-   .contents-holder {
-     .contents {
-       width: 85vw;
-       height: auto;
+  .contents-holder {
 
-       .img-holder {
-         width: 80%;
-         height: auto;
+    .contents {
+      width: 55vw;
+      height: 30rem;
+      // 원두 간격
+      font-size: 1.05rem;
 
-         img {
-           top: -0.02rem;
-           width: 100%;
-           height: auto;
-         }
-       }
-     }
 
-     table {
-       margin: 0 1.8rem;
-     }
-   }
- }
+      .img-holder {
+        //  margin: 0 auto;
+        width: 75%;
+        height: 60%;
+
+      }
+
+      table {
+        margin: 0 2rem;
+      }
+    }
+  }
+}
+
+
+
+//  //mobile 사이즈
+
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 4.25vw;
+  }
+
+  body {
+    margin: 2rem auto;
+  }
+
+  //컨텐츠 max-width: 450px
+  .contents-holder {
+    .contents {
+      width: 85vw;
+      height: 31rem;
+
+      .img-holder {
+        width: 80%;
+        height: auto;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+    table {
+      margin: 0 1.8rem;
+    }
+  }
+}

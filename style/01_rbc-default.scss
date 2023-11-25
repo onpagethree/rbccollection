@@ -158,7 +158,7 @@ header {
     padding: 0 7.5vw;
 
     .contents {
-        width: calc(100% / 2 - .7rem);
+        width: calc(100% / 2 - 0.7rem);
         height: 26.5rem;
         // 원두 높이 원두 높이
 
@@ -206,11 +206,9 @@ header {
 
             td,
             tr {
-                line-height: 1.2em;
+                line-height: 1.25em;
                 padding-bottom: 0.4em;
             }
-
-
 
             tr {
                 &>:first-child {
@@ -229,9 +227,8 @@ header {
 
 //Footer Footer Footer
 .footer {
-    position: fixed;
-    bottom: 1.5rem;
-    left: 0;
+    position: relative;
+    margin: 1.5rem auto;
     width: 100%;
 
     text-align: center;
@@ -281,6 +278,7 @@ header {
 
 
 @media screen and (max-width: 768px) {
+
     html {
         font-size: 2.2vw;
         //1rem = html의 폰트 사이즈
@@ -350,11 +348,15 @@ header {
             width: 55vw;
             height: 30rem;
             margin: 0 auto 2.3rem;
-            // 원두
+            // 원두 간격
 
             .img-holder {
                 width: 95%;
                 height: 60%;
+
+                img {
+                    top: -0.03rem;
+                }
             }
 
             table {
@@ -421,7 +423,6 @@ header {
                 height: auto;
 
                 img {
-                    top: -0.02rem;
                     width: 100%;
                     height: auto;
                 }

@@ -1,15 +1,15 @@
 @charset "UTF-8";
 /* 원두 3종 */
 .contents-holder {
-  margin: 0 -2rem;
+  padding: 0 3.5vw;
 }
 .contents-holder .contents {
   width: calc(33.3333333333% - 0.7rem);
   height: 26.5rem;
-  font-size: 0.98rem;
+  font-size: 0.9rem;
 }
 .contents-holder .contents .img-holder {
-  width: 95.15%;
+  width: 92%;
   height: auto;
 }
 .contents-holder .contents table {
@@ -19,30 +19,11 @@
   line-height: 1.6em;
 }
 
-@media screen and (min-width: 1280px) {
-  html {
-    font-size: 1.4vw;
-  }
-  body {
-    margin: 1.9rem 7.5rem;
-  }
-  .contents-holder .contents .img-holder {
-    width: 80%;
-  }
-}
-@media screen and (min-width: 1600px) {
-  html {
-    font-size: 1.2vw;
-  }
-  body {
-    margin: 1.9rem 12rem;
-  }
-}
 @media screen and (max-width: 768px) {
   .contents-holder .contents {
     width: 55vw;
     height: 30rem;
-    margin: 0 auto 2.3rem;
+    font-size: 1.05rem;
   }
   .contents-holder .contents .img-holder {
     width: 75%;
@@ -61,14 +42,13 @@
   }
   .contents-holder .contents {
     width: 85vw;
-    height: auto;
+    height: 31rem;
   }
   .contents-holder .contents .img-holder {
     width: 80%;
     height: auto;
   }
   .contents-holder .contents .img-holder img {
-    top: -0.02rem;
     width: 100%;
     height: auto;
   }
