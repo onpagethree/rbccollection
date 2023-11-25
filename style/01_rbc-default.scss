@@ -135,7 +135,7 @@ header {
     position: fixed;
     height: 100vh;
     z-index: 98;
-    top: 51%;
+    top: 48vh;
     left: 2.45rem;
 
     font-size: 3rem;
@@ -146,12 +146,13 @@ header {
     position: fixed;
     height: 100vh;
     z-index: 98;
-    top: 51%;
+    top: 48vh;
     right: 2.45rem;
 
     font-size: 3rem;
     font-weight: lighter;
 }
+
 
 
 
@@ -402,6 +403,14 @@ header {
     .writing {
         width: 92vw;
         margin: 2.4rem auto 2.6rem;
+    }
+
+    .previousM {
+        left: 1.4rem;
+    }
+
+    .nextM {
+        right: 1.4rem;
     }
 
     //컨텐츠 max-width: 450px
