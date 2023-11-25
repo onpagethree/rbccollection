@@ -151,10 +151,8 @@ header {
 }
 .contents-holder .contents table td,
 .contents-holder .contents table tr {
-  line-height: 1.6em;
-}
-.contents-holder .contents table .Lh_short {
-  line-height: 1.45em;
+  line-height: 1.2em;
+  padding-bottom: 0.4em;
 }
 .contents-holder .contents table tr > :first-child {
   width: 3.5rem;
@@ -165,10 +163,10 @@ header {
 
 .footer {
   position: fixed;
-  bottom: 1rem;
+  bottom: 1.5rem;
   left: 0;
+  width: 100%;
   text-align: center;
-  width: 100vw;
   font-size: 0.8rem;
   color: #f7f7e8;
   opacity: 0.6;
@@ -233,7 +231,7 @@ header {
     display: block;
   }
   .writing {
-    width: 60vw;
+    width: 85vw;
     margin: 2.8rem auto;
   }
   .contents-holder {
@@ -253,7 +251,8 @@ header {
     margin: 0 2rem;
   }
   .footer {
-    font-size: 1.5rem;
+    position: relative;
+    margin: 4rem 0 0;
   }
 }
 @media screen and (max-width: 450px) {
@@ -279,25 +278,20 @@ header {
   }
   .contents-holder .contents {
     width: 85vw;
-    height: 27rem;
+    height: auto;
+    padding-bottom: 1.2rem;
   }
   .contents-holder .contents .img-holder {
     width: 100%;
-    height: 58%;
+    height: auto;
   }
   .contents-holder .contents .img-holder img {
-    top: 0;
+    top: -0.02rem;
     width: 100%;
     height: auto;
   }
   .contents-holder .contents table {
     margin: 0 1.8rem;
-  }
-  .footer {
-    font-size: 1rem;
-    margin: 4rem 1.5rem;
-  }
-  .footer .rights {
-    font-size: 0.75rem;
+    font-size: 1.1em;
   }
 }

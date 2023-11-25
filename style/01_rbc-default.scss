@@ -171,8 +171,6 @@ header {
         display: flex;
         flex-direction: column;
 
-
-
         .img-holder {
             margin: 0 auto;
 
@@ -213,12 +211,11 @@ header {
 
             td,
             tr {
-                line-height: $lh;
+                line-height: 1.2em;
+                padding-bottom: 0.4em;
             }
 
-            .Lh_short {
-                line-height: 1.45em
-            }
+
 
             tr {
                 &>:first-child {
@@ -237,16 +234,14 @@ header {
 //Footer Footer Footer
 .footer {
     position: fixed;
-    bottom: 1rem;
+    bottom: 1.5rem;
     left: 0;
+    width: 100%;
+
     text-align: center;
-    width: 100vw;
-
-
     font-size: .8rem;
     color: $rbc-beige;
     opacity: .6;
-    // text-align: center;
 }
 
 
@@ -344,7 +339,7 @@ header {
 
     //전체 텍스트 max-width: 768px
     .writing {
-        width: 60vw;
+        width: 85vw;
         margin: 2.8rem auto;
     }
 
@@ -372,7 +367,8 @@ header {
     }
 
     .footer {
-        font-size: 1.5rem;
+        position: relative;
+        margin: 4rem 0 0;
     }
 }
 
@@ -412,14 +408,15 @@ header {
     .contents-holder {
         .contents {
             width: 85vw;
-            height: 27rem;
+            height: auto;
+            padding-bottom: 1.2rem;
 
             .img-holder {
                 width: 100%;
-                height: 58%;
+                height: auto;
 
                 img {
-                    top: 0;
+                    top: -0.02rem;
                     width: 100%;
                     height: auto;
                 }
@@ -427,17 +424,8 @@ header {
 
             table {
                 margin: 0 1.8rem;
+                font-size: 1.1em;
             }
-        }
-    }
-
-
-    .footer {
-        font-size: 1rem;
-        margin: 4rem 1.5rem;
-
-        .rights {
-            font-size: .75rem;
         }
     }
 }
