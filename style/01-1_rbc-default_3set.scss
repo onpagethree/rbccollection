@@ -25,11 +25,11 @@ $medium: 400;
 
     table {
       margin: 0 1.2rem;
+    }
 
-      .table_p {
-        line-height: $lh;
-      }
-
+    .table {
+      margin: 0 1.2rem;
+      font-size: .94em;
     }
   }
 }
@@ -46,20 +46,28 @@ $medium: 400;
 
     .contents {
       width: 55vw;
-      height: 30rem;
+      height: auto;
+      margin: 0 auto 2.3rem;
       // 원두 간격
-      font-size: 1.05rem;
-
+      padding-bottom: 2.5rem;
+      // 원두 안의 여유 간격
 
       .img-holder {
-        //  margin: 0 auto;
         width: 75%;
         height: 60%;
-
       }
 
       table {
         margin: 0 2rem;
+
+        font-size: 1rem;
+      }
+
+      .table {
+        margin: 0 2rem;
+        padding-bottom: 1.5rem;
+
+        font-size: 1rem;
       }
     }
   }
@@ -80,18 +88,24 @@ $medium: 400;
 
   //컨텐츠 max-width: 450px
   .contents-holder {
+
     .contents {
       width: 85vw;
-      height: 31rem;
+      height: auto;
+      padding-bottom: 1.6rem;
 
       .img-holder {
         width: 80%;
         height: auto;
+      }
 
-        img {
-          width: 100%;
-          height: auto;
-        }
+      table {
+        margin: 0 1.35rem;
+      }
+
+      .table {
+        margin: 0 1.35rem;
+        padding-bottom: 1.4rem;
       }
     }
   }

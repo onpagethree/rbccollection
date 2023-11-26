@@ -15,15 +15,17 @@
 .contents-holder .contents table {
   margin: 0 1.2rem;
 }
-.contents-holder .contents table .table_p {
-  line-height: 1.6em;
+.contents-holder .contents .table {
+  margin: 0 1.2rem;
+  font-size: 0.94em;
 }
 
 @media screen and (max-width: 768px) {
   .contents-holder .contents {
     width: 55vw;
-    height: 30rem;
-    font-size: 1.05rem;
+    height: auto;
+    margin: 0 auto 2.3rem;
+    padding-bottom: 2.5rem;
   }
   .contents-holder .contents .img-holder {
     width: 75%;
@@ -31,6 +33,12 @@
   }
   .contents-holder .contents table {
     margin: 0 2rem;
+    font-size: 1rem;
+  }
+  .contents-holder .contents .table {
+    margin: 0 2rem;
+    padding-bottom: 1.5rem;
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 450px) {
@@ -42,14 +50,18 @@
   }
   .contents-holder .contents {
     width: 85vw;
-    height: 31rem;
+    height: auto;
+    padding-bottom: 1.6rem;
   }
   .contents-holder .contents .img-holder {
     width: 80%;
     height: auto;
   }
-  .contents-holder .contents .img-holder img {
-    width: 100%;
-    height: auto;
+  .contents-holder .contents table {
+    margin: 0 1.35rem;
+  }
+  .contents-holder .contents .table {
+    margin: 0 1.35rem;
+    padding-bottom: 1.4rem;
   }
 }

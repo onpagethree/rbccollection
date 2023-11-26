@@ -185,8 +185,7 @@ header {
             z-index: 100;
             position: absolute;
             width: 100%;
-            height: 70%;
-            bottom: 0;
+            height: 50%;
             // background-color: aqua;
         }
 
@@ -215,9 +214,17 @@ header {
                     width: 3.5rem;
                 }
             }
+        }
 
-            .table_p {
-                font-size: .94em;
+        .table {
+            margin: 0 2rem;
+            color: $rbc-black;
+
+            .th {
+                padding-bottom: .5em;
+            }
+
+            p {
                 line-height: $lh;
             }
         }
@@ -340,15 +347,16 @@ header {
 
     //컨텐츠  max-width: 768px
     .contents-holder {
-
         display: block;
         height: auto;
 
         .contents {
             width: 55vw;
-            height: 30rem;
+            height: auto;
             margin: 0 auto 2.3rem;
             // 원두 간격
+            padding-bottom: 2.5rem;
+            // 원두 안의 여유 간격
 
             .img-holder {
                 width: 95%;
@@ -361,6 +369,11 @@ header {
 
             table {
                 margin: 0 2rem;
+            }
+
+            .table {
+                margin: 0 2rem;
+                padding-bottom: 1.5rem;
             }
         }
     }
@@ -416,7 +429,7 @@ header {
         .contents {
             width: 85vw;
             height: auto;
-            padding-bottom: 1.2rem;
+            padding-bottom: 1.6rem;
 
             .img-holder {
                 width: 100%;
@@ -429,7 +442,12 @@ header {
             }
 
             table {
-                margin: 0 1.2rem;
+                margin: 0 1.35rem;
+            }
+
+            .table {
+                margin: 0 1.35rem;
+                padding-bottom: 1.4rem;
             }
         }
     }
