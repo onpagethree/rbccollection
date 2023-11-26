@@ -134,6 +134,7 @@ header {
 
     font-size: 3rem;
     font-weight: lighter;
+    mix-blend-mode: difference;
 }
 
 .nextM {
@@ -145,6 +146,7 @@ header {
 
     font-size: 3rem;
     font-weight: lighter;
+    mix-blend-mode: difference;
 }
 
 
@@ -206,7 +208,7 @@ header {
             td,
             tr {
                 line-height: 1.25em;
-                padding-bottom: 0.4em;
+                padding-bottom: 0.35em;
             }
 
             tr {
@@ -369,6 +371,15 @@ header {
 
             table {
                 margin: 0 2rem;
+
+                th {
+                    padding-bottom: .75em;
+                }
+
+                td,
+                tr {
+                    padding-bottom: 0.4em;
+                }
             }
 
             .table {
@@ -443,6 +454,12 @@ header {
 
             table {
                 margin: 0 1.35rem;
+                font-size: 1.05em;
+
+                td,
+                tr {
+                    padding-bottom: 0.5em;
+                }
             }
 
             .table {
