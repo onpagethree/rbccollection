@@ -158,7 +158,7 @@ header {
 @media screen and (max-width: 768px) {
 
   html {
-    font-size: 4.25vw;
+    font-size: 4vw;
     //1rem = html의 폰트 사이즈
   }
 
@@ -210,11 +210,12 @@ header {
     }
 
 
-    .footer {
-      position: relative;
-      margin: 4rem 0 0;
-    }
+
   }
 
+  .footer {
+    position: relative;
+    margin: 3em 0 1rem;
+  }
 
 }
