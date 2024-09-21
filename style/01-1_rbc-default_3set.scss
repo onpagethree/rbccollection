@@ -9,103 +9,21 @@ $medium: 400;
 // -----------------------------------------
 // 기본: 768 ~ 1440px
 
-.contents-holder {
-  padding: 0 3.5vw;
 
-  .contents {
-    width: calc(100% / 3 - .7rem);
-    height: 26.5rem;
-
-    font-size: .9rem;
-
-    .img-holder {
-      width: 92%;
-      height: auto;
-    }
-
-    table {
-      margin: 0 1.2rem;
-    }
-
-    .table {
-      margin: 0 1.2rem;
-      font-size: .94em;
-    }
-  }
-}
-
-
-
-// -----------------------------------------
-//vertical screen option
-
-
-@media screen and (max-width: 768px) {
-
+.container {
   .contents-holder {
+    padding: 0;
 
     .contents {
-      width: 55vw;
-      height: auto;
-      margin: 0 auto 2.3rem;
-      // 원두 간격
-      padding-bottom: 2.5rem;
-      // 원두 안의 여유 간격
+      width: calc(100% / 3);
+      height: 25.5rem;
+      // 원두 높이 원두 높이
 
-      .img-holder {
-        width: 75%;
-        height: 60%;
-      }
+
+      font-size: .85rem;
 
       table {
-        margin: 0 2rem;
-
-        font-size: 1rem;
-      }
-
-      .table {
-        margin: 0 2rem;
-        padding-bottom: 1.5rem;
-
-        font-size: 1rem;
-      }
-    }
-  }
-}
-
-
-
-//  //mobile 사이즈
-
-@media screen and (max-width: 450px) {
-  html {
-    font-size: 4.25vw;
-  }
-
-  body {
-    margin: 2rem auto;
-  }
-
-  //컨텐츠 max-width: 450px
-  .contents-holder {
-
-    .contents {
-      width: 85vw;
-      height: auto;
-      padding-bottom: 1.6rem;
-
-      .img-holder {
-        width: 80%;
-        height: auto;
-      }
-
-      table {
-        margin: 0 1.35rem;
-      }
-
-      .table {
-        margin: 0 1.35rem;
-        padding-bottom: 1.4rem;
+        margin: 0 1.2rem;
       }
     }
   }

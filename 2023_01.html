@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RBC COLLECTION</title>
 
-    <link rel="stylesheet" href="./style/01_rbc-default.css">
+    <link rel="stylesheet" href="./style/default.css">
+    <link rel="stylesheet" href="./style/page.css">
     <link rel="stylesheet" href="./style/03_popup-page.css">
     <link rel="stylesheet" href="./style/01-1_rbc-default_3set.css">
+
     <script src="./coffee-popup.js" defer></script>
     <script src="./SideMonthBtn.js" defer></script>
+    <script src="./scrollMotion.js"></script>
+    <!-- 설명글 더보기 기능 -->
+    <script src="./caption.js"></script>
 </head>
 
 <body>
@@ -22,106 +27,133 @@
         </div>
     </header>
 
+    <div class="container">
 
-    <p class="writing">
-        RBC는 올 한 해 동안 더 다양한 커피를 경험하고 여러분에게 소개하기 위한 계획을 세웠습니다. <br>
-        1월 테마는 ‘도전(Challenge)적인 커피’입니다. <br>
-        <a href="#textFull01" id="readmore">···</a>
-    </p>
+        <p class="writing">
+            <span class="more-text" style="display:none;">
+                2023년 새해가 밝았습니다.
+                여러분은 올해 어떤 새로운 도전을 계획하고 계신가요?
+                <br><br>
+                우리는 새해가 되면 도전적인 목표를 세우곤 합니다.
+                '매일 운동하기’ 같은 꾸준함이 필요한 계획을 세우기도 하고, ’안 가본 나라 몇 개국’ 여행하기와 같은 변화가 필요한 목표를 만들기도 합니다.
+                <br><br>
+            </span>
+            RBC는 올 한 해 동안 더 다양한 커피를 경험하고 여러분에게 소개하기 위한 계획을 세웠습니다. <br>
+            그 시작으로 1월에는 ‘도전(Challenge)적인 커피’ 3종을 수집해 소개드립니다.
+            <span class="more-text" style="display:none;">
+                <br><br>
+                이번 커피는 각각 ‘포도맛 웰치스’, ‘적포도’, ‘청포도’를 연상시키는 포도 3총사입니다.
+                <br><br>
+                모두 도전적인 생산 방식을 통해 탄생한 커피입니다.
+                매력적인 향미를 끌어내기 위한 커피 생산자들의 도전 이야기를 아래 커피 소개에 적어두었습니다.
+                여유가 있으실 때 읽어보면서 드시면 더 즐거운 커피 경험이 되실거에요.
+                <br><br>
+                여러분도 신포도 보듯 멀리서 보기만 하지 말고,
+                오며 가며 RBC에 들르셔서 낯설지만 매력적인 커피의 맛에 도전해보시는 것은 어떨까요?
+                <br><br>
+                새해가 밝았습니다.
+                여러분은 어떤 새로운 도전을 계획하고 계신가요?
+                도전적인 경험으로 가득한 한 해가 되시길 바랍니다.
+            </span>
+            <br>
+            <button id="toggle-button">더 읽기</button>
+        </p>
 
 
 
-    <a class="previousM" href="./index.html"></a>
-    <a class="nextM" href="./2023_02.html"></a>
+        <a class="previousM" href="./index.html"></a>
+        <a class="nextM" href="./2023_02.html"></a>
 
 
-    <section class="contents-holder">
+        <section class="contents-holder">
 
-        <div class="contents">
-            <a href="#coffeeInfo01" id="coffee01"></a>
-            <div class="img-holder">
-                <img src="./2023_01-svg/01-coffee-1_tag.svg" alt="">
+            <div class="contents">
+                <a href="#coffeeInfo01" id="coffee01"></a>
+                <div class="img-holder">
+                    <img src="./2023_01-svg/01-coffee-1_tag.svg" alt="">
+                </div>
+
+                <table>
+                    <th colspan="2">포도맛 웰치스 같이 위트있는 커피</th>
+                    <tr>
+                        <td>농장</td>
+                        <td>Villarazon</td>
+                    </tr>
+                    <tr>
+                        <td>지역</td>
+                        <td>Colombia Armenia, Quindio</td>
+                    </tr>
+                    <tr>
+                        <td>품종</td>
+                        <td>Pink Bourbon</td>
+                    </tr>
+                    <tr>
+                        <td>가공</td>
+                        <td>Honey <br>
+                            (Wine Yeast, Grape)</td>
+                    </tr>
+                </table>
             </div>
 
-            <table>
-                <th colspan="2">포도맛 웰치스 같이 위트있는 커피</th>
-                <tr>
-                    <td>농장</td>
-                    <td>Villarazon</td>
-                </tr>
-                <tr>
-                    <td>지역</td>
-                    <td>Colombia Armenia, Quindio</td>
-                </tr>
-                <tr>
-                    <td>품종</td>
-                    <td>Pink Bourbon</td>
-                </tr>
-                <tr>
-                    <td>가공</td>
-                    <td>Honey <br>
-                        (Wine Yeast, Grape)</td>
-                </tr>
-            </table>
-        </div>
 
+            <div class="contents">
+                <a href="#coffeeInfo02" id="coffee02"></a>
+                <div class="img-holder">
+                    <img src="./2023_01-svg/01-coffee-2_tag.svg" alt="">
+                </div>
 
-        <div class="contents">
-            <a href="#coffeeInfo02" id="coffee02"></a>
-            <div class="img-holder">
-                <img src="./2023_01-svg/01-coffee-2_tag.svg" alt="">
+                <table>
+                    <th colspan="2">적포도 같이 달큰한 원두</th>
+                    <tr>
+                        <td>농장</td>
+                        <td>Potosi</td>
+                    </tr>
+                    <tr>
+                        <td>지역</td>
+                        <td>Colombia Calecedonia, Valle Del Cauca</td>
+                    </tr>
+                    <tr>
+                        <td>품종</td>
+                        <td>Colombia</td>
+                    </tr>
+                    <tr>
+                        <td>가공</td>
+                        <td>X.O Natural</td>
+                    </tr>
+                </table>
             </div>
 
-            <table>
-                <th colspan="2">적포도 같이 달큰한 원두</th>
-                <tr>
-                    <td>농장</td>
-                    <td>Potosi</td>
-                </tr>
-                <tr>
-                    <td>지역</td>
-                    <td>Colombia Calecedonia, Valle Del Cauca</td>
-                </tr>
-                <tr>
-                    <td>품종</td>
-                    <td>Colombia</td>
-                </tr>
-                <tr>
-                    <td>가공</td>
-                    <td>X.O Natural</td>
-                </tr>
-            </table>
-        </div>
 
+            <div class="contents">
+                <a href="#coffeeInfo03" id="coffee03"></a>
+                <div class="img-holder">
+                    <img src="./2023_01-svg/01-coffee-3_tag.svg" alt="">
+                </div>
 
-        <div class="contents">
-            <a href="#coffeeInfo03" id="coffee03"></a>
-            <div class="img-holder">
-                <img src="./2023_01-svg/01-coffee-3_tag.svg" alt="">
+                <table>
+                    <th colspan="2">청포도 같이 상큼한 원두</th>
+                    <tr>
+                        <td>농장</td>
+                        <td>Tamiru + Tsige</td>
+                    </tr>
+                    <tr>
+                        <td>지역</td>
+                        <td>Ethiopia Sidama Bensa + Ethiopia Yirgacheffe Gedeo Aricha</td>
+                    </tr>
+                    <tr>
+                        <td>품종</td>
+                        <td>74165, 74158, Wolisho</td>
+                    </tr>
+                    <tr>
+                        <td>가공</td>
+                        <td>Natural + Washed</td>
+                    </tr>
+                </table>
             </div>
 
-            <table>
-                <th colspan="2">청포도 같이 상큼한 원두</th>
-                <tr>
-                    <td>농장</td>
-                    <td>Tamiru + Tsige</td>
-                </tr>
-                <tr>
-                    <td>지역</td>
-                    <td>Ethiopia Sidama Bensa + Ethiopia Yirgacheffe Gedeo Aricha</td>
-                </tr>
-                <tr>
-                    <td>품종</td>
-                    <td>74165, 74158, Wolisho</td>
-                </tr>
-                <tr>
-                    <td>가공</td>
-                    <td>Natural + Washed</td>
-                </tr>
-            </table>
-        </div>
+        </section>
+    </div>
 
-    </section>
 
     <!-- Footer Footer Footer -->
 
@@ -132,43 +164,6 @@
 
 
 
-
-    <!--팝업 페이지 -->
-
-
-    <section class="popup" id="textFull01">
-        <header>
-            <div class="month">02</div>
-            <div><a href="./index.html">RBC COLLECTION</a></div>
-            <div class="head-info">
-                Roasting
-            </div>
-        </header>
-
-
-        <p class="writing" id="writing_popup">
-            2023년 새해가 밝았습니다.
-            여러분은 올해 어떤 새로운 도전을 계획하고 계신가요?
-            <br><br>
-            우리는 새해가 되면 도전적인 목표를 세우곤 합니다.
-            '매일 운동하기’ 같은 꾸준함이 필요한 계획을 세우기도 하고, ’안 가본 나라 몇 개국’ 여행하기와 같은 변화가 필요한 목표를 만들기도 합니다.
-            <br><br>
-            RBC는 올 한 해 동안 더 다양한 커피를 경험하고 여러분에게 소개하기 위한 계획을 세웠습니다.
-            그 시작으로 1월에는 ‘도전(Challenge)적인 커피’ 3종을 수집해 소개드립니다.
-            이번 커피는 각각 ‘포도맛 웰치스’, ‘적포도’, ‘청포도’를 연상시키는 포도 3총사입니다.
-            <br><br>
-            모두 도전적인 생산 방식을 통해 탄생한 커피입니다.
-            매력적인 향미를 끌어내기 위한 커피 생산자들의 도전 이야기를 아래 커피 소개에 적어두었습니다.
-            여유가 있으실 때 읽어보면서 드시면 더 즐거운 커피 경험이 되실거에요.
-            <br><br>
-            여러분도 신포도 보듯 멀리서 보기만 하지 말고,
-            오며 가며 RBC에 들르셔서 낯설지만 매력적인 커피의 맛에 도전해보시는 것은 어떨까요?
-            <br><br>
-            새해가 밝았습니다.
-            여러분은 어떤 새로운 도전을 계획하고 계신가요?
-            도전적인 경험으로 가득한 한 해가 되시길 바랍니다.
-        </p>
-    </section>
 
 
 

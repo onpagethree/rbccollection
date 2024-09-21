@@ -1,0 +1,196 @@
+@charset "UTF-8";
+.month {
+  width: 16vw;
+  height: auto;
+}
+
+.head-info {
+  width: 16vw;
+  padding-top: 0.2em;
+  font-size: 0.44em;
+  line-height: 1.15em;
+  text-align: right;
+  text-transform: uppercase;
+}
+.head-info .map {
+  width: 9rem;
+  position: absolute;
+  top: -0.4rem;
+  right: -1.2rem;
+}
+.head-info p {
+  display: none;
+}
+
+.previousM {
+  position: fixed;
+  height: 100vh;
+  z-index: 98;
+  top: 48vh;
+  left: 2.45rem;
+  font-size: 3rem;
+  font-weight: lighter;
+  mix-blend-mode: difference;
+}
+
+.nextM {
+  position: fixed;
+  height: 100vh;
+  z-index: 98;
+  top: 48vh;
+  right: 2.45rem;
+  font-size: 3rem;
+  font-weight: lighter;
+  mix-blend-mode: difference;
+}
+
+.container .writing {
+  width: 60vw;
+  margin: 2.3rem auto;
+  text-align: center;
+  line-height: 1.6em;
+  font-weight: 400;
+}
+.container #toggle-button {
+  background: none;
+  /* 배경 제거 */
+  border: none;
+  /* 테두리 제거 */
+  cursor: pointer;
+  /* 마우스 포인터를 가리키는 손 모양으로 변경 */
+  color: #ff3700;
+  font-size: 0.8em;
+  /* 밑줄 추가 */
+  margin-bottom: 1.5em;
+  margin-top: 1em;
+}
+.container #toggle-button:hover {
+  opacity: 0.5;
+}
+.container .message {
+  position: fixed;
+  bottom: 3rem;
+  left: 16.5%;
+}
+.container .contents-holder {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 7vw;
+  gap: 1rem;
+}
+.container .contents-holder .contents {
+  width: calc(50% - 0.7rem);
+  height: 27rem;
+  background-color: #f7f7e8;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+.container .contents-holder .contents .front,
+.container .contents-holder .contents .back {
+  backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.container .contents-holder .contents .front .img-holder,
+.container .contents-holder .contents .back .img-holder {
+  margin: 0 auto;
+  width: 90%;
+  height: 58.4%;
+}
+.container .contents-holder .contents .front .img-holder img,
+.container .contents-holder .contents .back .img-holder img {
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+.container .contents-holder .contents .front table,
+.container .contents-holder .contents .back table {
+  width: 19em;
+  height: 0;
+  margin: 0 2rem;
+  color: #000;
+  font-weight: 400;
+}
+.container .contents-holder .contents .front table th,
+.container .contents-holder .contents .back table th {
+  font-weight: 600;
+  text-align: left;
+  padding-bottom: 0.5em;
+}
+.container .contents-holder .contents .front table td,
+.container .contents-holder .contents .front table tr,
+.container .contents-holder .contents .back table td,
+.container .contents-holder .contents .back table tr {
+  line-height: 1.25em;
+  padding-bottom: 0.35em;
+}
+.container .contents-holder .contents .front table td p,
+.container .contents-holder .contents .front table tr p,
+.container .contents-holder .contents .back table td p,
+.container .contents-holder .contents .back table tr p {
+  line-height: 1.5em;
+}
+.container .contents-holder .contents .front table tr > :first-child,
+.container .contents-holder .contents .back table tr > :first-child {
+  width: 3.5rem;
+}
+.container .contents-holder .contents .back {
+  transform: rotateY(180deg);
+}
+.container .contents-holder .contents.flipped {
+  transform: rotateY(180deg);
+}
+.container .contents-holder .contents #coffee01,
+.container .contents-holder .contents #coffee02 {
+  z-index: 100;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .container .writing {
+    width: 82vw;
+    margin: 2.8rem auto;
+  }
+  .container .previousM {
+    left: 1rem;
+  }
+  .container .nextM {
+    right: 1rem;
+  }
+  .container .contents-holder {
+    display: block;
+    height: auto;
+    padding: 0;
+  }
+  .container .contents-holder .contents {
+    width: 88vw;
+    height: auto;
+    margin: 0 auto 1.5rem;
+    padding-bottom: 1.25rem;
+  }
+  .container .contents-holder .contents .img-holder {
+    width: 96%;
+    height: 60%;
+  }
+  .container .contents-holder .contents .img-holder img {
+    top: -0.03rem;
+  }
+  .container .contents-holder .contents table {
+    margin: 0 2rem;
+  }
+  .container .contents-holder .contents table th {
+    padding-bottom: 0.75em;
+  }
+  .container .contents-holder .contents table td,
+  .container .contents-holder .contents table tr {
+    padding-bottom: 0.4em;
+  }
+}

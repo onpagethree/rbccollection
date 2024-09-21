@@ -7,10 +7,15 @@
 
     <title>RBC COLLECTION</title>
 
-    <link rel="stylesheet" href="./style/01_rbc-default.css">
+    <link rel="stylesheet" href="./style/default.css">
+    <link rel="stylesheet" href="./style/page.css">
     <link rel="stylesheet" href="./style/03_popup-page.css">
+
     <script src="./coffee-popup.js" defer></script>
     <script src="./SideMonthBtn.js" defer></script>
+    <script src="./scrollMotion.js"></script>
+    <!-- 설명글 더보기 기능 -->
+    <script src="./caption.js"></script>
 </head>
 
 <body>
@@ -23,84 +28,140 @@
     </header>
 
 
-    <p class="writing">
-        3월에는 새로 만나 뵐 손님들을 떠올리며, 봄에 어울리는 화사한 ‘꽃차 같은 커피’를 소개합니다. <br>
-        꽃 향을 담은 향긋한 커피를 들고 캠퍼스를 거닐면 더 즐거운 봄 날이 되실 거에요 🙂<br>
-        <a href="#textFull01" id="readmore">···</a>
-    </p>
+
+    <div class="container">
+        <p class="writing">
+            3월에는 새로 만나 뵐 손님들을 떠올리며, 봄에 어울리는 화사한 ‘꽃차 같은 커피’를 소개합니다. <br>
+            꽃 향을 담은 향긋한 커피를 들고 캠퍼스를 거닐면 더 즐거운 봄 날이 되실 거에요 🙂
+            <span class="more-text" style="display:none;">
+                <br> <br>
+                여러분은 봄의 어떤 점이 좋으신가요?
+                따사로운 햇살, 알록달록한 색과 향기, 활기찬 분위기까지
+                별일 없어도 괜스레 기분 좋은 계절, 봄이 성큼 다가왔습니다.
+                <br><br>
+                매년 3월이면 래디컬브루잉클럽(RBC)에도 밝은 기운이 가득합니다.
+                개학을 맞은 캠퍼스의 생동감이 고려대 정문에 위치한 RBC까지 전해집니다.
+            </span>
+            <br>
+            <button id="toggle-button">더 읽기</button>
+        </p>
 
 
 
-    <a class="previousM" href="./2023_02.html"></a>
-    <a class="nextM" href="./2023_04.html"></a>
+        <a class="previousM" href="./2023_02.html"></a>
+        <a class="nextM" href="./2023_04.html"></a>
 
 
-    <section class="contents-holder">
+        <section class="contents-holder">
 
-        <div class="contents">
+            <div class="contents">
+                <div class="front">
+                    <!-- 앞면에 표시할 내용 -->
+                    <a href="" id="coffee01"> </a>
+                    <div class="img-holder">
+                        <img src="./2023_03-svg/03-coffee-1_tag.svg" alt="">
+                    </div>
+                    <table>
+                        <th colspan="2">라벤더향 은은한 원두</th>
+                        <tr>
+                            <td>생산자</td>
+                            <td>Ayele Tulu</td>
+                        </tr>
+                        <tr>
+                            <td>가공소</td>
+                            <td>Becha Village</td>
+                        </tr>
+                        <tr>
+                            <td>지역</td>
+                            <td>Ethiopia, Sidama</td>
+                        </tr>
+                        <tr>
+                            <td>품종</td>
+                            <td>Ethiopian Heirloom</td>
+                        </tr>
+                        <tr>
+                            <td>가공</td>
+                            <td>Wahsed</td>
+                        </tr>
+                    </table>
+                </div>
 
-            <a href="#coffeeInfo01" id="coffee01"> </a>
-
-            <div class="img-holder">
-                <img src="./2023_03-svg/03-coffee-1_tag.svg" alt="">
+                <div class="back">
+                    <!-- 뒷면에 표시할 내용 -->
+                    <a href="" id="coffee01"> </a>
+                    <div class="img-holder">
+                        <img src="./2023_03-svg/03-coffee-1_tag.svg" alt="">
+                    </div>
+                    <table>
+                        <thead>
+                            <th colspan="2">에티오피아 데메카 베차</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>은은한 라벤더향과 단맛이 조화로운 커피입니다. 차 같이 깔끔하고 섬세한 향미를 즐기시는 분께 추천드려요.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
-            <table>
-                <th colspan=" 2">라벤더향 은은한 원두</th>
-                <tr>
-                    <td>생산자</td>
-                    <td>Ayele Tulu</td>
-                </tr>
-                <tr>
-                    <td>가공소</td>
-                    <td>Becha Village</td>
-                </tr>
-                <tr>
-                    <td>지역</td>
-                    <td>Ethiopia, Sidama</td>
-                </tr>
-                <tr>
-                    <td>품종</td>
-                    <td>Ethiopian Heirloom</td>
-                </tr>
-                <tr>
-                    <td>가공</td>
-                    <td>Wahsed</td>
-                </tr>
-            </table>
-        </div>
 
 
-        <div class="contents">
+            <div class="contents">
+                <div class="front">
+                    <!-- 앞면에 표시할 내용 -->
+                    <a href="#coffeeInfo02" id="coffee02"> </a>
+                    <div class="img-holder">
+                        <img src="./2023_03-svg/03-coffee-2_tag.svg" alt="">
+                    </div>
+                    <table>
+                        <th colspan="2">히비스커스향 화려한 원두</th>
+                        <tr>
+                            <td>농장</td>
+                            <td>Paraiso92</td>
+                        </tr>
+                        <tr>
+                            <td>지역</td>
+                            <td>Ethiopia, Piendamo, Cauca </td>
+                        </tr>
+                        <tr>
+                            <td>품종</td>
+                            <td>Pink Bourbon</td>
+                        </tr>
+                        <tr>
+                            <td>가공</td>
+                            <td>Double Anaeoribc Fermentation </td>
+                        </tr>
+                    </table>
+                </div>
 
-            <a href="#coffeeInfo02" id="coffee02"> </a>
-            <div class="img-holder">
-                <img src="./2023_03-svg/03-coffee-2_tag.svg" alt="">
+                <div class="back">
+                    <!-- 뒷면에 표시할 내용 -->
+                    <a href="#coffeeInfo02" id="coffee02"> </a>
+                    <div class="img-holder">
+                        <img src="./2023_03-svg/03-coffee-2_tag.svg" alt="">
+                    </div>
+                    <table>
+                        <thead>
+                            <th colspan="2">콜롬비아 파라이소92 로즈 부케</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>히비스커스와 장미향이 연상되는 커피입니다.
+                                        무산소 가공을 거친 직관적인 꽃 계열 향미를 경험해보고 싶은 분께 추천드려요.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
-            <table>
-                <th colspan="2">히비스커스향 화려한 원두</th>
-                <tr>
-                    <td>농장</td>
-                    <td>Paraiso92</td>
-                </tr>
-                <tr>
-                    <td>지역</td>
-                    <td>Ethiopia, Piendamo, Cauca </td>
-                </tr>
-                <tr>
-                    <td>품종</td>
-                    <td>Pink Bourbon</td>
-                </tr>
-                <tr>
-                    <td>가공</td>
-                    <td>Double Anaeoribc Fermentation </td>
-                </tr>
-            </table>
-        </div>
+    </div>
 
 
-    </section>
 
     <!-- Footer Footer Footer -->
 
@@ -109,142 +170,21 @@
         <div>© 2023 radical brewing club. All rights reserved.</div>
     </footer>
 
+    <script>
+        // coffee01에 대한 flip 이벤트 리스너
+        document.getElementById("coffee01").addEventListener("click", function (e) {
+            e.preventDefault();
+            const content = this.closest('.contents');
+            content.classList.toggle('flipped');
+        });
 
-
-
-    <!--팝업 페이지 -->
-
-
-    <section class="popup" id="textFull01">
-        <header>
-            <div class="month">03</div>
-            <div><a href="./index.html">RBC COLLECTION</a></div>
-            <div class="head-info">
-                Spring
-            </div>
-        </header>
-
-
-        <p class="writing" id="writing_popup">
-            여러분은 봄의 어떤 점이 좋으신가요?
-            따사로운 햇살, 알록달록한 색과 향기, 활기찬 분위기까지
-            별일 없어도 괜스레 기분 좋은 계절 봄이 성큼 다가왔습니다.
-            <br><br>
-            매년 3월이면 래디컬브루잉클럽(RBC)에도 밝은 기운이 가득합니다.
-            개학을 맞은 캠퍼스의 생동감이 고려대 정문에 위치한 RBC까지 전해집니다.
-            <br><br>
-            3월에는 새로 만나 뵐 손님들을 떠올리며, 봄에 어울리는 화사한 ‘꽃차 같은 커피’를 소개합니다.
-            꽃 향을 담은 향긋한 커피를 들고 캠퍼스를 거닐면 더 즐거운 봄 날이 되실 거에요🙂
-        </p>
-    </section>
-
-
-
-    <!--팝업 페이지 + 원두 정보 -->
-
-    <section class="popup" id="coffeeInfo01">
-        <div class="pop-title">
-            Ethiopia Demeka Becha
-            <p>에티오피아 데메카 베차</p>
-        </div>
-
-        <div class="pop-info">
-            <div>
-                <table>
-                    <tr>
-                        <td>로스팅</td>
-                        <td>빈브라더스</td>
-                    </tr>
-                </table>
-                <table>
-                    <tr>
-                        <td>생두</td>
-                        <td>생산자</td>
-                        <td>Ayele Tulu</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>가공소</td>
-                        <td>Becha Village</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>지역</td>
-                        <td>Ethiopia, Sidama</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>품종</td>
-                        <td>Ethiopian Heirloom</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>가공</td>
-                        <td>Wahsed</td>
-                    </tr>
-                </table>
-                <table>
-                    <tr>
-                        <td>RBC 추천</td>
-                        <td>은은한 라벤더향과 단맛이 조화로운 커피입니다.
-                            차 같이 깔끔하고 섬세한 향미를 즐기시는 분께 추천드려요.</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </section>
-
-    <section class="popup" id="coffeeInfo02">
-        <div class="pop-title">
-            Colombia Paraiso 92 Rose Bouquet
-            <p>콜롬비아 파라이소92 로즈 부케</p>
-        </div>
-
-        <div class="pop-info">
-            <div>
-                <table>
-                    <tr>
-                        <td>로스팅</td>
-                        <td>벙커컴퍼니</td>
-                    </tr>
-                </table>
-                <table>
-                    <tr>
-                        <td>생두</td>
-                        <td>농장</td>
-                        <td>Paraiso92</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>지역</td>
-                        <td>Ethiopia, Piendamo, Cauca </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>품종</td>
-                        <td>Pink Bourbon</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>가공</td>
-                        <td>Double Anaeoribc Fermentation </td>
-                    </tr>
-                </table>
-                <table>
-                    <tr>
-                        <td>RBC 추천</td>
-                        <td>히비스커스와 장미향이 연상되는 커피입니다.
-                            무산소 가공을 거친 직관적인 꽃 계열 향미를 경험해보고 싶은 분께 추천드려요.
-                        </td>
-                    </tr>
-                </table>
-            </div>
-
-
-        </div>
-    </section>
-
-
+        // coffee02에 대한 flip 이벤트 리스너
+        document.getElementById("coffee02").addEventListener("click", function (e) {
+            e.preventDefault();
+            const content = this.closest('.contents');
+            content.classList.toggle('flipped');
+        });
+    </script>
 </body>
 
 </html>

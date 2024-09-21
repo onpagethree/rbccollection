@@ -1,0 +1,220 @@
+@font-face {
+  font-family: 'GT-Ultra-Median-Regular';
+  src: url(../source/GT-Ultra-Median-Regular.otf) format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+//spoqa hans
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+
+
+$rbc-black: #000;
+$rbc-beige: #f7f7e8;
+$lh: 1.6em;
+$bold: 600;
+$medium: 400;
+
+
+* {
+  box-sizing: border-box;
+  position: relative;
+  margin: 0;
+  padding: 0;
+
+  scroll-behavior: smooth;
+
+  word-break: keep-all;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+a,
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.75;
+  transition: all 0.1s linear;
+  cursor: pointer;
+}
+
+table,
+td,
+tr {
+  vertical-align: top;
+}
+
+
+
+// -----------------------------------------
+// 기본: 768 ~ 1440px
+
+
+html {
+  font-size: 1.6vw;
+  //1rem = html의 폰트 사이즈
+}
+
+body {
+  background-color: $rbc-black;
+  color: $rbc-beige;
+  margin: 1.9rem 4rem;
+
+  font-family: 'Lato', 'Spoqa Han Sans Neo';
+}
+
+
+//HEADER 헤더
+
+header {
+  font-family: 'GT-Ultra-Median-Regular';
+  font-size: 3.6rem;
+
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    margin: 0 auto;
+  }
+}
+
+.container {
+  &>* {
+    opacity: 0;
+    transform: translateY(15px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+
+    &.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+
+
+//Footer Footer Footer
+.footer {
+  position: relative;
+  margin: 1.5rem auto;
+  width: 100%;
+
+  text-align: center;
+  font-size: .8rem;
+  color: $rbc-beige;
+  opacity: .6;
+}
+
+
+
+// -----------------------------------------
+// wide screen option
+
+@media screen and (min-width: 1600px) {
+  html {
+    font-size: 1.2vw;
+  }
+
+  body {
+    margin: 1.9rem 12rem;
+  }
+}
+
+
+@media screen and (min-width: 1280px) {
+  html {
+    font-size: 1.4vw;
+  }
+
+  body {
+    margin: 1.9rem 7.5rem;
+  }
+
+  .contents-holder {
+    .contents {
+      .img-holder {
+        width: 80%;
+      }
+    }
+  }
+
+}
+
+
+
+// -----------------------------------------
+//mobile 사이즈
+
+
+@media screen and (max-width: 768px) {
+
+  html {
+    font-size: 4.25vw;
+    //1rem = html의 폰트 사이즈
+  }
+
+  body {
+    margin: 2rem auto;
+    overflow: auto;
+  }
+
+  //header max-width: 768px
+  header {
+    flex-direction: column;
+    font-size: 2.8rem;
+
+    &>:nth-child(1) {
+      text-align: center;
+      order: 2;
+    }
+
+    &>:nth-child(2) {
+      width: 88vw;
+      justify-content: center;
+      margin: auto;
+
+      text-align: center;
+      order: 1;
+    }
+
+    &>:nth-child(3) {
+      padding-top: 0;
+
+      text-align: center;
+      order: 3;
+
+      font-size: .7em;
+    }
+
+    .head-info,
+    .month {
+      width: 100%;
+      margin-top: 1.6rem;
+    }
+
+    .map {
+      display: none;
+    }
+
+    .head-info p {
+      display: block;
+    }
+
+
+    .footer {
+      position: relative;
+      margin: 4rem 0 0;
+    }
+  }
+
+
+}

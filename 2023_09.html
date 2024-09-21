@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RBC COLLECTION</title>
 
-    <link rel="stylesheet" href="./style/01_rbc-default.css">
+    <link rel="stylesheet" href="./style/default.css">
+    <link rel="stylesheet" href="./style/page.css">
     <link rel="stylesheet" href="./style/03_popup-page.css">
 
     <script src="./coffee-popup.js" defer></script>
     <script src="./SideMonthBtn.js" defer></script>
+    <script src="./scrollMotion.js"></script>
+    <!-- 설명글 더보기 기능 -->
+    <script src="./caption.js"></script>
 </head>
 
 <body>
@@ -20,79 +24,95 @@
         <div class="head-info">Gangneung</div>
     </header>
 
-    <p class="writing">
-        더워서 참 불편했던 것 같은데 막상 여름이 간다고 하니 아쉬운 마음이 드는 9월,<br>
-        시원한 바다가 떠오르는 강릉의 커피를 소개합니다. <br>
-        <a href="#textFull01" id="readmore">···</a>
-    </p>
+
+    <div class="container">
+        <p class="writing">
+            <span class="more-text" style="display:none;">
+                여름 휴가 다들 다녀오셨나요?
+                이번 여름에는 휴가도 다녀오지 못했는데
+                어느새 여름의 끝자락에 와있습니다.
+                <br><br>
+            </span>
+            더워서 참 불편했던 것 같은데 막상 여름이 간다고 하니 아쉬운 마음이 드는 9월,<br>
+            시원한 바다가 떠오르는 강릉의 커피를 소개합니다.
+            <span class="more-text" style="display:none;">
+                <br><br>
+                올해는 유난히 여름을 보내기가 아쉬워
+                시원한 바다가 떠오르는 강릉의 커피를 준비했습니다.
+                여름에 어울리는 ‘상큼한 과일을 닮은’ 커피 2종입니다.
+                남은 여름 동안 함께 즐겨보아요.
+            </span>
+            <br>
+            <button id="toggle-button">더 읽기</button>
+        </p>
 
 
-    <a class="previousM" href="./2023_08.html"></a>
-    <a class="nextM" href="./2023_10.html"></a>
+        <a class="previousM" href="./2023_08.html"></a>
+        <a class="nextM" href="./2023_10.html"></a>
 
 
-    <section class="contents-holder">
+        <section class="contents-holder">
 
-        <div class="contents">
-            <a href="#coffeeInfo01" id="coffee01"> </a>
+            <div class="contents">
+                <a href="#coffeeInfo01" id="coffee01"> </a>
 
-            <div class="img-holder">
-                <img src="./2023_09-svg/09-coffee-1_tag.svg" alt="">
+                <div class="img-holder">
+                    <img src="./2023_09-svg/09-coffee-1_tag.svg" alt="">
+                </div>
+
+                <table>
+                    <th colspan="2">자두맛 캔디 같이 새콤달콤한 커피</th>
+                    <tr>
+                        <td>가공소</td>
+                        <td>Keramo Station</td>
+                    </tr>
+                    <tr>
+                        <td>지역</td>
+                        <td>Keramo Keblele, Bensa Woreda Sidamo</td>
+                    </tr>
+                    <tr>
+                        <td>품종</td>
+                        <td>74158</td>
+                    </tr>
+                    <tr>
+                        <td>가공</td>
+                        <td>Natural</td>
+                    </tr>
+                </table>
             </div>
 
-            <table>
-                <th colspan="2">자두맛 캔디 같이 새콤달콤한 커피</th>
-                <tr>
-                    <td>가공소</td>
-                    <td>Keramo Station</td>
-                </tr>
-                <tr>
-                    <td>지역</td>
-                    <td>Keramo Keblele, Bensa Woreda Sidamo</td>
-                </tr>
-                <tr>
-                    <td>품종</td>
-                    <td>74158</td>
-                </tr>
-                <tr>
-                    <td>가공</td>
-                    <td>Natural</td>
-                </tr>
-            </table>
-        </div>
 
+            <div class="contents">
+                <a href="#coffeeInfo02" id="coffee02"></a>
 
-        <div class="contents">
-            <a href="#coffeeInfo02" id="coffee02"></a>
+                <div class="img-holder">
+                    <img src="./2023_09-svg/09-coffee-2_tag.svg" alt="">
+                </div>
 
-            <div class="img-holder">
-                <img src="./2023_09-svg/09-coffee-2_tag.svg" alt="">
+                <table>
+                    <th colspan="2">말린 무화과 같은 단맛의 여운이 남는 커피</th>
+                    <tr>
+                        <td>농장</td>
+                        <td>El Laurel Hijo</td>
+                    </tr>
+                    <tr>
+                        <td>지역</td>
+                        <td>Las Delicias, Danli, El Paraiso</td>
+                    </tr>
+                    <tr>
+                        <td>품종</td>
+                        <td>Parainema</td>
+                    </tr>
+                    <tr>
+                        <td>가공</td>
+                        <td>Washed</td>
+                    </tr>
+                </table>
             </div>
 
-            <table>
-                <th colspan="2">말린 무화과 같은 단맛의 여운이 남는 커피</th>
-                <tr>
-                    <td>농장</td>
-                    <td>El Laurel Hijo</td>
-                </tr>
-                <tr>
-                    <td>지역</td>
-                    <td>Las Delicias, Danli, El Paraiso</td>
-                </tr>
-                <tr>
-                    <td>품종</td>
-                    <td>Parainema</td>
-                </tr>
-                <tr>
-                    <td>가공</td>
-                    <td>Washed</td>
-                </tr>
-            </table>
-        </div>
 
-
-    </section>
-
+        </section>
+    </div>
 
 
     <!-- Footer Footer Footer -->
@@ -101,36 +121,6 @@
     <footer class="footer">
         <div>© 2023 radical brewing club. All rights reserved.</div>
     </footer>
-
-
-
-
-    <!--팝업 페이지 -->
-
-
-    <section class="popup" id="textFull01">
-        <header>
-            <div class="month">09</div>
-            <div><a href="./index.html">RBC COLLECTION</a></div>
-            <div class="head-info">Gangneung</div>
-        </header>
-
-
-        <p class="writing" id="writing_popup">
-            여름 휴가 다들 다녀오셨나요?
-            이번 여름에는 휴가도 다녀오지 못했는데
-            어느새 여름의 끝자락에 와있습니다.
-            <br><br>
-            계절이 바뀔 때마다 재밌다는 생각이 듭니다.
-            더워서 참 불편했던 것 같은데,
-            막상 여름이 간다고 하니 아쉬운 마음이 드는 게.
-            <br><br>
-            올해는 유난히 여름을 보내기가 아쉬워
-            시원한 바다가 떠오르는 강릉의 커피를 준비했습니다.
-            여름에 어울리는 ‘상큼한 과일을 닮은’ 커피 2종입니다.
-            남은 여름 동안 함께 즐겨보아요.
-        </p>
-    </section>
 
 
 

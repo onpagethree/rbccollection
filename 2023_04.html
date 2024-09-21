@@ -6,10 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RBC COLLECTION</title>
 
-    <link rel="stylesheet" href="./style/01_rbc-default.css">
+    <link rel="stylesheet" href="./style/default.css">
+    <link rel="stylesheet" href="./style/page.css">
     <link rel="stylesheet" href="./style/03_popup-page.css">
+
     <script src="./coffee-popup.js" defer></script>
     <script src="./SideMonthBtn.js" defer></script>
+    <script src="./scrollMotion.js"></script>
+    <!-- 설명글 더보기 기능 -->
+    <script src="./caption.js"></script>
 </head>
 
 <body>
@@ -23,77 +28,88 @@
     </header>
 
 
-    <p class="writing">
-        4월에는 ‘성북구 로스터리’의 커피를 소개합니다. <br>
-        한적하고 투명한 4월 성북구의 분위기와 어울리는 커피 2종입니다.<br>
-        <a href="#textFull01" id="readmore">···</a>
-    </p>
+    <div class="container">
+        <p class="writing">
+            <span class="more-text" style="display:none;">
+                한국에는 멋진 로스터리가 많습니다.
+                각자의 색깔을 가지고 꾸준히 좋은 커피를 볶는 분들을 보면 감사한 마음이 듭니다.
+                덕분에 어느 지역에 가든 좋은 커피를 만나는 즐거움을 누릴 수 있기 때문입니다.
+                <br><br>
+                RBC가 만나고 팬이 된 곳들을 안암 손님들께도 소개하고자 합니다.
+                <br><br>
+            </span>
+            4월에는 ‘성북구 로스터리’의 커피를 소개합니다. <br>
+            한적하고 투명한 4월 성북구의 분위기와 어울리는 커피 2종입니다.
+            <br>
+            <button id="toggle-button">더 읽기</button>
+        </p>
 
 
 
-    <a class="previousM" href="./2023_03.html"></a>
-    <a class="nextM" href="./2023_05.html"></a>
+        <a class="previousM" href="./2023_03.html"></a>
+        <a class="nextM" href="./2023_05.html"></a>
 
 
-    <section class="contents-holder">
+        <section class="contents-holder">
 
-        <div class="contents">
+            <div class="contents">
 
-            <a href="#coffeeInfo01" id="coffee01"> </a>
-            <div class="img-holder">
-                <img src="./2023_04-svg/04-coffee-1_tag.svg" alt="">
+                <a href="#coffeeInfo01" id="coffee01"> </a>
+                <div class="img-holder">
+                    <img src="./2023_04-svg/04-coffee-1_tag.svg" alt="">
+                </div>
+
+                <table>
+                    <th colspan="2">허브차 같이 은은한 원두</th>
+                    <tr>
+                        <td>농장</td>
+                        <td>Banko Gotiti Small Holders <br> (반코 고티티 지역 소농들) </td>
+                    </tr>
+                    <tr>
+                        <td>지역</td>
+                        <td>Ethiopia, Yirgacheffe</td>
+                    </tr>
+                    <tr>
+                        <td>품종</td>
+                        <td>Ethiopian Heirloom</td>
+                    </tr>
+                    <tr>
+                        <td>가공</td>
+                        <td>Wahsed</td>
+                    </tr>
+                </table>
             </div>
 
-            <table>
-                <th colspan="2">허브차 같이 은은한 원두</th>
-                <tr>
-                    <td>농장</td>
-                    <td>Banko Gotiti Small Holders <br> (반코 고티티 지역 소농들) </td>
-                </tr>
-                <tr>
-                    <td>지역</td>
-                    <td>Ethiopia, Yirgacheffe</td>
-                </tr>
-                <tr>
-                    <td>품종</td>
-                    <td>Ethiopian Heirloom</td>
-                </tr>
-                <tr>
-                    <td>가공</td>
-                    <td>Wahsed</td>
-                </tr>
-            </table>
-        </div>
+            <div class="contents">
 
-        <div class="contents">
+                <a href="#coffeeInfo02" id="coffee02"> </a>
+                <div class="img-holder">
+                    <img src="./2023_04-svg/04-coffee-2_tag.svg" alt="">
+                </div>
 
-            <a href="#coffeeInfo02" id="coffee02"> </a>
-            <div class="img-holder">
-                <img src="./2023_04-svg/04-coffee-2_tag.svg" alt="">
+                <table>
+                    <th colspan="2">레몬사탕 같이 새콤달콤 화사한 원두</th>
+                    <tr>
+                        <td>농장</td>
+                        <td>Nahun Fernandez</td>
+                    </tr>
+                    <tr>
+                        <td>지역</td>
+                        <td>Honduras, Las Flores Santa Barbara</td>
+                    </tr>
+                    <tr>
+                        <td>품종</td>
+                        <td>Geisha</td>
+                    </tr>
+                    <tr>
+                        <td>가공</td>
+                        <td>Washed</td>
+                    </tr>
+                </table>
             </div>
 
-            <table>
-                <th colspan="2">레몬사탕 같이 새콤달콤 화사한 원두</th>
-                <tr>
-                    <td>농장</td>
-                    <td>Nahun Fernandez</td>
-                </tr>
-                <tr>
-                    <td>지역</td>
-                    <td>Honduras, Las Flores Santa Barbara</td>
-                </tr>
-                <tr>
-                    <td>품종</td>
-                    <td>Geisha</td>
-                </tr>
-                <tr>
-                    <td>가공</td>
-                    <td>Washed</td>
-                </tr>
-            </table>
-        </div>
-
-    </section>
+        </section>
+    </div>
 
     <!-- Footer Footer Footer -->
 
@@ -103,32 +119,6 @@
     </footer>
 
 
-
-
-    <!--팝업 페이지 -->
-
-
-    <section class="popup" id="textFull01">
-        <header>
-            <div class="month">04</div>
-            <div><a href="./index.html">RBC COLLECTION</a></div>
-            <div class="head-info">
-                <img class="map" src="./2023_04-svg/04-coffee-map.svg" alt="">
-                <p>Seongbuk-gu</p>
-            </div>
-        </header>
-
-
-        <p class="writing" id="writing_popup">
-            한국에는 멋진 로스터리가 많습니다.
-            각자의 색깔을 가지고 꾸준히 좋은 커피를 볶는 분들을 보면 감사한 마음이 듭니다.
-            덕분에 어느 지역에 가든 좋은 커피를 만나는 즐거움을 누릴 수 있기 때문입니다.
-            <br><br>
-            RBC가 만나고 팬이 된 곳들을 안암 손님들께도 소개하고자 합니다.
-            4월에는 그 중 ‘성북구 로스터리’의 커피를 소개합니다.
-            한적하고 투명한 4월 성북구의 분위기와 어울리는 커피 2종입니다.
-        </p>
-    </section>
 
 
 

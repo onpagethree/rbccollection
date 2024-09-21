@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RBC COLLECTION</title>
 
-    <link rel="stylesheet" href="./style/01_rbc-default.css">
+    <link rel="stylesheet" href="./style/default.css">
+    <link rel="stylesheet" href="./style/page.css">
     <link rel="stylesheet" href="./style/03_popup-page.css">
     <link rel="stylesheet" href="./style/01-1_rbc-default_3set.css">
+
     <script src="./coffee-popup.js" defer></script>
     <script src="./SideMonthBtn.js" defer></script>
+    <script src="./scrollMotion.js"></script>
+    <!-- 설명글 더보기 기능 -->
+    <script src="./caption.js"></script>
 
 </head>
 
@@ -24,253 +29,239 @@
     </header>
 
 
-    <p class="writing">
-        한 가지 생두를 3가지 로스팅 포인트로 볶아서 여러분께 전달합니다. <br>
-        각각 다른 매력을 가지고 있어 비교해 마셔보면 즐거운 경험이 되실거에요. <br>
-        <a href="#textFull01" id="readmore">···</a>
-    </p>
+    <div class="container">
 
-
-
-    <a class="previousM" href="./2023_01.html"></a>
-    <a class="nextM" href="./2023_03.html"></a>
-
-
-    <section class="contents-holder">
-
-        <div class="contents">
-            <a href="#coffeeInfo01" id="coffee01"></a>
-            <div class="img-holder">
-                <img src="./2023_02-svg/02-coffee-1_tag.svg" alt="">
-            </div>
-            <div class="table">
-                <p style="font-weight: bold;" class="th">선명한 매력, 새콤 달콤한 원두</p>
-                <p>라이트 로스팅하여 생두 고유의 향과 적절한 단맛을 강조합니다. 새콤달콤 산미와 향미를 즐기는 분께 추천드립니다.</p>
-            </div>
-        </div>
-
-        <div class="contents">
-            <a href="#coffeeInfo02" id="coffee02"></a>
-            <div class="img-holder">
-                <img src="./2023_02-svg/02-coffee-2_tag.svg" alt="">
-            </div>
-
-            <div class="table">
-                <p style="font-weight: bold;" class="th">무던한 매력, 좋은 밸런스의 원두</p>
-                <p>미디움 로스팅하여 산미의 톤은 비교적 줄이고, 단맛과 고소한 뉘앙스를 더했습니다. 한 잔을 다 마셔도 부담없는 커피를
-                    선호하는 분께 추천드립니다.</p>
-            </div>
-        </div>
-
-        <div class="contents">
-            <a href="#coffeeInfo03" id="coffee03"></a>
-            <div class="img-holder">
-                <img src="./2023_02-svg/02-coffee-3_tag.svg" alt="">
-            </div>
-
-            <div class="table">
-                <p style="font-weight: bold;" class="th">묵직한 매력, 익숙한 고소함의 원두</p>
-                <p>다크 로스팅하여 익숙한 고소함을 바탕으로 고유의 향미가 어우러집니다.
-                    고소하고 짙은 농도의 커피를 즐기는 분께 추천드립니다.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer Footer Footer -->
-
-
-    <footer class="footer">
-        <div>© 2023 radical brewing club. All rights reserved.</div>
-    </footer>
-
-
-
-
-    <!--팝업 페이지 -->
-
-
-    <section class="popup" id="textFull01">
-        <header>
-            <div class="month">02</div>
-            <div><a href="./index.html">RBC COLLECTION</a></div>
-            <div class="head-info">
-                Roasting
-            </div>
-        </header>
-
-
-        <p class="writing" id="writing_popup">
-            여러분은 좋아하는 대상을 자신만의 스타일로 표현해본 경험이 있으신가요?
-            바리스타는 손님에게 전달할 한 잔의 커피를 두고 어떤 매력을 강조해 추출할지 항상 고민합니다.
-            이번 달에는 이런 바리스타의 즐거운 고민을 여러분께 공유하려고 합니다.
-            <br><br>
-            이웃 로스터리 @handsomeroastingcoffee의 도움으로 한 가지 생두를 3가지 로스팅 포인트로 볶아서 여러분께 전달합니다. 각각 다른 매력을 가지고 있어 비교해 마셔보면 즐거운
-            경험이 되실거에요.
-            <br><br>
-            어떤 버전의 커피가 좋으셨는지 여러분의 취향을 들려주세요🙂ㅠ<br>
+        <p class="writing">
+            한 가지 생두를 3가지 로스팅 포인트로 볶아서 여러분께 전달합니다. <br>
+            각각 다른 매력을 가지고 있어 비교해 마셔보면 즐거운 경험이 되실거에요.
+            <span class="more-text" style="display:none;">
+                <br><br>
+                여러분은 좋아하는 대상을 자신만의 스타일로 표현해본 경험이 있으신가요? 바리스타는 손님에게 전달할 한 잔의 커피를 두고 어떤 매력을 강조해 추출할지 항상 고민합니다. 이번 달에는 이런
+                바리스타의 즐거운 고민을 여러분께 공유하려고 합니다.
+                <br><br>
+                이웃 로스터리 @handsomeroastingcoffee의 도움으로 한 가지 생두를 3가지 로스팅 포인트로 볶아서 여러분께 전달합니다. 각각 다른 매력을 가지고 있어 비교해 마셔보면
+                즐거운 경험이 되실거에요.
+                <br><br>
+                어떤 버전의 커피가 좋으셨는지 여러분의 취향을 들려주세요!
+            </span>
+            <br>
+            <button id="toggle-button">더 읽기</button>
         </p>
-    </section>
 
 
 
-    <!--팝업 페이지 + 원두 정보 -->
+        <a class="previousM" href="./2023_01.html"></a>
+        <a class="nextM" href="./2023_03.html"></a>
 
-    <section class="popup" id="coffeeInfo01">
-        <div class="pop-title">
-            Ethiopia Sidamo Shantawene G1 Natural
-            <p>에티오피아 시다마 산타와니 G1 Natural</p>
-        </div>
 
-        <div class="pop-info">
-            <div>
-                <table>
-                    <tr>
-                        <td>로스팅</td>
-                        <td>핸섬로스팅 커피</td>
-                    </tr>
-                </table>
-                <table>
-                    <tr>
-                        <td></td>
-                        <td>농장</td>
-                        <td>Shantawene Washing station</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>지역</td>
-                        <td>Ethiopia, Sidamo Bensa </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>품종</td>
-                        <td>Heirloom</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>가공</td>
-                        <td>Natural</td>
-                    </tr>
-                </table>
-                <table>
-                    <tr>
-                        <td>RBC 추천</td>
-                        <td>과일이 연상 되는 새콤한 산미와 향미가 매력적인 커피입니다.
-                            라이트 로스팅하여 생두가 가진 고유한 향미와 적절한 단맛을 잘 이끌어내었습니다.
-                            추출시에는 매력적인 향미가 잘 느껴지도록 적당한 농도감으로 내려드리는데 집중하고 있습니다.
-                            평소에 선명한 산미와 향미를 즐기시는 분께 추천드려요. </td>
-                    </tr>
-                </table>
+        <section class="contents-holder">
+
+            <div class="contents">
+                <a href="#coffeeInfo01" id="coffee01"></a>
+                <div class="img-holder">
+                    <img src="./2023_02-svg/02-coffee-1_tag.svg" alt="">
+                </div>
+                <div class="table">
+                    <p style="font-weight: bold;" class="th">선명한 매력, 새콤 달콤한 원두</p>
+                    <p>라이트 로스팅하여 생두 고유의 향과 적절한 단맛을 강조합니다. 새콤달콤 산미와 향미를 즐기는 분께 추천드립니다.</p>
+                </div>
             </div>
 
+            <div class="contents">
+                <a href="#coffeeInfo02" id="coffee02"></a>
+                <div class="img-holder">
+                    <img src="./2023_02-svg/02-coffee-2_tag.svg" alt="">
+                </div>
 
-        </div>
-    </section>
-
-    <section class="popup" id="coffeeInfo02">
-        <div class="pop-title">
-            Ethiopia Sidamo Shantawene G1 Natural
-            <p>에티오피아 시다마 산타와니 G1 Natural</p>
-        </div>
-
-        <div class="pop-info">
-            <div>
-                <table>
-                    <tr>
-                        <td>로스팅</td>
-                        <td>핸섬로스팅 커피</td>
-                    </tr>
-                </table>
-                <table>
-                    <tr>
-                        <td></td>
-                        <td>농장</td>
-                        <td>Shantawene Washing station</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>지역</td>
-                        <td>Ethiopia, Sidamo Bensa </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>품종</td>
-                        <td>Heirloom</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>가공</td>
-                        <td>Natural</td>
-                    </tr>
-                </table>
-                <table>
-                    <tr>
-                        <td>RBC 추천</td>
-                        <td>데일리 커피로 손색없는 좋은 밸런스를 가진 커피입니다.
-                            미디움 로스팅하여 산미의 톤은 비교적 줄이고, 단맛과 고소한 뉘앙스를 더했습니다.
-                            추출시에는 산미와 단맛, 고소함의 밸런스가 잘 유지되도록 분쇄도와 농도를 조절해 내려드리고 있습니다.
-                            한 잔을 다 마셔도 부담없는 커피를 선호하는 분께 추천드려요.
-                        </td>
-                    </tr>
-                </table>
+                <div class="table">
+                    <p style="font-weight: bold;" class="th">무던한 매력, 좋은 밸런스의 원두</p>
+                    <p>미디움 로스팅하여 산미의 톤은 비교적 줄이고, 단맛과 고소한 뉘앙스를 더했습니다. 한 잔을 다 마셔도 부담없는 커피를
+                        선호하는 분께 추천드립니다.</p>
+                </div>
             </div>
 
+            <div class="contents">
+                <a href="#coffeeInfo03" id="coffee03"></a>
+                <div class="img-holder">
+                    <img src="./2023_02-svg/02-coffee-3_tag.svg" alt="">
+                </div>
 
-        </div>
-    </section>
+                <div class="table">
+                    <p style="font-weight: bold;" class="th">묵직한 매력, 익숙한 고소함의 원두</p>
+                    <p>다크 로스팅하여 익숙한 고소함을 바탕으로 고유의 향미가 어우러집니다.
+                        고소하고 짙은 농도의 커피를 즐기는 분께 추천드립니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Footer Footer -->
 
 
-    <section class="popup" id="coffeeInfo03">
-        <div class="pop-title">
-            Ethiopia Sidamo Shantawene G1 Natural
-            <p>에티오피아 시다마 산타와니 G1 Natural</p>
-        </div>
+        <footer class="footer">
+            <div>© 2023 radical brewing club. All rights reserved.</div>
+        </footer>
 
-        <div class="pop-info">
-            <div>
-                <table>
-                    <tr>
-                        <td>로스팅</td>
-                        <td>핸섬로스팅 커피</td>
-                    </tr>
-                </table>
-                <table>
-                    <tr>
-                        <td></td>
-                        <td>농장</td>
-                        <td>Shantawene Washing station</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>지역</td>
-                        <td>Ethiopia, Sidamo Bensa </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>품종</td>
-                        <td>Heirloom</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>가공</td>
-                        <td>Natural</td>
-                    </tr>
-                </table>
-                <table>
-                    <tr>
-                        <td>RBC 추천</td>
-                        <td>익숙한 고소함 속에 고유의 색깔을 품은 커피입니다.
-                            다크 로스팅하여 누구에게나 사랑 받을 커피의 고소함 베이스에, 이 생두가 가진 본연의 산미와 향미가 잘 녹아있습니다.
-                            추출시에는 묵직한 매력이 잘 전달되도록 다소 진한 농도감으로 내려 드리고 있습니다.
-                            평소 고소하고 짙은 농도의 커피를 즐기는 분께 추천드려요.
-                        </td>
-                    </tr>
-                </table>
+
+
+
+        <!--팝업 페이지 + 원두 정보 -->
+
+        <section class="popup" id="coffeeInfo01">
+            <div class="pop-title">
+                Ethiopia Sidamo Shantawene G1 Natural
+                <p>에티오피아 시다마 산타와니 G1 Natural</p>
             </div>
 
+            <div class="pop-info">
+                <div>
+                    <table>
+                        <tr>
+                            <td>로스팅</td>
+                            <td>핸섬로스팅 커피</td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td>농장</td>
+                            <td>Shantawene Washing station</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>지역</td>
+                            <td>Ethiopia, Sidamo Bensa </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>품종</td>
+                            <td>Heirloom</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>가공</td>
+                            <td>Natural</td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td>RBC 추천</td>
+                            <td>과일이 연상 되는 새콤한 산미와 향미가 매력적인 커피입니다.
+                                라이트 로스팅하여 생두가 가진 고유한 향미와 적절한 단맛을 잘 이끌어내었습니다.
+                                추출시에는 매력적인 향미가 잘 느껴지도록 적당한 농도감으로 내려드리는데 집중하고 있습니다.
+                                평소에 선명한 산미와 향미를 즐기시는 분께 추천드려요. </td>
+                        </tr>
+                    </table>
+                </div>
 
-        </div>
-    </section>
 
+            </div>
+        </section>
+
+        <section class="popup" id="coffeeInfo02">
+            <div class="pop-title">
+                Ethiopia Sidamo Shantawene G1 Natural
+                <p>에티오피아 시다마 산타와니 G1 Natural</p>
+            </div>
+
+            <div class="pop-info">
+                <div>
+                    <table>
+                        <tr>
+                            <td>로스팅</td>
+                            <td>핸섬로스팅 커피</td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td>농장</td>
+                            <td>Shantawene Washing station</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>지역</td>
+                            <td>Ethiopia, Sidamo Bensa </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>품종</td>
+                            <td>Heirloom</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>가공</td>
+                            <td>Natural</td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td>RBC 추천</td>
+                            <td>데일리 커피로 손색없는 좋은 밸런스를 가진 커피입니다.
+                                미디움 로스팅하여 산미의 톤은 비교적 줄이고, 단맛과 고소한 뉘앙스를 더했습니다.
+                                추출시에는 산미와 단맛, 고소함의 밸런스가 잘 유지되도록 분쇄도와 농도를 조절해 내려드리고 있습니다.
+                                한 잔을 다 마셔도 부담없는 커피를 선호하는 분께 추천드려요.
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+
+            </div>
+        </section>
+
+
+        <section class="popup" id="coffeeInfo03">
+            <div class="pop-title">
+                Ethiopia Sidamo Shantawene G1 Natural
+                <p>에티오피아 시다마 산타와니 G1 Natural</p>
+            </div>
+
+            <div class="pop-info">
+                <div>
+                    <table>
+                        <tr>
+                            <td>로스팅</td>
+                            <td>핸섬로스팅 커피</td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td>농장</td>
+                            <td>Shantawene Washing station</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>지역</td>
+                            <td>Ethiopia, Sidamo Bensa </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>품종</td>
+                            <td>Heirloom</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>가공</td>
+                            <td>Natural</td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td>RBC 추천</td>
+                            <td>익숙한 고소함 속에 고유의 색깔을 품은 커피입니다.
+                                다크 로스팅하여 누구에게나 사랑 받을 커피의 고소함 베이스에, 이 생두가 가진 본연의 산미와 향미가 잘 녹아있습니다.
+                                추출시에는 묵직한 매력이 잘 전달되도록 다소 진한 농도감으로 내려 드리고 있습니다.
+                                평소 고소하고 짙은 농도의 커피를 즐기는 분께 추천드려요.
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+
+            </div>
+        </section>
+    </div>
 
 </body>
 

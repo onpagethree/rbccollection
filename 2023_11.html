@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RBC COLLECTION</title>
 
-    <link rel="stylesheet" href="./style/01_rbc-default.css">
+    <link rel="stylesheet" href="./style/default.css">
+    <link rel="stylesheet" href="./style/page.css">
     <link rel="stylesheet" href="./style/03_popup-page.css">
 
     <script src="./coffee-popup.js" defer></script>
     <script src="./SideMonthBtn.js" defer></script>
+    <script src="./scrollMotion.js"></script>
+    <!-- 설명글 더보기 기능 -->
+    <script src="./caption.js"></script>
 </head>
 
 <body>
@@ -20,82 +24,94 @@
         <div class="head-info">Brown</div>
     </header>
 
-    <p class="writing">
-        찬바람 불어오는 가을에는 갈색 빛 따뜻한 색감의 옷, 밤처럼 고소한 음식에 마음이 갑니다
-        <br> 11월에는 ‘갈색이 생각나는 고소한 커피’ 2종을 수집해 소개합니다. <br>
-        <a href="#textFull01" id="readmore">···</a>
-    </p>
+
+    <div class="container">
+        <p class="writing">
+            <span class="more-text" style="display:none;">
+                <br><br>
+                찬바람 불어오는 가을이 왔습니다.
+                쌀쌀해진 온도 때문일까요? <br>
+            </span>
+            가을에는 갈색 빛 따뜻한 색감의 옷, 밤처럼 고소한 음식에 마음이 갑니다
+            <br> 11월에는 ‘갈색이 생각나는 고소한 커피’ 2종을 수집해 소개합니다.
+            <span class="more-text" style="display:none;">
+                <br><br>
+                하얀 겨울이 오기 전에 RBC와 함께 즐겨보아요! 🙂
+            </span>
+            <br>
+            <button id="toggle-button">더 읽기</button>
+        </p>
 
 
-    <a class="previousM" href="./2023_10.html"></a>
-    <a class="nextM" href="./2023_12.html"></a>
+        <a class="previousM" href="./2023_10.html"></a>
+        <a class="nextM" href="./2023_12.html"></a>
 
 
-    <section class="contents-holder">
+        <section class="contents-holder">
 
-        <div class="contents">
-            <a href="#coffeeInfo01" id="coffee01"> </a>
-            <div class="img-holder">
-                <img src="./2023_11-svg/11-coffee-1_tag.svg" alt="">
+            <div class="contents">
+                <a href="#coffeeInfo01" id="coffee01"> </a>
+                <div class="img-holder">
+                    <img src="./2023_11-svg/11-coffee-1_tag.svg" alt="">
+                </div>
+
+                <table>
+                    <th colspan="2">비스킷 같이 고소한 매력의 커피</th>
+                    <tr>
+                        <td>농장</td>
+                        <td>Vinhal</td>
+                    </tr>
+                    <tr>
+                        <td>지역</td>
+                        <td>Brazil, Cerrado Mineiro, Minas Gerais</td>
+                    </tr>
+                    <tr>
+                        <td>품종</td>
+                        <td>Red Catuai 99</td>
+                    </tr>
+                    <tr>
+                        <td>가공</td>
+                        <td>Double Fermented(Anaerobic)</td>
+                    </tr>
+                </table>
             </div>
 
-            <table>
-                <th colspan="2">비스킷 같이 고소한 매력의 커피</th>
-                <tr>
-                    <td>농장</td>
-                    <td>Vinhal</td>
-                </tr>
-                <tr>
-                    <td>지역</td>
-                    <td>Brazil, Cerrado Mineiro, Minas Gerais</td>
-                </tr>
-                <tr>
-                    <td>품종</td>
-                    <td>Red Catuai 99</td>
-                </tr>
-                <tr>
-                    <td>가공</td>
-                    <td>Double Fermented(Anaerobic)</td>
-                </tr>
-            </table>
-        </div>
 
+            <div class="contents">
+                <a href="#coffeeInfo02" id="coffee02"> </a>
 
-        <div class="contents">
-            <a href="#coffeeInfo02" id="coffee02"> </a>
+                <div class="img-holder">
+                    <img src="./2023_11-svg/11-coffee-2_tag.svg" alt="">
+                </div>
 
-            <div class="img-holder">
-                <img src="./2023_11-svg/11-coffee-2_tag.svg" alt="">
+                <table>
+                    <th colspan="2">보리차 같이 구수한 매력의 커피</th>
+                    <tr>
+                        <td>농부</td>
+                        <td>M.K. Chengapa</td>
+                    </tr>
+                    <tr>
+                        <td>농장</td>
+                        <td>Harangal Estate</td>
+                    </tr>
+                    <tr>
+                        <td>지역</td>
+                        <td>India, Madapur</td>
+                    </tr>
+                    <tr>
+                        <td>품종</td>
+                        <td>CxR, S.274, Peridina</td>
+                    </tr>
+                    <tr>
+                        <td>가공</td>
+                        <td>Washed</td>
+                    </tr>
+                </table>
             </div>
 
-            <table>
-                <th colspan="2">보리차 같이 구수한 매력의 커피</th>
-                <tr>
-                    <td>농부</td>
-                    <td>M.K. Chengapa</td>
-                </tr>
-                <tr>
-                    <td>농장</td>
-                    <td>Harangal Estate</td>
-                </tr>
-                <tr>
-                    <td>지역</td>
-                    <td>India, Madapur</td>
-                </tr>
-                <tr>
-                    <td>품종</td>
-                    <td>CxR, S.274, Peridina</td>
-                </tr>
-                <tr>
-                    <td>가공</td>
-                    <td>Washed</td>
-                </tr>
-            </table>
-        </div>
 
-
-    </section>
-
+        </section>
+    </div>
 
 
     <!-- Footer Footer Footer -->
@@ -105,30 +121,6 @@
         <div>© 2023 radical brewing club. All rights reserved.</div>
     </footer>
 
-
-
-
-    <!--팝업 페이지 -->
-
-
-    <section class="popup" id="textFull01">
-        <header>
-            <div class="month">11</div>
-            <div><a href="./index.html">RBC COLLECTION</a></div>
-            <div class="head-info">Brown</div>
-        </header>
-
-
-        <p class="writing" id="writing_popup">
-            찬바람 불어오는 가을이 왔습니다.
-            쌀쌀해진 온도 때문일까요? <br>
-            갈색 빛 따뜻한 색감의 옷, 밤처럼 고소한 음식에 마음이 갑니다.
-            <br><br>
-            11월에는 ‘갈색이 생각나는 고소한 커피’ 2종을 수집해 소개합니다. <br>
-            하얀 겨울이 오기 전에 RBC와 함께 즐겨보아요! 🙂
-
-        </p>
-    </section>
 
 
 
