@@ -118,9 +118,19 @@ $medium: 400;
             flex-direction: column;
 
             // FLIP 효과  FLIP 효과
-            transition: transform 0.6s ease-in-out;
+            transition: transform 0.5s ease-in-out;
+
+            opacity: 1;
+
             transform-style: preserve-3d;
             perspective: 1000px;
+
+            &.flipped {
+                transform: rotateY(180deg);
+                opacity: 1;
+            }
+
+
 
             .front,
             .back {
@@ -176,18 +186,13 @@ $medium: 400;
                         }
                     }
                 }
-
             }
+
+
 
             .back {
                 transform: rotateY(180deg);
             }
-
-
-            &.flipped {
-                transform: rotateY(180deg);
-            }
-
 
             // 클릭 버튼
             #coffee01,
