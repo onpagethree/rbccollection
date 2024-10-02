@@ -80,12 +80,12 @@
 }
 .container .contents-holder .contents {
   width: calc(50% - 0.7rem);
-  height: 27.7rem;
+  min-height: 27.8rem;
   background-color: #f7f7e8;
   display: flex;
   flex-direction: column;
-  transition: transform 0.5s ease-in-out;
   opacity: 1;
+  transition: transform 0.5s ease-in-out;
   transform-style: preserve-3d;
   perspective: 1000px;
 }
@@ -93,11 +93,15 @@
   transform: rotateY(180deg);
   opacity: 1;
 }
+.container .contents-holder .contents > * {
+  flex: 1;
+  /* 자식 요소들이 가능한 공간을 모두 차지하도록 설정 */
+}
 .container .contents-holder .contents .front,
 .container .contents-holder .contents .back {
   backface-visibility: hidden;
   width: 100%;
-  height: 100%;
+  height: auto;
   position: absolute;
   left: 0;
   top: 0;
@@ -116,7 +120,7 @@
 }
 .container .contents-holder .contents .front table,
 .container .contents-holder .contents .back table {
-  width: 19em;
+  width: 18.7em;
   height: 0;
   margin: 0 2rem;
   color: #000;

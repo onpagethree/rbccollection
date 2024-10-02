@@ -220,32 +220,18 @@
     </section>
 
     <script>
-
-
-        // 1번째 원두
-        var coffee01 = document.querySelector("#coffee01");
-
-        coffee01.addEventListener("focus", function () {
-            var modal01 = document.querySelector("#coffeeInfo01");
-            modal01.style.display = "block";
+        // coffee01에 대한 flip 이벤트 리스너
+        document.getElementById("coffee01").addEventListener("click", function (e) {
+            e.preventDefault();
+            const content = this.closest('.contents');
+            content.classList.toggle('flipped');
         });
 
-        coffee01.addEventListener("blur", function () {
-            var modal01 = document.querySelector("#coffeeInfo01");
-            modal01.style.display = "none";
-        });
-
-        // 2번째 원두
-        var coffee02 = document.querySelector("#coffee02");
-
-        coffee02.addEventListener("focus", function () {
-            var modal02 = document.querySelector("#coffeeInfo02");
-            modal02.style.display = "block";
-        });
-
-        coffee02.addEventListener("blur", function () {
-            var modal02 = document.querySelector("#coffeeInfo02");
-            modal02.style.display = "none";
+        // coffee02에 대한 flip 이벤트 리스너
+        document.getElementById("coffee02").addEventListener("click", function (e) {
+            e.preventDefault();
+            const content = this.closest('.contents');
+            content.classList.toggle('flipped');
         });
     </script>
 
