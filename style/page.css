@@ -45,7 +45,7 @@
 }
 
 .container .writing {
-  width: 60vw;
+  width: 75vw;
   margin: 2.3rem auto;
   text-align: center;
   line-height: 1.6em;
@@ -80,7 +80,7 @@
 }
 .container .contents-holder .contents {
   width: calc(50% - 0.7rem);
-  height: 27rem;
+  height: 27.7rem;
   background-color: #f7f7e8;
   display: flex;
   flex-direction: column;
@@ -127,6 +127,7 @@
   font-weight: 600;
   text-align: left;
   padding-bottom: 0.5em;
+  line-height: 1.6em;
 }
 .container .contents-holder .contents .front table td,
 .container .contents-holder .contents .front table tr,
@@ -135,21 +136,20 @@
   line-height: 1.25em;
   padding-bottom: 0.35em;
 }
-.container .contents-holder .contents .front table td p,
-.container .contents-holder .contents .front table tr p,
-.container .contents-holder .contents .back table td p,
-.container .contents-holder .contents .back table tr p {
-  line-height: 1.5em;
-}
 .container .contents-holder .contents .front table tr > :first-child,
 .container .contents-holder .contents .back table tr > :first-child {
   width: 3.5rem;
+}
+.container .contents-holder .contents .front table tr p,
+.container .contents-holder .contents .back table tr p {
+  line-height: 1.6em;
 }
 .container .contents-holder .contents .back {
   transform: rotateY(180deg);
 }
 .container .contents-holder .contents #coffee01,
-.container .contents-holder .contents #coffee02 {
+.container .contents-holder .contents #coffee02,
+.container .contents-holder .contents #coffee03 {
   z-index: 100;
   position: absolute;
   width: 100%;

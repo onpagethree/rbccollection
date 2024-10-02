@@ -65,7 +65,7 @@ $medium: 400;
 
     // 설명 글
     .writing {
-        width: 60vw;
+        width: 75vw;
         margin: 2.3rem auto;
 
         text-align: center;
@@ -110,7 +110,7 @@ $medium: 400;
 
         .contents {
             width: calc(100% / 2 - 0.7rem);
-            height: 27rem;
+            height: 27.7rem;
             // 원두 높이 원두 높이
 
             background-color: $rbc-beige;
@@ -168,22 +168,24 @@ $medium: 400;
                         font-weight: $bold;
                         text-align: left;
                         padding-bottom: .5em;
+                        line-height: $lh;
                     }
 
                     td,
                     tr {
                         line-height: 1.25em;
                         padding-bottom: 0.35em;
-
-                        p {
-                            line-height: 1.5em;
-                        }
                     }
 
                     tr {
                         &>:first-child {
                             width: 3.5rem;
                         }
+
+                        p {
+                            line-height: $lh;
+                        }
+
                     }
                 }
             }
@@ -196,7 +198,8 @@ $medium: 400;
 
             // 클릭 버튼
             #coffee01,
-            #coffee02 {
+            #coffee02,
+            #coffee03 {
                 z-index: 100;
                 position: absolute;
                 width: 100%;

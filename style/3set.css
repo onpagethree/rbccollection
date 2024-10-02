@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/* 원두 3종 */
+.container .contents-holder {
+  padding: 0;
+}
+.container .contents-holder .contents {
+  width: 33.3333333333%;
+  height: 27.5rem;
+  font-size: 0.85rem;
+}
+.container .contents-holder .contents .front table,
+.container .contents-holder .contents .back table {
+  width: 17.8em;
+  margin: 0 1.3rem;
+}
+.container .contents-holder .contents .front table tr td p,
+.container .contents-holder .contents .back table tr td p {
+  line-height: 1.632em;
+}
